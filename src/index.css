@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "TT Interphases Pro Mono Trial Regular";
+  src: url("./assets/fonts/TT-Interphases-Pro-Trial-Condensed-Regular.woff") format("woff"),
+    url("./assets/fonts/TT\ Interphases\ Pro\ Mono\ Trial\ Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: TT Interphases Pro Mono Trial Regular;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  min-height: 100%;
+}
