@@ -7,8 +7,8 @@
 
 function Header() {
   return (
-    <header className="pt-10 px-36">
-      <div className="flex items-center justify-between px-12 py-10 bg-white rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
+    <header className="pt-8 px-24 sticky">
+      <div className="flex items-center justify-between px-12 py-4 bg-white rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
         <div className="img-container">
           <a href="/">
             <img src="../images/mainLogo.png" alt="mainlogo" />
@@ -37,7 +37,7 @@ function Header() {
           </ol>
         </nav>
 
-        <buthrefn className="text-white bg-cyan-600 ">GET A QUOTE</buthrefn>
+        <buthrefn className="text-white text-sm px-11 py-2 rounded-lg gradientBackground">GET A QUOTE</buthrefn>
       </div>
     </header>
   );
