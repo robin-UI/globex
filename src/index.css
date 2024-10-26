@@ -18,13 +18,14 @@
 }
 
 html {
-  font-size: 62.5%;
-  height: 100%;
   font-family: TT Interphases Pro Mono Trial Regular;
 }
 
 body {
   box-sizing: border-box;
-  font-size: 1.6rem;
-  min-height: 100%;
+}
+
+
+.gradientBackground {
+  background: linear-gradient(82.38deg, #03E7A3 -34.57%, #335BE1 97.18%);
 }
