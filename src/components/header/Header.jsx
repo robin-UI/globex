@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import { NavLink } from "react-router-dom";
+
 // import { Link } from "react-router-dom";
 
 // box-shadow: 0px 0px 4px 4px #5A9CFE14;
@@ -17,22 +19,22 @@ function Header() {
         <nav>
           <ol className="flex justify-center gap-10 text-[#353535]">
             <li>
-              <a className="font-bold" href="/">Home</a>
+              <NavLink className="font-bold" to="/">Home</NavLink>
             </li>
             <li>
-              <a href="our-company">Our Company</a>
+              <NavLink to="our-company">Our Company</NavLink>
             </li>
             <li>
-              <a href="Services">Services</a>
+              <NavLink to="services">Services</NavLink>
             </li>
             <li>
-              <a href="Company-setup">Company Setup</a>
+              <NavLink to="company-setup">Company Setup</NavLink>
             </li>
             <li>
-              <a href="10-year-uae-visa">10 Year UAE Visa</a>
+              <NavLink to="year-uae-visa">10 Year UAE Visa</NavLink>
             </li>
             <li>
-              <a href="Media">Media</a>
+              <NavLink to="media">Media</NavLink>
             </li>
           </ol>
         </nav>
