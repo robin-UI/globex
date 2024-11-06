@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: "TT Interphases Pro Mono Trial Regular";
-  src: url("./assets/fonts/TT-Interphases-Pro-Trial-Condensed-Regular.woff") format("woff"),
+  src: url("./assets/fonts/TT-Interphases-Pro-Trial-Condensed-Regular.woff")
+      format("woff"),
     url("./assets/fonts/TT\ Interphases\ Pro\ Mono\ Trial\ Regular.ttf")
       format("truetype"); /* Safari, Android, iOS */
 }
@@ -25,7 +26,46 @@ body {
   box-sizing: border-box;
 }
 
-
 .gradientBackground {
-  background: linear-gradient(82.38deg, #03E7A3 -34.57%, #335BE1 97.18%);
+  background: linear-gradient(82.38deg, #03e7a3 -34.57%, #335be1 97.18%);
+}
+
+.gradient-border {
+  position: relative;
+  /* border-radius: 15px; Border radius for the actual element */
+  overflow: hidden; /* Ensures the gradient border doesn’t overlap content */
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit; /* Inherit border radius */
+  padding: 1px; /* Border thickness */
+  background: linear-gradient(270deg, #03e7a3, #335be1); /* Gradient */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+.gradient-text {
+  /* font-size: 3rem; /* Adjust size as needed */
+  /* font-weight: bold; Optional  */
+  /* background-image: linear-gradient(
+    270deg,
+    #03e7a3,
+    #335be1
+  );  */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text; /* Standard */
+  color: transparent; /* Make text color transparent to show the gradient */
+  border: 1px solid;
+
+  background-image: linear-gradient(270deg, #03E7A3 0%, #335BE1 100%);
+
+
 }
