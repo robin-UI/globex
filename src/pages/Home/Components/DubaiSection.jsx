@@ -8,7 +8,7 @@ import {
 function DubaiSection() {
   return (
     <section>
-      <div className="min-h-screen bg-gray-50 py-8 sm:py-12 md:py-20 px-4">
+      <div className="bg-gray-50 sm:py-12 md:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 md:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">

@@ -13,7 +13,7 @@ function Header() {
       <div className="flex items-center justify-between px-12 py-4 bg-white rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
         <div className="img-container">
           <a href="/">
-            <img src="../images/mainLogo.png" alt="mainlogo" />
+            <img style={{width:"150px",height:"auto"}} src="../images/mainLogo.png" alt="mainlogo" />
           </a>
         </div>
         <nav>

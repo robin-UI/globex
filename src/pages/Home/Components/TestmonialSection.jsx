@@ -56,21 +56,18 @@ function TestmonialSection() {
           <div className="flex gap-4">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors"
+              className="w-12 h-12 rounded-full flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-cyan-500 transition-colors"
               aria-label="Previous testimonial"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
+             
+              <img src="./images/homepage/Group 66.svg"/>
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors"
+              className="w-12 h-12 rounded-full flex items-center justify-center hover:bg-gradient-to-r from-blue-600 to-cyan-500 transition-colors"
               aria-label="Next testimonial"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <img src="./images/homepage/Group 67.svg"/>
             </button>
           </div>
         </div>
