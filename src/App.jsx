@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import Header from "./components/header/Header";
 import Routers from "./router/Router";
+import Footer from "./components/footer/footer"
 
 // This is our layout
 
@@ -19,6 +20,7 @@ export const LayOut = function () {
     <>
       <Header />
       <Outlet />
+      <Footer/>
     </>
   );
 };

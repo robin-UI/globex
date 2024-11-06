@@ -1,7 +1,18 @@
+import React from 'react'
+import Header from "../../components/header/Header"
 
-function Services() {
+const Services = () => {
   return (
-    <div>Services</div>
+    <div className="services">
+      {/* Navbar start */}
+
+      <Header/>
+
+      {/* Navbar end */}
+
+
+
+    </div>
   )
 }
 
