@@ -8,10 +8,6 @@ const Services = () => {
 
       <Header/>
 
-      {/* Navbar end */}
-
-
-
     </div>
   )
 }
