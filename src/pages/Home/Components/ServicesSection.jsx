@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { AttestationIcon, CompanyIcon, LabourIcon, ProIcon, TradeIcon, VisaIcon } from "../../../components/Icons/Icons";
 
 function ServicesSection() {
@@ -43,7 +44,7 @@ function ServicesSection() {
                 accounting, marketing, and IT support sustainable growth.
               </p>
               <img
-                src="https://placehold.co/600x400"
+                src="./images/homepage/Frame 30.png"
                 alt="Company Formation"
                 className="w-full rounded-lg mb-6"
               />
@@ -73,9 +74,13 @@ function ServicesSection() {
 
 export default ServicesSection;
 
-function ServiceCard({ icon, title, isActive = false }) {
+function ServiceCard({ icon, title }) {
+
+  const [isActive, setIsActive] = useState(false)
     return (
       <div
+      onMouseEnter={() => setIsActive(true)}
+      onMouseLeave={() => setIsActive(false)}
         className={`flex items-center justify-between p-6 rounded-xl transition-all cursor-pointer
         ${
           isActive
