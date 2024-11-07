@@ -5,11 +5,19 @@ import {
   MapIcon,
 } from "../../../components/Icons/Icons";
 
+import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
+
 function DubaiSection() {
   return (
-    <section>
-      <div className="bg-gray-50 sm:py-12 md:py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+    <section
+      className="bg-gray-50 relative"
+      // style={{
+      //   backgroundImage: `url(${backgroundDubai})`,
+      //   backgroundRepeat: "no-repeat",
+      // }}
+    >
+      <div className=" sm:py-12 md:py-20 px-4  z-50">
+        <div className="max-w-6xl mx-auto ">
           <div className="text-center mb-8 md:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
               <span className="block sm:inline">
@@ -46,6 +54,11 @@ function DubaiSection() {
           </div>
         </div>
       </div>
+      <img
+        src={backgroundDubai}
+        alt=""
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+      />
     </section>
   );
 }
@@ -61,7 +74,7 @@ function BusinessCard2({ title, description, icon }) {
       className={`max-w-sm w-full lg:max-w-full  p-6 sm:p-8 rounded-xl ${
         gradient
           ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
-          : "bg-white"
+          : "bg-gray-50"
       } transition-transform hover:scale-105 lg:h-auto flex-none bg-cover rounded text-center overflow-hidden`}
       style={{
         width: "351px",
@@ -71,12 +84,14 @@ function BusinessCard2({ title, description, icon }) {
         lineHeight: "20px",
         fontWeight: 300,
         borderRadius: "15px",
-        padding: "10px", 
-        boxShadow: "0 4px 8px rgba(128, 128, 128, 0.5)", 
+        padding: "10px",
+        boxShadow: "0 4px 8px rgba(128, 128, 128, 0.5)",
       }}
     >
       <div
-        className={`${gradient ? "text-blue-600" : "text-white"} align-middle`}
+        className={`${
+          gradient ? "text-blue-600" : "text-white"
+        } align-middle flex justify-center w-full`}
       >
         <img src="/images/homepage/Group 13.svg" />
       </div>
@@ -101,9 +116,16 @@ function BusinessCard2({ title, description, icon }) {
 
       <button
         className={`p-1 rounded-md font-small text-sm sm:text-base ${
-          gradient ? "bg-white text-blue-600" : "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
+          gradient
+            ? "bg-white text-blue-600"
+            : "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
         }`}
-        style={{width:"127px",height:"33px",fontSize:"12px",fontWeight:"12px"}}
+        style={{
+          width: "127px",
+          height: "33px",
+          fontSize: "12px",
+          fontWeight: "12px",
+        }}
       >
         LEARN MORE
       </button>
