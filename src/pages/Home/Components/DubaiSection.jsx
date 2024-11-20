@@ -6,7 +6,6 @@ import {
 } from "../../../components/Icons/Icons";
 
 import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
-import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
 
 function DubaiSection() {
   return (
@@ -47,6 +46,7 @@ function DubaiSection() {
             icon={<MapIcon />}
           />
         </div>
+      </div>
       </div>
       <img
         src={backgroundDubai}

@@ -5,14 +5,12 @@ function SignupSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log("Email submitted:", email);
   };
+
   return (
-    <section
-      className="container mx-auto mt-32"
-      style={{ height: "402px !important", transform: "translate(0%, 0%)" }}
-    >
+    <section className="container mx-auto mt-16 sm:mt-32 px-4 sm:px-6 lg:px-8">
+      {/* Special Offer Section */}
       <div className="relative ">
         <div className="w-full bg-gradient-to-r from-teal-400 to-blue-600 rounded-3xl">
           <div className="max-w-7xl mx-auto px-4 pl-14 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -88,41 +86,42 @@ function SignupSection() {
         </div>
       </div>
 
-      <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Government Bodies Section */}
-          <div className="">
-            <h2 className="text-5xl font-bold mb-2">UAE Government Bodies</h2>
-            <h3 className="text-5xl font-bold mb-8">
+      {/* Government Bodies Section */}
+      <div className="min-h-screen bg-gray-50 py-12">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
+          {/* Text Content */}
+          <div className="text-center lg:text-left mb-12 lg:mb-0">
+            <h2 className="text-3xl sm:text-4xl font-bold">
+              UAE Government Bodies
+            </h2>
+            <h3 className="text-3xl sm:text-4xl font-bold mt-4">
               <span className="text-blue-500">We</span> work with
             </h3>
-            <p className="text-gray-600 text-lg leading-8  max-w-3xl lin">
+            <p className="text-gray-600 text-base sm:text-lg leading-7 mt-4">
               Globex simplifies company setup with needs assessment, legal
               registration, and compliance. Our tailored solutions in
               accounting, marketing, and IT support sustainable growth.
             </p>
-            {/* <GovernmentPartners /> */}
           </div>
 
-          <div className="grid grid-rows-2 grid-flow-col gap-4">
-            <div className="space-y-4">
-              <img src="../images/homepage/amer.png" alt="" />
-            </div>
-            <div className="space-y-4">
-              <img src="../images/homepage/dubai-muncipality.png" alt="" />
-            </div>
-            <div className="space-y-4">
-              <img src="../images/homepage/trs-heel.png" alt="" />
-            </div>
-            <div className="space-y-4">
-              <img src="../images/homepage/dubai-economy.png" alt="" />
-            </div>
-            <div className="space-y-4">
-              <img src="../images/homepage/uae.png" alt="" />
-            </div>
-            <div className="space-y-4">
-              <img src="../images/homepage/rera.png" alt="" />
-            </div>
+          {/* Logos Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              "../images/homepage/amer.png",
+              "../images/homepage/dubai-muncipality.png",
+              "../images/homepage/trs-heel.png",
+              "../images/homepage/dubai-economy.png",
+              "../images/homepage/uae.png",
+              "../images/homepage/rera.png",
+            ].map((src, index) => (
+              <div key={index} className="flex justify-center items-center">
+                <img
+                  src={src}
+                  alt={`Logo ${index + 1}`}
+                  className="w-20 sm:w-24 lg:w-32"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
