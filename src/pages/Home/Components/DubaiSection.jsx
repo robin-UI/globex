@@ -5,6 +5,9 @@ import {
   MapIcon,
 } from "../../../components/Icons/Icons";
 
+import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
+import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
+
 function DubaiSection() {
   return (
     <section>
@@ -26,33 +29,37 @@ function DubaiSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-2 sm:px-4 md:px-0">
-            <BusinessCard2
-              title="Freezone"
-              description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
-              icon={<GlobeIcon />}
-              gradient={true}
-            />
-            <BusinessCard2
-              title="Offshore"
-              description="the biggest benefit of opening an offshore company is not having to pat any taxes."
-              icon={<BuildingIcon />}
-            />
-            <BusinessCard2
-              title="Mainland"
-              description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
-              icon={<MapIcon />}
-            />
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <BusinessCard
+            title="Freezone"
+            description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
+            icon={<GlobeIcon />}
+            gradient={true}
+          />
+          <BusinessCard
+            title="Offshore"
+            description="The biggest benefit of opening an offshore company is not having to pay any taxes."
+            icon={<BuildingIcon />}
+          />
+          <BusinessCard
+            title="Mainland"
+            description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
+            icon={<MapIcon />}
+          />
         </div>
       </div>
+      <img
+        src={backgroundDubai}
+        alt=""
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+      />
     </section>
   );
 }
 
 export default DubaiSection;
 
-function BusinessCard2({ title, description, icon }) {
+function BusinessCard({ title, description, icon }) {
   const [gradient, setGradient] = useState(false);
   return (
     <div
@@ -61,7 +68,7 @@ function BusinessCard2({ title, description, icon }) {
       className={`max-w-sm w-full lg:max-w-full  p-6 sm:p-8 rounded-xl ${
         gradient
           ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
-          : "bg-white"
+          : "bg-gray-50"
       } transition-transform hover:scale-105 lg:h-auto flex-none bg-cover rounded text-center overflow-hidden`}
       style={{
         width: "351px",
@@ -76,7 +83,9 @@ function BusinessCard2({ title, description, icon }) {
       }}
     >
       <div
-        className={`${gradient ? "text-blue-600" : "text-white"} align-middle`}
+        className={`${
+          gradient ? "text-blue-600" : "text-white"
+        } align-middle flex justify-center w-full`}
       >
         <img src="/images/homepage/Group 13.svg" />
       </div>
@@ -84,7 +93,7 @@ function BusinessCard2({ title, description, icon }) {
       <h2
         className={`${
           gradient ? "text-white" : "text-gray-900"
-        } font-bold text-xl mb-2 font-bold`}
+        } font-bold text-xl mb-2`}
       >
         {title}
       </h2>
@@ -101,9 +110,16 @@ function BusinessCard2({ title, description, icon }) {
 
       <button
         className={`p-1 rounded-md font-small text-sm sm:text-base ${
-          gradient ? "bg-white text-blue-600" : "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
+          gradient
+            ? "bg-white text-blue-600"
+            : "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
         }`}
-        style={{width:"127px",height:"33px",fontSize:"12px",fontWeight:"12px"}}
+        style={{
+          width: "127px",
+          height: "33px",
+          fontSize: "12px",
+          fontWeight: "12px",
+        }}
       >
         LEARN MORE
       </button>
