@@ -9,63 +9,104 @@ import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
 
 function DubaiSection() {
   return (
-    <section
-      className="bg-gray-50 relative"
-      // style={{
-      //   backgroundImage: `url(${backgroundDubai})`,
-      //   backgroundRepeat: "no-repeat",
-      // }}
-    >
-      <div className=" sm:py-12 md:py-20 px-4  z-50">
-        <div className="max-w-6xl mx-auto ">
-          <div className="text-center mb-8 md:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
-              <span className="block sm:inline">
-                Uncover the ideal business setup that
-              </span>{" "}
-              <span className="block sm:inline">
-                fits your vision in Dubai.
-              </span>
-            </h1>
-            <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto px-4">
-              Seasoned advisors analyze your needs efficiently and devise
-              tailored business setup solutions to adequately protect your
-              interests.
-            </p>
-          </div>
+    // <section
+    //   className="bg-gray-50 relative"
+    // >
+    //   <div className=" sm:py-12 md:py-20 px-4  z-50">
+    //     <div className="max-w-6xl mx-auto ">
+    //       <div className="text-center mb-8 md:mb-16">
+    //         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+    //           <span className="block sm:inline">
+    //             Uncover the ideal business setup that
+    //           </span>{" "}
+    //           <span className="block sm:inline">
+    //             fits your vision in Dubai.
+    //           </span>
+    //         </h1>
+    //         <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto px-4">
+    //           Seasoned advisors analyze your needs efficiently and devise
+    //           tailored business setup solutions to adequately protect your
+    //           interests.
+    //         </p>
+    //       </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-2 sm:px-4 md:px-0">
-            <BusinessCard2
-              title="Freezone"
-              description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
-              icon={<GlobeIcon />}
-              gradient={true}
-            />
-            <BusinessCard2
-              title="Offshore"
-              description="the biggest benefit of opening an offshore company is not having to pat any taxes."
-              icon={<BuildingIcon />}
-            />
-            <BusinessCard2
-              title="Mainland"
-              description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
-              icon={<MapIcon />}
-            />
-          </div>
+    //       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-2 sm:px-4 md:px-0">
+    //         <BusinessCard
+    //           title="Freezone"
+    //           description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
+    //           icon={<GlobeIcon />}
+    //           gradient={true}
+    //         />
+    //         <BusinessCard
+    //           title="Offshore"
+    //           description="the biggest benefit of opening an offshore company is not having to pat any taxes."
+    //           icon={<BuildingIcon />}
+    //         />
+    //         <BusinessCard
+    //           title="Mainland"
+    //           description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
+    //           icon={<MapIcon />}
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <img
+    //     src={backgroundDubai}
+    //     alt=""
+    //     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+    //   />
+    // </section>
+    <section className="relative min-h-screen py-20 overflow-hidden bg-[#F8F8F8]">
+      {/* Background Image Container */}
+      <div className="absolute inset-0 z-0 w-full h-full">
+        <img
+          src={backgroundDubai}
+          alt=""
+          className="w-full h-full object-cover opacity-40 "
+        />
+        {/* Gradient Overlay */}
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-gray-50/90 to-gray-50/95" /> */}
+      </div>
+
+      {/* Content Container */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight max-w-4xl mx-auto">
+            Uncover the ideal business setup that <br />
+            fits your vision in Dubai
+          </h2>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            Seasoned advisors analyze your needs efficiently and devise tailored
+            business setup solutions to adequately protect your interests.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <BusinessCard
+            title="Freezone"
+            description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
+            icon={<GlobeIcon />}
+            gradient={true}
+          />
+          <BusinessCard
+            title="Offshore"
+            description="The biggest benefit of opening an offshore company is not having to pay any taxes."
+            icon={<BuildingIcon />}
+          />
+          <BusinessCard
+            title="Mainland"
+            description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
+            icon={<MapIcon />}
+          />
         </div>
       </div>
-      <img
-        src={backgroundDubai}
-        alt=""
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
-      />
     </section>
   );
 }
 
 export default DubaiSection;
 
-function BusinessCard2({ title, description, icon }) {
+function BusinessCard({ title, description, icon }) {
   const [gradient, setGradient] = useState(false);
   return (
     <div

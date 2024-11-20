@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 // import { Link } from "react-router-dom";
@@ -8,15 +9,21 @@ import { NavLink } from "react-router-dom";
 
 
 function Header() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-    <header className="pt-8 px-24 sticky">
-      <div className="flex items-center justify-between px-12 py-4 bg-white rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
+    <header className=" lg:pt-8 lg:px-24 top-0 z-50 sticky">
+      <div className="flex items-center justify-between px-12 py-4 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
         <div className="img-container">
           <a href="/">
             <img style={{width:"150px",height:"auto"}} src="../images/mainLogo.png" alt="mainlogo" />
           </a>
         </div>
-        <nav>
+        <nav className="hidden lg:block">
           <ol className="flex justify-center gap-10 text-[#353535]">
             <li>
               <NavLink className="font-bold" to="/">Home</NavLink>
@@ -39,7 +46,11 @@ function Header() {
           </ol>
         </nav>
 
-        <buthrefn className="text-white text-sm px-11 py-2 rounded-lg gradientBackground">GET A QUOTE</buthrefn>
+        <button className="hidden lg:block text-white text-sm px-11 py-2 rounded-lg gradientBackground">GET A QUOTE</button>
+
+        <div className={`menu-btn-1 ${isMenuOpen ? "active" : ""} lg:hidden`} onClick={toggleMenu}>
+            <span></span>
+          </div>
       </div>
     </header>
   );
