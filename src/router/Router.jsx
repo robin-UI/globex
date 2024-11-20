@@ -7,6 +7,7 @@ import CompanySetup from "../pages/companySetup/CompanySetup";
 import YearVisit from "../pages/yearVisit/YearVisit";
 import Media from "../pages/media/Media";
 import Services2 from "../pages/services/Services2";
+import About from "../pages/about/About";
 
 function Routers() {
   return (
@@ -18,6 +19,7 @@ function Routers() {
         <Route path="company-setup" element={<CompanySetup />} />
         <Route path="year-uae-visa" element={<YearVisit />} />
         <Route path="media" element={<Media />} />
+        <Route path="about" element={<About />} />
         <Route path="*" element={<div> This page is not found </div>} />
       </Route>
     </Routes>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const footer = () => {
   return (
     
@@ -21,10 +23,10 @@ const footer = () => {
                 <hr />
             </div>
             <ul className='py-9'> 
-                <li className=' text-white  text-1xl py-2'><a href="about us">About Us</a></li>
-                <li className=' text-white  text-1xl py-1'><a href="our services">Our Services</a></li>
-                <li className=' text-white  text-1xl py-1'><a href="blog">Blog</a></li>
-                <li className=' text-white  text-1xl py-1'><a href="contact">Contact Us</a></li>
+                <li className=' text-white  text-1xl py-2'><Link to="about">About Us</Link></li>
+                <li className=' text-white  text-1xl py-1'><Link to="our services">Our Services</Link></li>
+                <li className=' text-white  text-1xl py-1'><Link to="blog">Blog</Link></li>
+                <li className=' text-white  text-1xl py-1'><Link to="contact">Contact Us</Link></li>
             </ul>
         </div>
        
