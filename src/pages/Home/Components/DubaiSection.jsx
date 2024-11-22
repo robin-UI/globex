@@ -6,54 +6,57 @@ import {
 } from "../../../components/Icons/Icons";
 
 import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
+// import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
 
 function DubaiSection() {
   return (
-    <section>
-      <div className="bg-gray-50 sm:py-12 md:py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8 md:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
-              <span className="block sm:inline">
-                Uncover the ideal business setup that
-              </span>{" "}
-              <span className="block sm:inline">
-                fits your vision in Dubai.
-              </span>
-            </h1>
-            <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto px-4">
-              Seasoned advisors analyze your needs efficiently and devise
-              tailored business setup solutions to adequately protect your
-              interests.
-            </p>
-          </div>
+    <>
+      <section>
+        <div className="bg-gray-50 sm:py-12 md:py-20 px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8 md:mb-16">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+                <span className="block sm:inline">
+                  Uncover the ideal business setup that
+                </span>{" "}
+                <span className="block sm:inline">
+                  fits your vision in Dubai.
+                </span>
+              </h1>
+              <p className="text-gray-600 text-base sm:text-lg max-w-3xl mx-auto px-4">
+                Seasoned advisors analyze your needs efficiently and devise
+                tailored business setup solutions to adequately protect your
+                interests.
+              </p>
+            </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <BusinessCard
-            title="Freezone"
-            description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
-            icon={<GlobeIcon />}
-            gradient={true}
-          />
-          <BusinessCard
-            title="Offshore"
-            description="The biggest benefit of opening an offshore company is not having to pay any taxes."
-            icon={<BuildingIcon />}
-          />
-          <BusinessCard
-            title="Mainland"
-            description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
-            icon={<MapIcon />}
-          />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              <BusinessCard
+                title="Freezone"
+                description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
+                icon={<GlobeIcon />}
+                gradient={true}
+              />
+              <BusinessCard
+                title="Offshore"
+                description="The biggest benefit of opening an offshore company is not having to pay any taxes."
+                icon={<BuildingIcon />}
+              />
+              <BusinessCard
+                title="Mainland"
+                description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
+                icon={<MapIcon />}
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      <img
-        src={backgroundDubai}
-        alt=""
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
-      />
-    </section>
+        <img
+          src={backgroundDubai}
+          alt=""
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+        />
+      </section>
+    </>
   );
 }
 
@@ -78,8 +81,8 @@ function BusinessCard({ title, description, icon }) {
         lineHeight: "20px",
         fontWeight: 300,
         borderRadius: "15px",
-        padding: "10px", 
-        boxShadow: "0 4px 8px rgba(128, 128, 128, 0.5)", 
+        padding: "10px",
+        boxShadow: "0 4px 8px rgba(128, 128, 128, 0.5)",
       }}
     >
       <div

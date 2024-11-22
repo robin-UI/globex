@@ -20,7 +20,7 @@ export const LayOut = function () {
   return (
     <>
       <Header />
-      <SideMedia/>
+      {/* <SideMedia/> */}
       <Outlet />
       <Footer/>
     </>
