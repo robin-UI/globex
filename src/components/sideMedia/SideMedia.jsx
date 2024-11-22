@@ -1,7 +1,7 @@
 
 const SideMedia = () => {
   return (
-    <div className="side-container bg-gradient-to-r from-blue-600 to-blue-400 rounded-[10px_0px_0px_10px] w-[auto] right-0 fixed mt-5 z-50 ">
+    <div className="side-container bg-gradient-to-r from-blue-600 to-blue-400 rounded-[10px_0px_0px_10px] w-[auto] right-0 fixed mt-28 z-50">
       <div className="media-icons p-2 pl-3 flex flex-col gap-2">
         <div className="hover:bg-gradient-to-r from-blue-100 to-blue-150 hover:rounded hover:scale-105 transition duration-220 ease-in-out w-150px h-auto">
           <img

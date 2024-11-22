@@ -18,14 +18,14 @@ function Routers() {
       <Route path="/" element={<LayOut />}>
         <Route index element={<Home />} />
         <Route path="our-company" element={<OurCompany />} />
-        <Route path="services" element={<Services />} />
+        <Route path="services" element={<Services2 />} />
         <Route path="company-setup" element={<CompanySetup />} />
         <Route path="year-uae-visa" element={<YearVisit />} />
         <Route path="media" element={<Media />} />
         <Route path="about" element={<About />} />
         <Route path="team" element={<Team />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="contactus" element={<ContactUs />} />
+        <Route path="contact" element={<ContactUs />} />
         <Route path="*" element={<div> This page is not found </div>} />
       </Route>
     </Routes>

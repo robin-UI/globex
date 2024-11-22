@@ -16,8 +16,8 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className=" lg:pt-8 lg:px-24 top-0 z-50 sticky">
-      <div className="flex items-center justify-between px-12 py-4 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
+    <header className="lg:pt-8 lg:px-24 top-0 fixed z-50">
+      <div className="flex items-center justify-between gap-24 px-12 py-4 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
         <div className="img-container">
           <a href="/">
             <img style={{width:"150px",height:"auto"}} src="../images/mainLogo.png" alt="mainlogo" />

@@ -12,54 +12,66 @@ function Services2() {
   ];
   return (
     <>
-    <section className="w-full h-60 flex items-center justify-center flex-col " style={{ backgroundImage: "url('./images/homepage/pexels-mo-ismail.png')"}}>
-      <h1 className="text-white text-6xl text-center font-semibold">Visa Services</h1>
-      <p className="text-white text-xl text-center">Choose from the services tailored for you</p>
-    </section>
-    <main className=" bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <section
+        className="w-full h-60 flex items-center justify-center flex-col "
+        style={{
+          backgroundImage:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('./images/homepage/contactusBG.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+          height: "795px",
+        }}
+      >
+        <h1 className="text-white text-6xl text-center font-semibold">
+          Visa Services
+        </h1>
+        <p className="text-white text-xl text-center">
+          Choose from the services tailored for you
+        </p>
+      </section>
+      <main className=" bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            {/* First row - 2 large cards */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {/* First row - 2 large cards */}
-
-          <div className="col-span-2">
-            <div className="text-left mb-10 sm:mb-16">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
-                Outstanding immigration and visa services
-              </h1>
-              <p className="text-gray-600 text-base sm:text-lg max-w-3xl">
-                For visa services in Dubai, Globex simplify the process from
-                application to issuance. Our team provides reliable service,
-                serving clients trust for their UAE visa needs.
-              </p>
+            <div className="col-span-2">
+              <div className="text-left mb-10 sm:mb-16">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4">
+                  Outstanding immigration and visa services
+                </h1>
+                <p className="text-gray-600 text-base sm:text-lg max-w-3xl">
+                  For visa services in Dubai, Globex simplify the process from
+                  application to issuance. Our team provides reliable service,
+                  serving clients trust for their UAE visa needs.
+                </p>
+              </div>
             </div>
-          </div>
-          {services.slice(0, 2).map((service, index) => (
-            <div key={index} className="col-span-1">
-              <ServiceCard title={service.title} isLarge={false} />
-            </div>
-          ))}
+            {services.slice(0, 2).map((service, index) => (
+              <div key={index} className="col-span-1">
+                <ServiceCard title={service.title} isLarge={false} />
+              </div>
+            ))}
 
-          {/* Middle rows - 4 medium cards */}
-          {services.slice(2, 6).map((service, index) => (
-            <div key={index + 2} className="col-span-1">
-              <ServiceCard title={service.title} />
-            </div>
-          ))}
+            {/* Middle rows - 4 medium cards */}
+            {services.slice(2, 6).map((service, index) => (
+              <div key={index + 2} className="col-span-1">
+                <ServiceCard title={service.title} />
+              </div>
+            ))}
 
-          {/* Last row - 1 centered card */}
-          <div className="lg:col-start-1 lg:col-span-1">
-            <ServiceCard title={services[6].title} />
-          </div>
-          <div className="col-span-full lg:col-start-2 lg:col-span-3">
-            <CTASection />
+            {/* Last row - 1 centered card */}
+            <div className="lg:col-start-1 lg:col-span-1">
+              <ServiceCard title={services[6].title} />
+            </div>
+            <div className="col-span-full lg:col-start-2 lg:col-span-3">
+              <CTASection />
+            </div>
           </div>
         </div>
-      </div>
 
-      <TestmonialSection />
-      
-    </main>
+        <TestmonialSection />
+      </main>
     </>
   );
 }

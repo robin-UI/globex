@@ -42,8 +42,8 @@ function TestmonialSection() {
     );
   };
   return (
-    <section>
-   <div className="py-16">
+    // <section>
+   <div className="p-16 bg-gray-50 mb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between">
         <div className="mb-4">
@@ -108,7 +108,7 @@ function TestmonialSection() {
         </div>
       </div>
     </div>
-    </section>
+    // </section>
   );
 }
 

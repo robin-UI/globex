@@ -68,7 +68,7 @@ function LandingSection() {
     //   />
     // </section>
 
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden mt-20">
     <div className="container mx-auto px-4 lg:px-8 xl:px-20 min-h-[calc(100vh-80px)] py-12 lg:py-20">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 h-full">
         <ContentSection />

@@ -9,7 +9,7 @@ function SignupSection() {
   };
 
   return (
-    <section className="container mx-auto mt-16 sm:mt-32 px-4 sm:px-6 lg:px-8">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-28">
       {/* Special Offer Section */}
       <div className="relative ">
         <div className="w-full bg-gradient-to-r from-teal-400 to-blue-600 rounded-3xl">
@@ -35,7 +35,8 @@ function SignupSection() {
                     position: "absolute",
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    bottom: "0px"
+                    bottom: "0px",
+                    zIndex:1
                     // transform: "translate(0%, 0%)",
                   }}
                 />
@@ -87,8 +88,8 @@ function SignupSection() {
       </div>
 
       {/* Government Bodies Section */}
-      <div className="min-h-screen bg-gray-50 py-12">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
+      <div className="p-12 mt-11">
+        <div className="max-w-7xl flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
           {/* Text Content */}
           <div className="text-center lg:text-left mb-12 lg:mb-0">
             <h2 className="text-3xl sm:text-4xl font-bold">
