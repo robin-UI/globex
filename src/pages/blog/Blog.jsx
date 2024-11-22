@@ -175,17 +175,17 @@ function Blog() {
       <section className="p-3 grid grid-cols-2 gap-3">
         <div>
           <div
-            className=""
+            className="h-28 p-2 rounded-md"
             style={{
               backgroundImage: "url('./images/homepage/blogBackground.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           >
-            <p className="text-white bg-[#00000030] p-1">Busness</p>
+            <p className="text-white text-sm bg-[#00000030] py-[2px] px-3 rounded-md inline-block">Busness</p>
           </div>
           <p className="text-[#353535] text-xs my-2">30 Jan 2024 10 mins read</p>
-          <p className="text-sm font-medium">
+          <p className="text-sm font-medium mb-2">
           Lorem Ipsum dolor ssit amet lorem isum anyat
           </p>
 
