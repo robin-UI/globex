@@ -12,6 +12,11 @@
       format("truetype"); /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: "autography";
+  src: url("./assets/fonts/Autography.otf") format("opentype");
+}
+
 *,
 *::before,
 *::after {
