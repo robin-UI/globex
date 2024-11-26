@@ -1,14 +1,19 @@
 function OurCompany() {
   return (
     <>
-      <section className="gradientBackground px-24 py-24">
-        <div className="w-1/2">
-          <h2 className=" font-semibold text-[64px] text-white leading-[66.02px] mb-[47px]">
+      <section
+        style={{
+          background: "linear-gradient(270deg, #2BDEFA 0%, #377CFF 100%)",
+        }}
+        className="relative"
+      >
+        <div className=" w-full lg:w-1/2 px-8 py-10 lg:px-24 lg:py-24">
+          <h2 className=" font-semibold text-[46px] lg:text-[64px] text-white leading-[50px] lg:leading-[66.02px] mb-[32px] lg:mb-[47px]">
             Securing a <br /> Business License
             <br /> in Dubai
           </h2>
 
-          <p className="font-normal text-base text-white mb-[47px]">
+          <p className="font-normal text-sm lg:text-base text-white mb-[47px]">
             Are you considering starting a company in Dubai? Every business{" "}
             <br />
             needs a license, and savvy entrepreneurs rely on Emirates First for{" "}
@@ -20,20 +25,36 @@ function OurCompany() {
             effortlessly. <br />
           </p>
 
-          <button className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white">
-            Book Free Consultation
-          </button>
+          <div className=" h-[280px] lg:h-0 "></div>
+          <div className="flex items-center justify-center lg:justify-start mt-5" >
+            <button className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white">
+              <samp className="bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] bg-clip-text text-transparent">
+                Book Free Consultation
+              </samp>
+            </button>
+          </div>
         </div>
-        <div className="w-1/2"></div>
+        <img
+          className="absolute lg:right-0 lg:bottom-0 bottom-28 w-full lg:w-auto"
+          src="./images/homepage/buildingCompany.png"
+          alt=""
+        />
+        {/* <div className="w-1/2"></div>
+        <img
+          className="absolute top-0 left-0 -z-10"
+          src="./images/homepage/netdivider.png"
+          alt=""
+        /> */}
+
       </section>
 
-      <section className="px-20 py-24 bg-[#F8F8F8]">
-        <h2 className="text-[42px] leading-[54px] text-center font-semibold mb-[70px]">
-          Business licenses issued by <br />
+      <section className="px-5 py-16 lg:px-20 lg:py-24 bg-[#F8F8F8]">
+        <h2 className="text-sm lg:text-[42px] lg:leading-[54px] text-center font-semibold mb-[70px]">
+          Business licenses issued by <br className="hidden lg:block" />
           Department of Economic Development in Dubai
         </h2>
 
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="rounded-lg gradientBackground ">
             <div className="px-9 pt-12 mb-6">
               <h2 className="text-[20.87px] leading-[30.05px] text-white font-semibold mb-5">
@@ -115,16 +136,16 @@ function OurCompany() {
       </section>
 
       <section
-        className="container mx-auto mt-32 pb-32"
+        className="container mx-auto mt-32 pb-32 px-5 lg:px-12 "
         style={{ height: "402px !important", transform: "translate(0%, 0%)" }}
       >
         <div className="relative mb-24">
-          <div className="w-full bg-gradient-to-r from-teal-400 to-blue-600 rounded-3xl">
-            <div className="max-w-7xl mx-auto px-4 pl-14 sm:px-6 lg:px-8 py-12 lg:py-16">
+          <div className="w-full bg-gradient-to-r from-teal-400 to-blue-600 rounded-xl lg:rounded-3xl">
+            <div className="max-w-7xl mx-auto px-4 lg:pl-14 sm:px-6 lg:px-8 py-4 lg:py-16">
               <div className="flex items-center justify-between">
                 {/* Left Column - Text Content */}
                 <div className="text-white z-10">
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  <h2 className="text-xl md:text-5xl lg:text-6xl font-bold leading-tight">
                     Sign up for
                     <br />
                     Special Offer
@@ -135,9 +156,9 @@ function OurCompany() {
                   <img
                     src="./images/homepage/business-woman.png"
                     alt="Special Offer"
-                    className="w-full max-w-2xl rounded-lg z-50"
+                    className="w-52 lg:w-auto lg:max-w-2xl rounded-lg z-50"
                     style={{
-                      width: "auto",
+                      // width: "auto",
                       // height: "50vh",
                       position: "absolute",
                       left: "50%",
@@ -152,7 +173,7 @@ function OurCompany() {
 
                 {/* Text and Form */}
                 <div className="">
-                  <p className="text-lg md:text-xl text-white/90 relative z-20">
+                  <p className="text-xs lg:text-lg md:text-xl text-white/90 relative z-20">
                     Seasoned advisors analyze your needs <br /> efficiently and
                     devise solutions to <br /> protect your interests.
                   </p>
@@ -160,7 +181,7 @@ function OurCompany() {
                     // onSubmit={handleSubmit}
                     className="w-full max-w-md pt-4 relative z-20"
                   >
-                    <div className="flex flex-col sm:flex-row border bottom-1 rounded-full p-1 bg-[#FFFFFF33] focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <div className="flex flex-row border bottom-1 rounded-full p-1 bg-[#FFFFFF33] focus:outline-none focus:ring-2 focus:ring-blue-300">
                       <input
                         type="email"
                         // value={email}
@@ -171,7 +192,7 @@ function OurCompany() {
                       />
                       <button
                         type="submit"
-                        className="px-8 py-3 bg-white text-[#126CD7] rounded-full font-semibold hover:bg-blue-50 transition-colors duration-200 whitespace-nowrap"
+                        className="w-1/2 px-8 py-3 text-xs bg-white text-[#126CD7] rounded-full font-semibold hover:bg-blue-50 transition-colors duration-200 whitespace-nowrap"
                       >
                         Get Started
                       </button>
@@ -194,23 +215,27 @@ function OurCompany() {
         </div>
 
         <div>
-          <div className="flex justify-between items-center">
-            <div>
-              <h2 className="text-[42px] font-semibold leading-[54px] mb-8">Why Dubai</h2>
-              <p className="text-[#353535] text-base font-medium tracking-widest leading-6">
+          <div className="lg:flex justify-between items-center">
+            <div className="mb-8">
+              <h2 className="text-2xl lg:text-[42px] font-semibold leading-[54px] lg:mb-8">
+                Why Dubai
+              </h2>
+              <p className="text-[#353535] text-sm lg:text-base font-medium tracking-widest leading-6">
                 Dubai is located at the crossroads of the world, providing
-                access to both hemispheres <br /> through air and sea routes. With a
-                growing and diversifying economy, along with a <br /> workforce of
-                varying skill levels, Dubai is an ideal destination for
-                entrepreneurs looking <br /> to start or expand their businesses.
-                Emirates First’s team of business setup <br /> consultants in Dubai
-                offers comprehensive support for all types of licensing, whether <br />
+                access to both hemispheres <br className="hidden lg:block" /> through air and sea routes.
+                With a growing and diversifying economy, along with a <br  className="hidden lg:block" />{" "}
+                workforce of varying skill levels, Dubai is an ideal destination
+                for entrepreneurs looking <br  className="hidden lg:block" /> to start or expand their
+                businesses. Emirates First’s team of business setup <br  className="hidden lg:block" />{" "}
+                consultants in Dubai offers comprehensive support for all types
+                of licensing, whether <br  className="hidden lg:block" />
                 your industry is tourism or trade. We deliver business setup
-                services across Dubai and <br /> in all the free zones of the UAE.
+                services across Dubai and <br  className="hidden lg:block" /> in all the free zones of the
+                UAE.
               </p>
             </div>
 
-            <div className="w-[427px] h-[235px] bg-[url('./images/homepage/whyDubai.png')]" ></div>
+            <div className="w-[427px] h-[235px] bg-[url('./images/homepage/whyDubai.png')]"></div>
           </div>
         </div>
       </section>
