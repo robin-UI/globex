@@ -392,7 +392,7 @@ function ServiceCard({ icon, title, isActive, onMouseEnter, onMouseLeave }) {
         <span className="font-semibold">{title}</span>
       </div>
       <img
-        src="./images/homepage/Component 3.svg"
+        src="./images/homepage/upArrow.svg"
         alt=""
         style={{
           width: "55px",

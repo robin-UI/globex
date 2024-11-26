@@ -10,6 +10,7 @@ import Services2 from "../pages/services/Services2";
 import About from "../pages/about/About";
 import Team from "../pages/team/Team";
 import Blog from "../pages/blog/Blog";
+import ContactUs from "../pages/contactus/ContactUs";
 
 function Routers() {
   return (
@@ -24,6 +25,7 @@ function Routers() {
         <Route path="about" element={<About />} />
         <Route path="team" element={<Team />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="contact" element={<ContactUs />} />
         <Route path="*" element={<div> This page is not found </div>} />
       </Route>
     </Routes>

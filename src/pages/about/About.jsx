@@ -26,9 +26,12 @@ function About() {
       <section
         className="w-full h-72 lg:h-screen flex items-center justify-center flex-col relative"
         style={{
-          backgroundImage: "url('./images/homepage/aboutScreen.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundImage:
+          "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('./images/homepage/contactusBG.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100%",
+        height: "795px",
         }}
       >
         {/* Dark overlay */}
