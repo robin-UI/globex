@@ -27,7 +27,7 @@ function SignupOffer() {
               <img
                 src="./images/homepage/business-woman.png"
                 alt="Special Offer"
-                className=" max-w-80 rounded-lg z-50"
+                className=" max-w-80 rounded-lg z-20"
                 style={{
                 //   width: "auto",
                   // height: "50vh",

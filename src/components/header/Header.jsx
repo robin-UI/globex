@@ -29,8 +29,8 @@ function Header() {
   }, []);
 
   return (
-    <header className="lg:pt-8 lg:px-24 top-0 fixed z-50 w-full">
-      <div className="flex items-center justify-between gap-24 px-12 py-4 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
+    <header className="lg:pt-7 lg:px-24 top-0 fixed z-50 w-full">
+      <div className="flex items-center justify-between gap-12 px-12 py-3 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14]">
         <div className="img-container">
           <a href="/">
             <img
@@ -43,24 +43,24 @@ function Header() {
         <nav className="hidden lg:block">
           <ol className="flex justify-center gap-10 text-[#353535]">
             <li>
-              <NavLink className="font-bold" to="/">
+              <NavLink className={({isActive}) => isActive ? "font-bold" : "font-normal"} to="/">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="our-company">Our Company</NavLink>
+              <NavLink className={({isActive}) => isActive ? "font-bold" : "font-normal"} to="our-company">Our Company</NavLink>
             </li>
             <li>
-              <NavLink to="services">Services</NavLink>
+              <NavLink className={({isActive}) => isActive ? "font-bold" : "font-normal"} to="services">Services</NavLink>
             </li>
             <li>
-              <NavLink to="company-setup">Company Setup</NavLink>
+              <NavLink className={({isActive}) => isActive ? "font-bold" : "font-normal"} to="company-setup">Company Setup</NavLink>
             </li>
             <li>
-              <NavLink to="year-uae-visa">10 Year UAE Visa</NavLink>
+              <NavLink className={({isActive}) => isActive ? "font-bold" : "font-normal"} to="year-uae-visa">10 Year UAE Visa</NavLink>
             </li>
             <li>
-              <NavLink to="media">Media</NavLink>
+              <NavLink className={({isActive}) => isActive ? "font-bold" : "font-normal"} to="media">Media</NavLink>
             </li>
           </ol>
         </nav>

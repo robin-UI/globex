@@ -1,15 +1,20 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-custom-gradient">
-      <div className="footer-sections flex flex-wrap sm:flex-col lg:flex-row">
+      <div className="footer-sections py-10 lg:py-24 flex justify-center gap-28 flex-col lg:flex-row">
         {/* Logo Section */}
-        <div className="logo-sec pt-10 lg:pt-[90px] px-4 lg:pl-[139px] w-full lg:w-1/4">
-          <img
-            className="w-[185px] h-[64px] mx-auto lg:mx-0"
-            src="../images/mainLogo.png"
-            alt=""
-          />
-          <p className="pt-5 text-white text-center lg:text-left">
+        <div className="logo-sec ">
+          <div className="flex justify-between items-center px-6 lg:px-0">
+            <img
+              className="w-[185px] h-[64px] lg:mx-0"
+              src="../images/mainLogo.png"
+              alt=""
+            />
+            <button className="text-base text-blue-400 bg-white px-9 h-10 rounded-3xl lg:hidden ">Get a Quote</button>
+          </div>
+          <p className="pt-5 text-lg text-white text-center lg:text-left">
             Lorem ipsum dolor sit amet, <br />
             consectetur adipiscing elit. Sed <br />
             do eiusmod tempor incididunt ut <br />
@@ -35,7 +40,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links Section */}
-        <div className="footer-quicklinks pt-10 lg:pt-[90px] px-4 lg:pl-[139px] w-full lg:w-1/4">
+        <div className="footer-quicklinks ">
           <h1 className="text-white text-2xl text-center lg:text-left">
             Quick Links
           </h1>
@@ -44,22 +49,22 @@ const Footer = () => {
           </div>
           <ul className="py-5 space-y-2 text-center lg:text-left">
             <li className="text-white text-lg">
-              <a href="about us">About Us</a>
+              <Link to="about">About Us</Link>
             </li>
             <li className="text-white text-lg">
-              <a href="our services">Our Services</a>
+              <Link to="services">Our Services</Link>
             </li>
             <li className="text-white text-lg">
-              <a href="blog">Blog</a>
+              <Link to="blog">Blog</Link>
             </li>
             <li className="text-white text-lg">
-              <a href="contact">Contact Us</a>
+              <Link to="contact">Contact Us</Link>
             </li>
           </ul>
         </div>
 
         {/* Recent Posts Section */}
-        <div className="footer-recentposts pt-10 lg:pt-[90px] px-4 lg:pl-[139px] w-full lg:w-1/4">
+        <div className="footer-recentposts ">
           <h1 className="text-white text-2xl text-center lg:text-left">
             Recent Posts
           </h1>
@@ -105,7 +110,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Us Section */}
-        <div className="footer-contactus pt-10 lg:pt-[90px] px-4 lg:pl-[139px] w-full lg:w-1/4">
+        <div className="footer-contactus ">
           <h1 className="text-white text-2xl text-center lg:text-left">
             Contact Us
           </h1>

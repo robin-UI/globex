@@ -123,8 +123,8 @@ function ContentSection() {
 
 function ImageGrid() {
   return (
-    <div className="w-full lg:w-1/2 h-full">
-      <div className="relative w-full aspect-[4/3] lg:aspect-square max-w-[650px] mx-auto">
+    <div className="w-full lg:w-1/2 h-[367px] lg:h-full mb-5">
+      <div className="relative w-full aspect-[4/3] lg:aspect-square max-w-[650px] mx-auto h-full lg:h-auto">
         <div className="absolute inset-0 grid grid-cols-2 gap-4 p-4">
           <div className="relative h-full">
             <img

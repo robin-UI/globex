@@ -106,7 +106,7 @@ function Team() {
         <p className="text-xs lg:text-base">CEO and Founder</p>
       </section>
 
-      <section className="px-28 py-36">
+      <section className="lg:px-28 lg:py-36">
         <SignupOffer />
       </section>
     </>

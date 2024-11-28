@@ -11,8 +11,8 @@ import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
 function DubaiSection() {
   return (
     <>
-      <section>
-        <div className="bg-gray-50 sm:py-12 md:py-20 px-4">
+      <section className="relative">
+        <div className="bg-gray-50 sm:py-12 md:py-20 px-4 ">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8 md:mb-16">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
@@ -68,7 +68,7 @@ function BusinessCard({ title, description, icon }) {
     <div
       onMouseEnter={() => setGradient(true)}
       onMouseLeave={() => setGradient(false)}
-      className={`max-w-sm w-full lg:max-w-full  p-6 sm:p-8 rounded-xl ${
+      className={`max-w-sm w-full lg:max-w-full z-20 p-6 sm:p-8 rounded-xl ${
         gradient
           ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
           : "bg-gray-50"

@@ -19,7 +19,8 @@ function Routers() {
         <Route index element={<Home />} />
         <Route path="our-company" element={<OurCompany />} />
         <Route path="services" element={<Services2 />} />
-        <Route path="company-setup" element={<CompanySetup />} />
+        {/* <Route path="company-setup" element={<CompanySetup />} /> */}
+        <Route path="company-setup" element={<Team />} />
         <Route path="year-uae-visa" element={<YearVisit />} />
         <Route path="media" element={<Media />} />
         <Route path="about" element={<About />} />
