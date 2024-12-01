@@ -31,7 +31,7 @@ function Blog() {
   return (
     <main>
       <section
-        className="w-full h-[180px] lg:h-screen p-3 lg:px-24 lg:py-14  "
+        className="w-full h-[180px] lg:h-screen p-3 lg:px-24 lg:py-14 mt-20 "
         style={{
           backgroundImage: "url('./images/homepage/blogBackground.png')",
           backgroundSize: "cover",
@@ -106,7 +106,7 @@ function Blog() {
 
           <div className="col-span-1 flex items-center justify-end gap-3 mb-4">
             <span>Sort by</span>
-            <div className="max-w-sm min-w-[150px]">
+            <div className="max-w-sm min-w-[100px]">
               <div className="relative">
                 <select
                   value={"brazil"}

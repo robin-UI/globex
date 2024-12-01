@@ -1,3 +1,5 @@
+import SignupOffer from "../../components/utils/SignupOffer";
+
 function OurCompany() {
   return (
     <>
@@ -7,7 +9,7 @@ function OurCompany() {
         }}
         className="relative"
       >
-        <div className=" w-full lg:w-1/2 px-8 py-10 lg:px-24 lg:py-32">
+        <div className=" w-full lg:w-1/2 px-8 py-10 pt-28 lg:px-24 lg:py-32">
           <h2 className=" font-semibold text-[46px] lg:text-[64px] text-white leading-[50px] lg:leading-[66.02px] mb-[32px] lg:mb-[47px]">
             Securing a <br /> Business License
             <br /> in Dubai
@@ -139,80 +141,7 @@ function OurCompany() {
         className="container mx-auto mt-32 pb-32 px-5 lg:px-12 "
         style={{ height: "402px !important", transform: "translate(0%, 0%)" }}
       >
-        <div className="relative mb-24">
-          <div className="w-full bg-gradient-to-r from-teal-400 to-blue-600 rounded-xl lg:rounded-3xl">
-            <div className="max-w-7xl mx-auto px-4 lg:pl-14 sm:px-6 lg:px-8 py-4 lg:py-16">
-              <div className="flex items-center justify-between">
-                {/* Left Column - Text Content */}
-                <div className="text-white z-10">
-                  <h2 className="text-xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    Sign up for
-                    <br />
-                    Special Offer
-                  </h2>
-                </div>
-
-                <div>
-                  <img
-                    src="./images/homepage/business-woman.png"
-                    alt="Special Offer"
-                    className="w-52 lg:w-auto lg:max-w-2xl rounded-lg z-50"
-                    style={{
-                      // width: "auto",
-                      // height: "50vh",
-                      position: "absolute",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      bottom: "0px",
-                      // transform: "translate(0%, 0%)",
-                    }}
-                  />
-                </div>
-
-                {/* Right Column - Image and Text/Form */}
-
-                {/* Text and Form */}
-                <div className="">
-                  <p className="text-xs lg:text-lg md:text-xl text-white/90 relative z-20">
-                    Seasoned advisors analyze your needs <br /> efficiently and
-                    devise solutions to <br /> protect your interests.
-                  </p>
-                  <form
-                    // onSubmit={handleSubmit}
-                    className="w-full max-w-md pt-4 relative z-20"
-                  >
-                    <div className="flex flex-row border bottom-1 rounded-full p-1 bg-[#FFFFFF33] focus:outline-none focus:ring-2 focus:ring-blue-300">
-                      <input
-                        type="email"
-                        // value={email}
-                        // onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Enter your email"
-                        className="flex-grow px-6 py-3 rounded-full text-white placeholder-white bg-transparent"
-                        required
-                      />
-                      <button
-                        type="submit"
-                        className="w-1/2 px-8 py-3 text-xs bg-white text-[#126CD7] rounded-full font-semibold hover:bg-blue-50 transition-colors duration-200 whitespace-nowrap"
-                      >
-                        Get Started
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            {/* Grid Overlay */}
-            <div
-              className="absolute inset-0 opacity-10"
-              style={{
-                backgroundImage: `linear-gradient(to right, white 1px, transparent 1px),
-                             linear-gradient(to bottom, white 1px, transparent 1px)`,
-                backgroundSize: "40px 40px",
-              }}
-            />
-          </div>
-        </div>
+        <SignupOffer />
 
         <div>
           <div className="lg:flex justify-between items-center">
@@ -235,7 +164,7 @@ function OurCompany() {
               </p>
             </div>
 
-            <div className="w-[427px] h-[235px] bg-[url('./images/homepage/whyDubai.png')]"></div>
+            <div className="h-52 lg:w-[427px] lg:h-[235px] rounded-lg bg-[url('./images/homepage/whyDubai.png')] bg-center bg-no-repeat bg-cover"></div>
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ function SignupSection() {
 
   return (
     <section
-      className="container mx-auto mt-32 lg:px-14 lg:py-11"
+      className="container mx-auto mt-10 lg:mt-32 lg:px-14 lg:py-11"
       style={{ height: "402px !important", transform: "translate(0%, 0%)" }}
     >
       <SignupOffer />

@@ -43,7 +43,7 @@ function TestmonialSection() {
   };
   return (
     // <section>
-   <div className="p-16 bg-gray-50 mb-12">
+   <div className="lg:p-16 bg-gray-50 mb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between lg:flex-row flex-col">
         <div className="mb-4">
@@ -72,7 +72,7 @@ function TestmonialSection() {
           </div>
         </div>
 
-        <div className="relative w-1/2">
+        <div className="relative lg:w-1/2">
           <div className="overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
