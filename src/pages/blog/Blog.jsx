@@ -1,31 +1,31 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 function Blog() {
-  //   useEffect(() => {
-  document.addEventListener("DOMContentLoaded", () => {
-    const tabs = document.querySelectorAll("[data-tab-target]");
-    const contents = document.querySelectorAll("[data-tab-content]");
+  // useEffect(() => {
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const tabs = document.querySelectorAll("[data-tab-target]");
+  //   const contents = document.querySelectorAll("[data-tab-content]");
 
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        const target = tab.getAttribute("data-tab-target");
+  //   tabs.forEach((tab) => {
+  //     tab.addEventListener("click", () => {
+  //       const target = tab.getAttribute("data-tab-target");
 
-        // Remove active class from all tabs and hide all content
-        tabs.forEach((t) => t.classList.remove("text-slate-700", "font-bold"));
-        contents.forEach((content) => content.classList.add("hidden"));
+  //       // Remove active class from all tabs and hide all content
+  //       tabs.forEach((t) => t.classList.remove("text-slate-700", "font-bold"));
+  //       contents.forEach((content) => content.classList.add("hidden"));
 
-        // Add active class to clicked tab and show its content
-        tab.classList.add("text-slate-700", "font-bold");
-        document
-          .querySelector(`[data-tab-content="${target}"]`)
-          .classList.remove("hidden");
-      });
-    });
+  //       // Add active class to clicked tab and show its content
+  //       tab.classList.add("text-slate-700", "font-bold");
+  //       document
+  //         .querySelector(`[data-tab-content="${target}"]`)
+  //         .classList.remove("hidden");
+  //     });
+  //   });
 
-    // Initialize: Show the first tab content
-    tabs[0].classList.add("text-slate-700", "font-bold");
-    contents[0].classList.remove("hidden");
-  });
+  //   // Initialize: Show the first tab content
+  //   tabs[0].classList.add("text-slate-700", "font-bold");
+  //   contents[0].classList.remove("hidden");
+  // });
   //   }, []);
 
   return (
@@ -106,7 +106,7 @@ function Blog() {
 
           <div className="col-span-1 flex items-center justify-end gap-3 mb-4">
             <span>Sort by</span>
-            <div className="max-w-sm min-w-[100px]">
+            <div className="max-w-sm min-w-[10  0px]">
               <div className="relative">
                 <select
                   value={"brazil"}
