@@ -25,7 +25,7 @@ function Routers() {
         <Route path="company-setup" element={<CompanySetup />} />
         <Route path="company-setup" element={<Team />} />
         <Route path="year-uae-visa" element={<GoldenVisa />} />
-        <Route path="media" element={<Media />} />
+        <Route path="media" element={<BlogList />} />
         <Route path="about" element={<About />} />
         <Route path="team" element={<Team />} />
         <Route path="blog" element={<BlogLayout />}>
