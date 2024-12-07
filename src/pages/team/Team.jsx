@@ -36,7 +36,7 @@ function Team() {
   return (
     <>
       <section
-        className="w-full h-64 lg:h-96 lg:pb-20 mt-20 flex items-center lg:justify-end justify-center flex-col relative"
+        className="w-full h-64 lg:h-96 lg:pb-20 mt-20 lg:mt-0 flex items-center lg:justify-end justify-center flex-col relative"
         style={{
           backgroundImage: "url('./images/homepage/teamBackground.png')",
           backgroundSize: "cover",
@@ -49,7 +49,7 @@ function Team() {
         <div className="relative z-10 text-center">
           <h1 className="text-white text-4xl lg:text-6xl font-semibold mb-4">
             Meet our <br className="lg:hidden" />
-            beautiful team
+            beautiful team 
           </h1>
           <div className="relative inline-block">
             <img
@@ -70,7 +70,7 @@ function Team() {
         </div>
       </section>
 
-      <section className="py-5 lg:px-52 lg:mb-24">
+      <section className="py-5 lg:px-52 lg:mb-10">
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 p-5 ">
           {teamArray.map((e, i) => (
             <div
@@ -106,7 +106,7 @@ function Team() {
         <p className="text-xs lg:text-base">CEO and Founder</p>
       </section>
 
-      <section className="lg:px-28 lg:py-36 my-24">
+      <section className="lg:px-28 lg:py-0 my-24">
         <SignupOffer />
       </section>
     </>

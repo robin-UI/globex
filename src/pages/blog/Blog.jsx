@@ -1,6 +1,10 @@
 // import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Blogs from "./blogData.json";
 
 function Blog() {
+  console.log(Blogs);
+
   // useEffect(() => {
   // document.addEventListener("DOMContentLoaded", () => {
   //   const tabs = document.querySelectorAll("[data-tab-target]");
@@ -31,14 +35,25 @@ function Blog() {
   return (
     <main>
       <section
-        className="w-full h-[180px] lg:h-screen p-3 lg:px-24 lg:py-14 mt-20 "
+        className="relative w-full h-[180px] lg:h-screen p-3 lg:px-24 lg:py-14 mt-20 lg:mt-0 z-10"
         style={{
-          backgroundImage: "url('./images/homepage/blogBackground.png')",
+          backgroundImage:
+            "url('../images/homepage/b31d530eda803594da6800db54d1df0a.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="flex flex-col justify-between w-full h-full ">
+        {/* Gradient overlay behind the text */}
+        <div
+          className="absolute left-0 bottom-0 h-full w-full z-10"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%)",
+          }}
+        ></div>
+
+        {/* Content wrapper with higher z-index */}
+        <div className="relative z-20 flex flex-col justify-between w-full h-full">
           <div className="flex justify-between">
             <div className="bg-[#00000035] rounded-2xl p-1 px-4 lg:hidden">
               <p className="text-white text-sm">
@@ -47,7 +62,6 @@ function Blog() {
                 15 mins read
               </p>
             </div>
-
             <div className="bg-[#00000035] rounded-2xl p-1 px-4 lg:hidden">
               <p className="text-white text-sm">Business</p>
             </div>
@@ -55,10 +69,10 @@ function Blog() {
 
           <div className="lg:flex justify-between">
             <div className="mb-2">
-              <h2 className="text-white text-base lg:text-3xl font-semibold">
+              <h2 className="text-white text-base lg:text-3xl font-semibold drop-shadow-lg">
                 Sand of success in the land of dreams
               </h2>
-              <p className="text-white text-sm lg:text-base ">
+              <p className="text-white text-sm lg:text-base drop-shadow-lg">
                 An iconic landscape, this post unveils the secrets that make
                 this land an entrepreneur’s paradise
               </p>
@@ -82,7 +96,7 @@ function Blog() {
               </div>
 
               <button className="flex items-center gap-2 lg:gap-4">
-                <p className="text-white text-sm lg:text-2xl font-bold ">
+                <p className="text-white text-sm lg:text-2xl font-bold drop-shadow-lg">
                   Read Now
                 </p>
                 <img
@@ -195,7 +209,7 @@ function Blog() {
         </div>
       </section>
 
-      <section className="p-3 lg:px-24 grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
+      <section className="p-3 lg:px-24 grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 mb-20">
         {/* {Array.from({ length: 6 }, (e, i) => (
           <div className="col-span-1">
             <div
@@ -230,42 +244,45 @@ function Blog() {
             </p>
           </div>
         ))} */}
-        {Array.from({ length: 6 }, (_, i) => (
-          <div className="col-span-1" key={i}>
-            <div
-              className="h-28 lg:h-52 p-2 rounded-md"
-              style={{
-                backgroundImage: "url('./images/homepage/blogBackground.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <p className="text-white text-sm bg-[#00000030] py-[2px] px-3 rounded-md inline-block">
-                Business
+        {Blogs.map((e, i) => (
+          <Link key={i} to={`${i}`}>
+            <div className="col-span-1">
+              <div
+                className="h-28 lg:h-52 p-2 rounded-md"
+                style={{
+                  backgroundImage: `url('${e.img}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <p className="text-white text-sm bg-[#00000030] py-[2px] px-3 rounded-md inline-block">
+                  Business
+                </p>
+              </div>
+              <p className="text-[#353535] text-xs my-2">
+                {e.date} <span className="mx-1"> &#9679; </span> 10 mins read
               </p>
-            </div>
-            <p className="text-[#353535] text-xs my-2">
-              30 Jan 2024 <span className="mx-1"> &#9679; </span> 10 mins read
-            </p>
-            <p className="text-sm lg:text-xl font-medium mb-2">
-              Lorem Ipsum dolor ssit amet lorem isum anyat
-            </p>
+              <p className="text-sm lg:text-xl font-medium mb-2">
+                {e.title.slice(0, 40)}...
+              </p>
 
-            <div className="flex flex-col lg:flex-col-reverse">
-            <div className="flex items-center gap-2 mb-2">
-              <img
-                className="h-8 w-8"
-                src="./images/homepage/blogUser.png"
-                alt="Blog Author"
-              />
-              <p className="text-black text-sm">Usman Khaled</p>
+              <div className="flex flex-col lg:flex-col-reverse">
+                <div className="flex items-center gap-2 mb-2">
+                  <img
+                    className="h-8 w-8"
+                    src="./images/homepage/blogUser.png"
+                    alt="Blog Author"
+                  />
+                  <p className="text-black text-sm">Usman Khaled</p>
+                </div>
+                <p className="text-[#353535] text-sm lg:text-base font-light mb-2">
+                  <span className="hidden lg:block">
+                    {e.description.slice(0, 100)}...{" "}
+                  </span>
+                </p>
+              </div>
             </div>
-            <p className="text-[#353535] text-sm lg:text-base font-light mb-2">
-              <span className="lg:hidden" >Here we share quick and informative reads that...</span>
-              <span className="hidden lg:block" >Here we share quick and informative reads that will guide you through your journey</span>
-            </p>
-            </div>
-          </div>
+          </Link>
         ))}
       </section>
     </main>
