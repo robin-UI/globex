@@ -17,10 +17,10 @@ const Footer = () => {
             </button>
           </div>
           <p className="pt-5 text-lg text-white text-center lg:text-left">
-            Lorem ipsum dolor sit amet, <br className="hidden lg:block" />
-            consectetur adipiscing elit. Sed <br className="hidden lg:block" />
-            do eiusmod tempor incididunt ut <br className="hidden lg:block" />
-            labore et dolore magna aliqua.
+          Globex Incorporation is a young enterprise <br className="hidden lg:block" /> 
+          admirable in assisting aspiring entrepreneurs <br className="hidden lg:block" /> 
+          to set up business in Burjuman Business Tower Sheikh Khalifa <br className="hidden lg:block" />
+           Bin Zayed St Al Mankhool Dubai, United Arab Emirates, UAE. <br className="hidden lg:block" />
           </p>
           <div className="socialmedia-icons hidden lg:flex justify-center lg:justify-start py-3 ">
             <img

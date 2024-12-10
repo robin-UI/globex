@@ -100,7 +100,7 @@ function GoldenVisa() {
             sponsor. Enjoy the benefits of full business ownership and a
             multi-entry permit, allowing you and your family to thrive in one of
             the world’s most dynamic cities. Discover these exclusive privileges
-            and more with the Golden Visa in Dubai. ECH DIGITAL is your trusted
+            and more with the Golden Visa in Dubai. Globex is your trusted
             partner for Golden Visa services, ensuring a smooth and rewarding
             experience in the UAE.
           </p>
