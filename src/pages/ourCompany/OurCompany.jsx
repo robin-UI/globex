@@ -18,7 +18,7 @@ function OurCompany() {
           <p className="font-normal text-sm lg:text-base text-white mb-[47px]">
             Are you considering starting a company in Dubai? Every business{" "}
             <br />
-            needs a license, and savvy entrepreneurs rely on Emirates First for{" "}
+            needs a license, and savvy entrepreneurs rely on for{" "}
             <br />
             comprehensive licensing support. We assist a wide range of <br />
             industries, from startups to established multinational corporations,
@@ -155,7 +155,7 @@ function OurCompany() {
                 With a growing and diversifying economy, along with a <br  className="hidden lg:block" />{" "}
                 workforce of varying skill levels, Dubai is an ideal destination
                 for entrepreneurs looking <br  className="hidden lg:block" /> to start or expand their
-                businesses. Emirates First’s team of business setup <br  className="hidden lg:block" />{" "}
+                businesses. Emirates team of business setup <br  className="hidden lg:block" />{" "}
                 consultants in Dubai offers comprehensive support for all types
                 of licensing, whether <br  className="hidden lg:block" />
                 your industry is tourism or trade. We deliver business setup
