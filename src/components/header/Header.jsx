@@ -121,72 +121,68 @@ function Header() {
             <span></span>
           </div>
         </div>
-        <nav
-          className={`top-bar__nav ${
-            isOpen ? "expanded" : "collapsed"
-          }`}
-        >
+        <nav className={`top-bar__nav ${isOpen ? "expanded" : "collapsed"}`}>
           <ul>
-          <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="/"
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="our-company"
-                >
-                  Our Company
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="services"
-                >
-                  Services
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="company-setup"
-                >
-                  Company Setup
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="year-uae-visa"
-                >
-                  10 Year UAE Visa
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="media"
-                >
-                  Media
-                </NavLink>
-              </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="our-company"
+              >
+                Our Company
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="services"
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="company-setup"
+              >
+                Company Setup
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="year-uae-visa"
+              >
+                10 Year UAE Visa
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="media"
+              >
+                Media
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>

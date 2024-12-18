@@ -18,8 +18,7 @@ function OurCompany() {
           <p className="font-normal text-sm lg:text-base text-white mb-[47px]">
             Are you considering starting a company in Dubai? Every business{" "}
             <br />
-            needs a license, and savvy entrepreneurs rely on for{" "}
-            <br />
+            needs a license, and savvy entrepreneurs rely on for <br />
             comprehensive licensing support. We assist a wide range of <br />
             industries, from startups to established multinational corporations,
             <br />
@@ -28,7 +27,7 @@ function OurCompany() {
           </p>
 
           <div className=" h-[280px] lg:h-0 "></div>
-          <div className="flex items-center justify-center lg:justify-start mt-5" >
+          <div className="flex items-center justify-center lg:justify-start mt-5">
             <button className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white">
               <samp className="bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] bg-clip-text text-transparent">
                 Book Free Consultation
@@ -47,7 +46,6 @@ function OurCompany() {
           src="./images/homepage/netdivider.png"
           alt=""
         /> */}
-
       </section>
 
       <section className="px-5 py-16 lg:px-20 lg:py-24 bg-[#F8F8F8]">
@@ -99,8 +97,8 @@ function OurCompany() {
           <div className="rounded-lg gradientBackground ">
             <div className="px-9 pt-12 mb-6">
               <h2 className="text-[20.87px] leading-[30.05px] text-white font-semibold mb-5">
-                Commercial License in <br />
-                Dubai, UAE
+                Dive into the Tourism <br />
+                Market in Dubai.
               </h2>
               <p className="text-xs leading-[23.37px] text-white">
                 A business license is necessary for conducting business in the
@@ -120,8 +118,7 @@ function OurCompany() {
           >
             <div className="px-9 pt-12 mb-6">
               <h2 className="text-[20.87px] leading-[30.05px] text-black font-semibold mb-5">
-                Professional License in <br />
-                Dubai, UAE
+                Industrial License In <br /> Dubai, UAE
               </h2>
               <p className="text-xs leading-[23.37px] text-[#353535]">
                 A business license is necessary for conducting business in the
@@ -151,16 +148,18 @@ function OurCompany() {
               </h2>
               <p className="text-[#353535] text-sm lg:text-base font-medium tracking-widest leading-6">
                 Dubai is located at the crossroads of the world, providing
-                access to both hemispheres <br className="hidden lg:block" /> through air and sea routes.
-                With a growing and diversifying economy, along with a <br  className="hidden lg:block" />{" "}
+                access to both hemispheres <br className="hidden lg:block" />{" "}
+                through air and sea routes. With a growing and diversifying
+                economy, along with a <br className="hidden lg:block" />{" "}
                 workforce of varying skill levels, Dubai is an ideal destination
-                for entrepreneurs looking <br  className="hidden lg:block" /> to start or expand their
-                businesses. Emirates team of business setup <br  className="hidden lg:block" />{" "}
-                consultants in Dubai offers comprehensive support for all types
-                of licensing, whether <br  className="hidden lg:block" />
+                for entrepreneurs looking <br className="hidden lg:block" /> to
+                start or expand their businesses. Emirates team of business
+                setup <br className="hidden lg:block" /> consultants in Dubai
+                offers comprehensive support for all types of licensing, whether{" "}
+                <br className="hidden lg:block" />
                 your industry is tourism or trade. We deliver business setup
-                services across Dubai and <br  className="hidden lg:block" /> in all the free zones of the
-                UAE.
+                services across Dubai and <br className="hidden lg:block" /> in
+                all the free zones of the UAE.
               </p>
             </div>
 
