@@ -31,11 +31,10 @@ function ContactUs() {
               Keep in <br /> Touch
             </h2>
             <p className="text-sm sm:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              lacinia odio vitae vestibulum. Sed auctor, magna vel convallis
-              fermentum, nulla nisi bibendum nisl, a varius elit elit id turpis.
-              Curabitur tincidunt quam vitae justo condimentum, sit amet viverra
-              ligula egestas.
+              Globex Incorporation is a young enterprise admirable in assisting
+              aspiring entrepreneurs to set up business in Burjuman Business
+              Tower Sheikh Khalifa Bin Zayed St Al Mankhool Dubai, United Arab
+              Emirates, UAE.
             </p>
           </div>
 

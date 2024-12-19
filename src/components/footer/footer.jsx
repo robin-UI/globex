@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-custom-gradient">
-      <div className="footer-sections py-10 lg:py-24 flex justify-center gap-2 lg:gap-20 flex-col lg:flex-row">
+      <div className="footer-sections lg:px-10 py-10 lg:py-24 flex justify-center gap-2 lg:gap-20 flex-col lg:flex-row">
         {/* Logo Section */}
         <div className="logo-sec ">
           <div className="flex justify-between items-center px-6 lg:px-0">
@@ -17,10 +17,14 @@ const Footer = () => {
             </button>
           </div>
           <p className="pt-5 text-lg text-white text-center lg:text-left">
-          Globex Incorporation is a young enterprise <br className="hidden lg:block" /> 
-          admirable in assisting aspiring entrepreneurs <br className="hidden lg:block" /> 
-          to set up business in Burjuman Business Tower Sheikh Khalifa <br className="hidden lg:block" />
-           Bin Zayed St Al Mankhool Dubai, United Arab Emirates, UAE. <br className="hidden lg:block" />
+            Globex Incorporation is a young enterprise{" "}
+            <br className="hidden lg:block" />
+            admirable in assisting aspiring entrepreneurs{" "}
+            <br className="hidden lg:block" />
+            to set up business in Burjuman Business Tower Sheikh Khalifa{" "}
+            <br className="hidden lg:block" />
+            Bin Zayed St Al Mankhool Dubai, United Arab Emirates, UAE.{" "}
+            <br className="hidden lg:block" />
           </p>
           <div className="socialmedia-icons hidden lg:flex justify-center lg:justify-start py-3 ">
             <img
@@ -211,7 +215,8 @@ const Footer = () => {
               alt=""
             />
             <p className="text-white pl-3 text-center lg:text-left">
-              Lorem Ipsum, dolor street Calicut
+              Burjuman Business Tower Sheikh Khalifa Bin Zayed St Al Mankhool
+              Dubai, United Arab Emirates
             </p>
           </div>
           <div className="mobile flex lg:justify-start items-center pt-2">
@@ -220,7 +225,7 @@ const Footer = () => {
               src="../images/homepage/footer-call.png"
               alt=""
             />
-            <p className="text-white pl-3">+97145 655 65</p>
+            <p className="text-white pl-3">+971529326975</p>
           </div>
           <div className="email flex lg:justify-start items-center pt-2">
             <img
@@ -228,7 +233,7 @@ const Footer = () => {
               src="../images/homepage/footer-email.png"
               alt=""
             />
-            <p className="text-white pl-3">Globex@gmail.com</p>
+            <p className="text-white pl-3">nayeem46.nm@gmail.com</p>
           </div>
           <button className="text-blue-700 rounded-full mt-4 bg-white w-[160px] h-[50px] mx-auto lg:mx-0">
             Get a Quote

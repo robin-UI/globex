@@ -27,11 +27,11 @@ function About() {
         className="w-full h-72 lg:h-screen flex items-center justify-center flex-col relative"
         style={{
           backgroundImage:
-          "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('./images/homepage/contactusBG.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        width: "100%",
-        height: "795px",
+            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('./images/homepage/contactusBG.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+          height: "795px",
         }}
       >
         {/* Dark overlay */}
@@ -51,12 +51,14 @@ function About() {
               Globex started because the <br /> market needed a key player
             </h2>
             <p className="lg:text-left text-[#353535] leading-7 text-center lg:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              lacinia odio vitae vestibulum. Sed auctor, magna vel convallis
-              fermentum, nulla nisi bibendum nisl, a varius elit elit id turpis.
-              Curabitur tincidunt quam vitae justo condimentum, sit amet viverra
-              ligula egestas. Fusce nec orci id nisi scelerisque dignissim non
-              sit amet odio.
+              At Globex Incorporation, we are dedicated to providing exceptional
+              business solutions tailored to your unique needs. With years of
+              experience in the industry, our team of experts is here to guide
+              you through every step of your business journey, from initial
+              setup to ongoing support. <br />
+              Our mission is to empower businesses by delivering innovative
+              services that drive growth and success. We pride ourselves on our
+              commitment to quality, integrity, and customer satisfaction.
             </p>
           </div>
           <div className="flex items-center justify-center  lg:w-1/2">
@@ -76,7 +78,9 @@ function About() {
             "linear-gradient(298.19deg, #2BDEFA -14.15%, #377CFF 68.52%)",
         }}
       >
-        <h1 className="text-2xl lg:text-[44px] text-white font-semibold">Core Values</h1>
+        <h1 className="text-2xl lg:text-[44px] text-white font-semibold">
+          Core Values
+        </h1>
         <hr className="mt-4 mb-6 border-[#FFFFFF32] border-[1px] lg:my-11" />
 
         <div className="flex flex-col lg:flex-row gap-28">
@@ -90,8 +94,12 @@ function About() {
                     alt=""
                   />
                 </div>
-                <h4 className="font-bold text-base text-white lg:text-2xl">{e.title}</h4>
-                <p className="text-sm text-white leading-6 lg:text-lg lg:leading-8">{e.text}</p>
+                <h4 className="font-bold text-base text-white lg:text-2xl">
+                  {e.title}
+                </h4>
+                <p className="text-sm text-white leading-6 lg:text-lg lg:leading-8">
+                  {e.text}
+                </p>
               </div>
             ))}
           </div>
@@ -111,41 +119,43 @@ function About() {
         </h2>
 
         <div className="flex flex-col lg:flex-row lg: gap-10 ">
-        <div className="flex justify-center items-start gap-2 w-full mb-5">
-          <img
-            className="w-10 h-10 lg:w-24 lg:h-24"
-            src="./images/homepage/ourVision.png"
-            alt=""
-          />
-          <div>
-            <h4 className="text-base lg:text-2xl font-semibold text-black mb-2">
-              Our Mission
-            </h4>
-            <p className="text-[#353535] text-[13px] lg:text-[18px] leading-6 lg:leading-[30px]">
-              To become the industry leader in supporting businesses with setup
-              and company formation in the UAE, while offering additional
-              value-added services to help them achieve their goals.
-            </p>
+          <div className="flex justify-center items-start gap-2 w-full mb-5">
+            <img
+              className="w-10 h-10 lg:w-24 lg:h-24"
+              src="./images/homepage/ourVision.png"
+              alt=""
+            />
+            <div>
+              <h4 className="text-base lg:text-2xl font-semibold text-black mb-2">
+                Our Mission
+              </h4>
+              <p className="text-[#353535] text-[13px] lg:text-[18px] leading-6 lg:leading-[30px]">
+                To become the industry leader in supporting businesses with
+                setup and company formation in the UAE, while offering
+                additional value-added services to help them achieve their
+                goals.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="flex justify-center items-start gap-2 w-full ">
-          <img
-            className="w-10 h-10 lg:w-24 lg:h-24"
-            src="./images/homepage/ourMission.png"
-            alt=""
-          />
-          <div>
-            <h4 className="text-base lg:text-2xl font-semibold text-black mb-2">
-              Our Vision
-            </h4>
-            <p className="text-[#353535] text-[13px] lg:text-[18px] leading-6 lg:leading-[30px]">
-              To become the industry leader in supporting businesses with setup
-              and company formation in the UAE, while offering additional
-              value-added services to help them achieve their goals.
-            </p>
+          <div className="flex justify-center items-start gap-2 w-full ">
+            <img
+              className="w-10 h-10 lg:w-24 lg:h-24"
+              src="./images/homepage/ourMission.png"
+              alt=""
+            />
+            <div>
+              <h4 className="text-base lg:text-2xl font-semibold text-black mb-2">
+                Our Vision
+              </h4>
+              <p className="text-[#353535] text-[13px] lg:text-[18px] leading-6 lg:leading-[30px]">
+                To become the industry leader in supporting businesses with
+                setup and company formation in the UAE, while offering
+                additional value-added services to help them achieve their
+                goals.
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </section>
     </>
