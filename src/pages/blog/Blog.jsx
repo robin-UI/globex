@@ -245,7 +245,7 @@ function Blog() {
           </div>
         ))} */}
         {Blogs.map((e, i) => (
-          <Link key={i} to={`${i}`}>
+          <Link key={i} to={`/blog/${i}`}>
             <div className="col-span-1">
               <div
                 className="h-28 lg:h-52 p-2 rounded-md"

@@ -33,7 +33,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="lg:pt-7  top-0 fixed z-50 w-full">
+    <header className="lg:pt-7 lg:px-24 top-0 fixed z-50 w-full">
       <div className="px-6 lg:px-12 py-3 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14] lg:min-w-[1119px] lg:max-w-[1440px] mx-auto ">
         <div className="flex items-center justify-between md:gap-7 lg:gap-12 ">
           <div className="img-container">
@@ -77,7 +77,7 @@ function Header() {
                   Services
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
@@ -86,7 +86,7 @@ function Header() {
                 >
                   Company Setup
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   className={({ isActive }) =>
@@ -153,7 +153,7 @@ function Header() {
                 Services
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "font-bold" : "font-normal"
@@ -162,7 +162,7 @@ function Header() {
               >
                 Company Setup
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 className={({ isActive }) =>
