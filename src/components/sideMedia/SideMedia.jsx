@@ -3,7 +3,7 @@ import FormModal from "../utils/FormModal";
 
 const SideMedia = () => {
   const [open, setOpen] = useState(false);
- 
+
   const handleOpen = () => setOpen(!open);
   return (
     <>
@@ -33,7 +33,10 @@ const SideMedia = () => {
             <p className="text-white text-center text-xs">Whatsapp</p>
           </a>
 
-          <button onClick={() => setOpen(true)} className="hover:bg-gradient-to-r from-blue-100 to-blue-150 hover:rounded hover:scale-105 transition duration-220 ease-in-out w-150px h-auto">
+          <button
+            onClick={() => setOpen(true)}
+            className="hover:bg-gradient-to-r from-blue-100 to-blue-150 hover:rounded hover:scale-105 transition duration-220 ease-in-out w-150px h-auto"
+          >
             <img
               className="h-auto w-[40px]"
               src="../images/homepage/letstalk.png"
@@ -112,7 +115,10 @@ const SideMedia = () => {
               </a>
             </div>
             <div data-projection-id={3}>
-              <button className="m-0.5 flex min-h-[48px] min-w-[48px] flex-col items-center justify-center gap-1 rounded-full p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100">
+              <button
+                onClick={() => setOpen(true)}
+                className="m-0.5 flex min-h-[48px] min-w-[48px] flex-col items-center justify-center gap-1 rounded-full p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100"
+              >
                 <img
                   className="h-auto w-[40px]"
                   src="../images/homepage/letstalk.png"
@@ -143,7 +149,6 @@ const SideMedia = () => {
       </div>
 
       <FormModal open={open} handleOpen={handleOpen} />
-
     </>
   );
 };

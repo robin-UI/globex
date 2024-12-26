@@ -14,7 +14,7 @@ function FormModal({ open, handleOpen }) {
             <p className="bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] bg-clip-text text-transparent text-xs">
               Your trustable partner
             </p>
-            <IconButton variant="text" size="sm" className="rounded-full">
+            <IconButton variant="text" size="sm" className="rounded-full" onClick={() => handleOpen()}>
               <CloseIcon />
             </IconButton>
           </div>
@@ -59,11 +59,54 @@ function FormModal({ open, handleOpen }) {
 
             <p className="text-xl mb-2">Feel Free to Contact Us</p>
 
-            <form action="">
-              <div className="mb-2">
-                <label htmlFor="name" className="pb-2">Name</label>
-                <input id="name" name="name" type="text" className="bg-[#F4F8FA] w-full rounded-md p-2" />
+            <form action="" className="flex flex-col gap-2 justify-center items-center">
+              <div className="w-full">
+                <label htmlFor="name" className="pb-2">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  className="bg-[#F4F8FA] w-full rounded-md p-2"
+                />
               </div>
+              <div className="w-full">
+                <label htmlFor="number" className="pb-2">
+                  Phone Number
+                </label>
+                <input
+                  id="number"
+                  name="number"
+                  type="text"
+                  className="bg-[#F4F8FA] w-full rounded-md p-2"
+                />
+              </div>
+              <div className="w-full">
+                <label htmlFor="Email" className="pb-2">
+                  Email
+                </label>
+                <input
+                  id="Email"
+                  name="Email"
+                  type="text"
+                  className="bg-[#F4F8FA] w-full rounded-md p-2"
+                />
+              </div>
+              <div className="w-full pb-2">
+                <label htmlFor="Lookingfor" className="pb-2">
+                  Looking for
+                </label>
+                <input
+                  id="Lookingfor"
+                  name="Lookingfor"
+                  type="text"
+                  className="bg-[#F4F8FA] w-full rounded-md p-2"
+                />
+              </div>
+              <button className="text-white text-sm px-11 py-2 rounded-lg w-full gradientBackground">
+                Book Free Consultation
+              </button>
             </form>
           </div>
         </div>
