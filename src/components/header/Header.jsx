@@ -77,7 +77,7 @@ function Header() {
                   Services
                 </NavLink>
               </li>
-              {/* <li>
+              <li>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
@@ -86,7 +86,7 @@ function Header() {
                 >
                   Company Setup
                 </NavLink>
-              </li> */}
+              </li>
               <li>
                 <NavLink
                   className={({ isActive }) =>
