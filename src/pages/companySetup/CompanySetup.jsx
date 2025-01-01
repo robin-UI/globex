@@ -1,7 +1,7 @@
 
 function CompanySetup() {
   return (
-    <div>CompanySetup</div>
+    <div>Company Setup</div>
   )
 }
 

@@ -1,8 +1,87 @@
 import { Dialog, DialogBody, IconButton } from "@material-tailwind/react";
-import React from "react";
+import React, { useState } from "react";
 import { CloseIcon } from "../Icons/Icons";
 
+import * as XLSX from "xlsx";
+
 function FormModal({ open, handleOpen }) {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phoneNumber: "",
+    email: "",
+    lookingFor: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Handle form field change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Validation logic
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name) newErrors.name = "Name is required.";
+    if (!formData.phoneNumber) newErrors.phoneNumber = "Phone number is required.";
+    else if (!/^\d{10}$/.test(formData.phoneNumber)) newErrors.phoneNumber = "Phone number must be 10 digits.";
+    if (!formData.email) newErrors.email = "Email is required.";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Email is invalid.";
+    if (!formData.lookingFor) newErrors.lookingFor = "Looking for field is required.";
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    if (validateForm()) {
+      // Form data to send to Google Apps Script (Web App)
+      const formDataToSend = {
+        name: formData.name,
+        phoneNumber: formData.phoneNumber,
+        email: formData.email,
+        lookingFor: formData.lookingFor,
+      };
+  
+      // Your Google Apps Script Web App URL
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyJLvqKtFeKJbetl_DOHMK5H0eTQ137Q4aVWLTIQM7mIZtGF7wW__AXOf-9l8-u_GKK/exec';
+  
+      try {
+        // Send POST request to Google Apps Script Web App
+        const response = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formDataToSend),
+          mode: 'no-cors',  // Disable CORS for local testing
+        });
+        
+  
+        const data = await response.json(); // Get the response from the Apps Script
+  console.log(data.result,"alsdfhaksjdfhkasdhfkajsdhfkajshfkajshd");
+  
+        if (data.result === 'success') {
+          // Successfully added data
+          setFormData({ name: '', phoneNumber: '', email: '', lookingFor: '' });
+          setIsSubmitted(true);
+        } else {
+          console.error("Error adding data:", data.error);
+        }
+      } catch (error) {
+        console.error("Error in form submission:", error);
+      }
+    }
+  };
+  
+
   return (
     open && (
       // <div className="bg-white fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
@@ -71,7 +150,7 @@ function FormModal({ open, handleOpen }) {
               <p className="text-xl mb-2">Feel Free to Contact Us</p>
 
               <form
-                action=""
+                onSubmit={handleSubmit}
                 className="flex flex-col gap-2 justify-center items-center"
               >
                 <div className="w-full">
@@ -83,7 +162,11 @@ function FormModal({ open, handleOpen }) {
                     name="name"
                     type="text"
                     className="bg-[#F4F8FA] w-full rounded-md p-2"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                   />
+                  {errors.name && <span className="text-red-500 text-sm">{errors.name}</span>}
                 </div>
                 <div className="w-full">
                   <label htmlFor="number" className="pb-2">
@@ -91,37 +174,59 @@ function FormModal({ open, handleOpen }) {
                   </label>
                   <input
                     id="number"
-                    name="number"
+                    name="phoneNumber"
                     type="text"
                     className="bg-[#F4F8FA] w-full rounded-md p-2"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                    required
                   />
+                  {errors.phoneNumber && (
+                    <span className="text-red-500 text-sm">{errors.phoneNumber}</span>
+                  )}
                 </div>
                 <div className="w-full">
-                  <label htmlFor="Email" className="pb-2">
+                  <label htmlFor="email" className="pb-2">
                     Email
                   </label>
                   <input
-                    id="Email"
-                    name="Email"
-                    type="text"
+                    id="email"
+                    name="email"
+                    type="email"
                     className="bg-[#F4F8FA] w-full rounded-md p-2"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
                   />
+                  {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
                 </div>
                 <div className="w-full pb-2">
-                  <label htmlFor="Lookingfor" className="pb-2">
+                  <label htmlFor="lookingFor" className="pb-2">
                     Looking for
                   </label>
                   <input
-                    id="Lookingfor"
-                    name="Lookingfor"
+                    id="lookingFor"
+                    name="lookingFor"
                     type="text"
                     className="bg-[#F4F8FA] w-full rounded-md p-2"
+                    value={formData.lookingFor}
+                    onChange={handleChange}
+                    required
                   />
+                  {errors.lookingFor && (
+                    <span className="text-red-500 text-sm">{errors.lookingFor}</span>
+                  )}
                 </div>
-                <button className="text-white text-sm px-11 py-2 rounded-lg w-full gradientBackground">
+                <button
+                  type="submit"
+                  className="text-white text-sm px-11 py-2 rounded-lg w-full gradientBackground"
+                >
                   Book Free Consultation
                 </button>
               </form>
+              {isSubmitted && (
+                <p className="text-green-500 mt-4 text-center">Form submitted successfully!</p>
+              )}
             </div>
           </div>
         </div>

@@ -102,7 +102,7 @@ function Team() {
           Globex truly values work-life balance. We work <br />
           hard, but at the end of the day you can switch off
         </p>
-        <p className="text-lg lg:text-xl font-semibold">Alec Stewert</p>
+        <p className="text-lg lg:text-xl font-semibold">Nayeem</p>
         <p className="text-xs lg:text-base">CEO and Founder</p>
       </section>
 
