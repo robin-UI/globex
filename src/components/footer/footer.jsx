@@ -1,7 +1,15 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import FormModal from "../utils/FormModal";
 
 const Footer = () => {
+
+   const [open, setOpen] = useState(false);
+  
+    const handleOpen = () => setOpen(!open);
+
   return (
+    <>
     <footer className="bg-custom-gradient">
       <div className="footer-sections lg:px-10 py-10 lg:py-24 flex justify-center gap-2 lg:gap-20 flex-col lg:flex-row">
         {/* Logo Section */}
@@ -12,7 +20,7 @@ const Footer = () => {
               src="../images/mainLogo.png"
               alt=""
             />
-            <button className="text-base text-blue-400 bg-white px-9 h-10 rounded-3xl lg:hidden ">
+            <button  onClick={() => setOpen(true)} className="text-base text-blue-400 bg-white px-9 h-10 rounded-3xl lg:hidden ">
               Get a Quote
             </button>
           </div>
@@ -235,7 +243,7 @@ const Footer = () => {
             />
             <p className="text-white pl-3">nayeem46.nm@gmail.com</p>
           </div>
-          <button className="text-blue-700 rounded-full mt-4 bg-white w-[160px] h-[50px] mx-auto lg:mx-0">
+          <button onClick={() => setOpen(true)} className="text-blue-700 rounded-full mt-4 bg-white w-[160px] h-[50px] mx-auto lg:mx-0">
             Get a Quote
           </button>
         </div>
@@ -265,6 +273,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    <FormModal open={open} handleOpen={handleOpen} />
+    </>
   );
 };
 

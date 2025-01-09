@@ -5,6 +5,7 @@ import axios from "axios";
 
 function FormModal({ open, handleOpen }) {
   const [isDisable, setIsDisable] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
@@ -27,13 +28,13 @@ function FormModal({ open, handleOpen }) {
         alert("Form submitted successfully!");
         e.target.reset(); // Clear the form after successful submission
         setIsDisable(false);
+        setIsSubmitted(true);
       }
     } catch (error) {
       console.error("Form submission failed:", error);
       alert("Failed to submit the form. Please try again.");
     }
   };
-
   return (
     open && (
       // <div className="bg-white fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
@@ -160,6 +161,9 @@ function FormModal({ open, handleOpen }) {
                   Book Free Consultation
                 </button>
               </form>
+              {isSubmitted && (
+                <p className="text-green-500 mt-4 text-center">Form submitted successfully!</p>
+              )}
             </div>
           </div>
         </div>

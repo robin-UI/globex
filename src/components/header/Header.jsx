@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import FormModal from "../utils/FormModal";
 
 // import { Link } from "react-router-dom";
 
@@ -11,6 +12,10 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const [open, setOpen] = useState(false);
+  
+  const handleOpen = () => setOpen(!open);
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
@@ -33,6 +38,8 @@ function Header() {
   }, []);
 
   return (
+    <>
+    
     <header className="lg:pt-7 lg:px-24 top-0 fixed z-50 w-full">
       <div className="px-6 lg:px-12 py-3 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14] lg:min-w-[1119px] lg:max-w-[1440px] mx-auto ">
         <div className="flex items-center justify-between md:gap-7 lg:gap-12 ">
@@ -82,9 +89,9 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="company-setup"
+                  to="our-team"
                 >
-                  Company Setup
+                  Our Team
                 </NavLink>
               </li>
               <li>
@@ -110,7 +117,7 @@ function Header() {
             </ol>
           </nav>
 
-          <button className="hidden lg:block text-white text-sm px-11 py-2 rounded-lg gradientBackground">
+          <button onClick={() => setOpen(true)} className="hidden lg:block text-white text-sm px-11 py-2 rounded-lg gradientBackground">
             GET A QUOTE
           </button>
 
@@ -158,7 +165,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive ? "font-bold" : "font-normal"
                 }
-                to="company-setup"
+                to="our-team"
               >
                 Company Setup
               </NavLink>
@@ -198,6 +205,8 @@ function Header() {
 
       </div> */}
     </header>
+    <FormModal open={open} handleOpen={handleOpen} />
+    </>
   );
 }
 
