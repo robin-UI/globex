@@ -1,8 +1,39 @@
 import { Dialog, DialogBody, IconButton } from "@material-tailwind/react";
-import React from "react";
+import React, { useState } from "react";
 import { CloseIcon } from "../Icons/Icons";
+import axios from "axios";
 
 function FormModal({ open, handleOpen }) {
+  const [isDisable, setIsDisable] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    setIsDisable(true);
+    // Collect form data
+    const formData = new FormData(e.target);
+
+    // Convert FormData to a plain object for better control
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await axios({
+        method: "post",
+        url: "https://script.google.com/macros/s/AKfycbwbetChaDqK4NBqbRRSpMIKgtHGK3-S62ycFQq1QcR_I2nfwMMDO__xqeAppZMSH45v/exec",
+        data: data,
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+
+      if (response.status === 200 || response.status === 302) {
+        alert("Form submitted successfully!");
+        e.target.reset(); // Clear the form after successful submission
+        setIsDisable(false);
+      }
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      alert("Failed to submit the form. Please try again.");
+    }
+  };
+
   return (
     open && (
       // <div className="bg-white fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
@@ -71,8 +102,11 @@ function FormModal({ open, handleOpen }) {
               <p className="text-xl mb-2">Feel Free to Contact Us</p>
 
               <form
-                action=""
+                id="gform"
+                // method="POST"
+                // action="https://script.google.com/macros/s/AKfycbwbetChaDqK4NBqbRRSpMIKgtHGK3-S62ycFQq1QcR_I2nfwMMDO__xqeAppZMSH45v/exec"
                 className="flex flex-col gap-2 justify-center items-center"
+                onSubmit={handleSubmit}
               >
                 <div className="w-full">
                   <label htmlFor="name" className="pb-2">
@@ -97,28 +131,32 @@ function FormModal({ open, handleOpen }) {
                   />
                 </div>
                 <div className="w-full">
-                  <label htmlFor="Email" className="pb-2">
+                  <label htmlFor="email" className="pb-2">
                     Email
                   </label>
                   <input
                     id="Email"
-                    name="Email"
-                    type="text"
+                    name="email"
+                    type="email"
                     className="bg-[#F4F8FA] w-full rounded-md p-2"
                   />
                 </div>
                 <div className="w-full pb-2">
-                  <label htmlFor="Lookingfor" className="pb-2">
+                  <label htmlFor="lookingfor" className="pb-2">
                     Looking for
                   </label>
                   <input
                     id="Lookingfor"
-                    name="Lookingfor"
+                    name="lookingfor"
                     type="text"
                     className="bg-[#F4F8FA] w-full rounded-md p-2"
                   />
                 </div>
-                <button className="text-white text-sm px-11 py-2 rounded-lg w-full gradientBackground">
+                <button
+                  disabled={isDisable}
+                  type="submit"
+                  className="text-white text-sm px-11 py-2 rounded-lg w-full gradientBackground"
+                >
                   Book Free Consultation
                 </button>
               </form>
