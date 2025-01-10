@@ -14,7 +14,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const [open, setOpen] = useState(false);
-  
+
   const handleOpen = () => setOpen(!open);
 
   const toggleNav = () => {
@@ -39,21 +39,99 @@ function Header() {
 
   return (
     <>
-    
-    <header className="lg:pt-7 lg:px-24 top-0 fixed z-50 w-full">
-      <div className="px-6 lg:px-12 py-3 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14] lg:min-w-[1119px] lg:max-w-[1440px] mx-auto ">
-        <div className="flex items-center justify-between md:gap-7 lg:gap-12 ">
-          <div className="img-container">
-            <a href="/">
-              <img
-                style={{ width: "150px", height: "auto" }}
-                src="../images/mainLogo.png"
-                alt="mainlogo"
-              />
-            </a>
+      <header className="lg:pt-7 lg:px-24 top-0 fixed z-50 w-full">
+        <div className="px-6 lg:px-12 py-3 bg-white lg:rounded-xl shadow-[0px_0px_4px_4px_#5A9CFE14] lg:min-w-[1119px] lg:max-w-[1440px] mx-auto ">
+          <div className="flex items-center justify-between md:gap-7 lg:gap-12 ">
+            <div className="img-container">
+              <a href="/">
+                <img
+                  style={{ width: "150px", height: "auto" }}
+                  src="../images/mainLogo.png"
+                  alt="mainlogo"
+                />
+              </a>
+            </div>
+            <nav className="hidden lg:block">
+              <ol className="flex justify-center gap-10 text-[#353535]">
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="our-company"
+                  >
+                    Our Company
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="services"
+                  >
+                    Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="our-team"
+                  >
+                    Our Team
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="year-uae-visa"
+                  >
+                    10 Year UAE Visa
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="media"
+                  >
+                    Media
+                  </NavLink>
+                </li>
+              </ol>
+            </nav>
+
+            <button
+              onClick={() => setOpen(true)}
+              className="hidden lg:block text-white text-sm px-11 py-2 rounded-lg gradientBackground"
+            >
+              GET A QUOTE
+            </button>
+
+            <div
+              className={`menu-btn-1 ${isMenuOpen ? "active" : ""} lg:hidden`}
+              onClick={toggleNav}
+            >
+              <span></span>
+            </div>
           </div>
-          <nav className="hidden lg:block">
-            <ol className="flex justify-center gap-10 text-[#353535]">
+          <nav className={`top-bar__nav ${isOpen ? "expanded" : "collapsed"}`}>
+            <ul>
               <li>
                 <NavLink
                   className={({ isActive }) =>
@@ -84,16 +162,16 @@ function Header() {
                   Services
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="our-team"
-                >
-                  Our Team
-                </NavLink>
-              </li>
+              {/* <li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "font-bold" : "font-normal"
+                }
+                to="our-team"
+              >
+                Company Setup
+              </NavLink>
+            </li> */}
               <li>
                 <NavLink
                   className={({ isActive }) =>
@@ -114,86 +192,18 @@ function Header() {
                   Media
                 </NavLink>
               </li>
-            </ol>
+            </ul>
+            {/* <div className="flex"> */}
+            <button
+              onClick={() => setOpen(true)}
+              className=" mx-auto w-full text-white text-sm px-11 py-2 rounded-lg gradientBackground"
+            >
+              GET A QUOTE
+            </button>
+            {/* </div> */}
           </nav>
-
-          <button onClick={() => setOpen(true)} className="hidden lg:block text-white text-sm px-11 py-2 rounded-lg gradientBackground">
-            GET A QUOTE
-          </button>
-
-          <div
-            className={`menu-btn-1 ${isMenuOpen ? "active" : ""} lg:hidden`}
-            onClick={toggleNav}
-          >
-            <span></span>
-          </div>
         </div>
-        <nav className={`top-bar__nav ${isOpen ? "expanded" : "collapsed"}`}>
-          <ul>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="/"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="our-company"
-              >
-                Our Company
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="services"
-              >
-                Services
-              </NavLink>
-            </li>
-            {/* <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="our-team"
-              >
-                Company Setup
-              </NavLink>
-            </li> */}
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="year-uae-visa"
-              >
-                10 Year UAE Visa
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="media"
-              >
-                Media
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      {/* <div className="top-bar">
+        {/* <div className="top-bar">
         <button
           className={`top-bar__nav-toggle hamburger ${isOpen ? "closed" : ""}`}
           onClick={toggleNav}
@@ -204,10 +214,16 @@ function Header() {
         </button>
 
       </div> */}
-    </header>
-    <FormModal open={open} handleOpen={handleOpen} />
+      </header>
+      <FormModal open={open} handleOpen={handleOpen} />
     </>
   );
 }
 
 export default Header;
+
+//  \___________________/
+//  __/__/_________\__\__
+//  /⭕⭕\________/⭕⭕\
+//  |_______🄶🅃🅁______ |
+// \●●___||___||___||__●●/

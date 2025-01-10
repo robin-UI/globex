@@ -260,5 +260,5 @@ textarea, input { outline: none; }
 }
 
 .top-bar__nav.expanded {
-  max-height: 300px; /* Adjust based on the content */
+  max-height: 321px; /* Adjust based on the content */
 }
