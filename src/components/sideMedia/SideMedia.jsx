@@ -62,7 +62,7 @@ const SideMedia = () => {
       <div className="fixed bottom-5 right-[18px] z-50 lg:hidden">
         <div className="group">
           <button
-            className="relative h-12 max-h-[48px] w-12 max-w-[48px] select-none overflow-hidden rounded-full bg-gray-900 text-center align-middle font-sans text-sm font-medium uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50  disabled:shadow-none"
+            className="relative h-12 max-h-[48px] w-12 max-w-[48px] select-none overflow-hidden rounded-full bg-[#61dafb] text-center align-middle font-sans text-sm font-medium uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50  disabled:shadow-none"
             type="button"
           >
             <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
