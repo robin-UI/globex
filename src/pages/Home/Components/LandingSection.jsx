@@ -68,7 +68,7 @@ function LandingSection() {
     //   />
     // </section>
 
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden mt-20">
     <div className="container mx-auto px-4 lg:px-8 xl:px-20 min-h-[calc(100vh-80px)] py-12 lg:py-20">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 h-full">
         <ContentSection />
@@ -123,8 +123,8 @@ function ContentSection() {
 
 function ImageGrid() {
   return (
-    <div className="w-full lg:w-1/2 h-full">
-      <div className="relative w-full aspect-[4/3] lg:aspect-square max-w-[650px] mx-auto">
+    <div className="w-full lg:w-1/2 h-[367px] lg:h-full mb-5">
+      <div className="relative w-full aspect-[4/3] lg:aspect-square max-w-[650px] mx-auto h-full lg:h-auto">
         <div className="absolute inset-0 grid grid-cols-2 gap-4 p-4">
           <div className="relative h-full">
             <img

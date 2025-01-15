@@ -42,10 +42,10 @@ function TestmonialSection() {
     );
   };
   return (
-    <section>
-   <div className="py-16">
+    // <section>
+   <div className="lg:p-16 bg-gray-50 mb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between">
+        <div className="flex justify-between lg:flex-row flex-col">
         <div className="mb-4">
           <div className="mb-6">
             <h3 className="text-blue-600 text-xl mb-4">Testimonials</h3>
@@ -72,7 +72,7 @@ function TestmonialSection() {
           </div>
         </div>
 
-        <div className="relative w-1/2">
+        <div className="relative lg:w-1/2">
           <div className="overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
@@ -108,7 +108,7 @@ function TestmonialSection() {
         </div>
       </div>
     </div>
-    </section>
+    // </section>
   );
 }
 

@@ -12,7 +12,7 @@ function ServicesSection() {
   const [isActive, setIsActive] = useState({ status: true, title: "COMPANY FORMATION" });
   return (
     <section>
-      <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-24 lg:py-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1
@@ -392,7 +392,7 @@ function ServiceCard({ icon, title, isActive, onMouseEnter, onMouseLeave }) {
         <span className="font-semibold">{title}</span>
       </div>
       <img
-        src="./images/homepage/Component 3.svg"
+        src="./images/homepage/upArrow.svg"
         alt=""
         style={{
           width: "55px",
