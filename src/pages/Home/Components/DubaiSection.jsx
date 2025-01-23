@@ -6,6 +6,7 @@ import {
 } from "../../../components/Icons/Icons";
 
 import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
+import { Link } from "react-router-dom";
 // import backgroundDubai from "../../../assets/images/dubainSectionBG.png";
 
 function DubaiSection() {
@@ -36,16 +37,19 @@ function DubaiSection() {
                 description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
                 icon={<GlobeIcon />}
                 gradient={true}
+                link="/freezone"
               />
               <BusinessCard
                 title="Offshore"
                 description="The biggest benefit of opening an offshore company is not having to pay any taxes."
                 icon={<BuildingIcon />}
+                link="/offsore"
               />
               <BusinessCard
                 title="Mainland"
                 description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
                 icon={<MapIcon />}
+                link="/mainland"
               />
             </div>
           </div>
@@ -62,10 +66,11 @@ function DubaiSection() {
 
 export default DubaiSection;
 
-function BusinessCard({ title, description, icon }) {
+function BusinessCard({ title, description, icon, link }) {
   const [gradient, setGradient] = useState(false);
   return (
-    <div
+    <Link
+      to={link}
       onMouseEnter={() => setGradient(true)}
       onMouseLeave={() => setGradient(false)}
       className={`max-w-sm w-full lg:max-w-full z-20 p-6 sm:p-8 rounded-xl ${
@@ -102,7 +107,7 @@ function BusinessCard({ title, description, icon }) {
       </h2>
 
       <p
-        className={` ${gradient ? "text-white" : "text-gray-500"}`}
+        className={` ${gradient ? "text-white" : "text-gray-500"} mx-auto`}
         style={{
           width: "263px",
           height: "80px",
@@ -126,6 +131,6 @@ function BusinessCard({ title, description, icon }) {
       >
         LEARN MORE
       </button>
-    </div>
+    </Link>
   );
 }

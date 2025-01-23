@@ -17,6 +17,9 @@ import BlogLayout from "../pages/blog/BlogLayout";
 import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import LoadingAnimation from "../components/lotties/loading.json";
+import Freezone from "../pages/Details/Freezone";
+import Offsore from "../pages/Details/Offsore";
+import Mainland from "../pages/Details/Mainland";
 
 function Routers() {
   const [loading, setLoading] = useState(false);
@@ -42,6 +45,9 @@ function Routers() {
               <Route path=":blogId" element={<BlogDetails />} />
             </Route>
             <Route path="contact" element={<ContactUs />} />
+            <Route path="freezone" element={<Freezone />} />
+            <Route path="offsore" element={<Offsore />} />
+            <Route path="mainland" element={<Mainland />} />
             <Route path="*" element={<div> This page is not found </div>} />
           </Route>
         </Routes>
