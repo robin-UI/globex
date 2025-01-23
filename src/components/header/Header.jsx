@@ -45,7 +45,7 @@ function Header() {
             <div className="img-container">
               <a href="/">
                 <img
-                  style={{ width: "150px", height: "auto" }}
+                  style={{ width: "120px", height: "auto" }}
                   src="../images/mainLogo.png"
                   alt="mainlogo"
                 />
@@ -132,7 +132,7 @@ function Header() {
                         Media
                       </NavLink>
                       <NavLink
-                        to="/blogs"
+                        to="/blog"
                         className={({ isActive }) =>
                           `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
                         }
@@ -140,21 +140,21 @@ function Header() {
                         Blogs
                       </NavLink>
                       <NavLink
-                        to="/contact-us"
+                        to="/contact"
                         className={({ isActive }) =>
                           `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Contact Us
                       </NavLink>
-                      <NavLink
+                      {/* <NavLink
                         to="/our-services"
                         className={({ isActive }) =>
                           `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Our Services
-                      </NavLink>
+                      </NavLink> */}
                     </div>
                   </div>
                 </li>
