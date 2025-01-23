@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import FormModal from "../../components/utils/FormModal";
 
 function ArrowRight() {
   return (
@@ -30,6 +31,10 @@ const BenefitCard = ({ title, description }) => (
 );
 
 function Mainland() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(!open);
+  // const handleClose = () => setOpen(false);
+
   const benefits = [
     {
       title: "Well established Connections",
@@ -82,7 +87,7 @@ function Mainland() {
           />
         ))}
         <div className="text-center mt-6 text-gray-700 italic">
-          A&A Associate LLC makes starting your Dubai mainland company formation
+          Globex Incorporation makes starting your Dubai mainland company formation
           easy. Let's make your business dreams come true!
         </div>
       </div>
@@ -157,6 +162,8 @@ function Mainland() {
           </button>
         </div>
       </div>
+
+      <FormModal open={open} handleOpen={handleOpen} />
     </>
   );
 }

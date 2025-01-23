@@ -254,7 +254,7 @@ function Offsore() {
           <div className="w-full md:w-1/2">
             <img
               src="/api/placeholder/394/407"
-              alt="Start your offshore Company with A&A ASSOCIATE LLC"
+              alt="Start your offshore Company with Globex Incorporation"
               className="w-full h-auto object-cover rounded-lg shadow-md"
             />
           </div>

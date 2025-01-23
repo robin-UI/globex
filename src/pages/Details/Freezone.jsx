@@ -4,6 +4,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 function Icon({ id, open }) {
   return (
@@ -147,9 +148,9 @@ function Freezone() {
     },
     {
       id: 3,
-      title: "How can A&A Associate LLC assist with freezone company formation in Dubai, UAE?",
+      title: "How can Globex Incorporation assist with freezone company formation in Dubai, UAE?",
       content: [
-        "A&A Associate LLC is a trusted business setup and licensing company in Dubai, UAE. We offer comprehensive services to help you navigate the complexities of freezone company formation. Our expert team can guide you through:",
+        "Globex Incorporation is a trusted business setup and licensing company in Dubai, UAE. We offer comprehensive services to help you navigate the complexities of freezone company formation. Our expert team can guide you through:",
       ],
     },
     {
@@ -163,7 +164,7 @@ function Freezone() {
       id: 5,
       title: "What are the costs involved in Dubai freezone company setup?",
       content: [
-        "The costs for Dubai freezone company setup typically include: license fees, registration fees, visa costs, office or workspace charges, and initial capital requirements. The exact costs vary depending on the chosen freezone, type of license, number of visas required, and office space selection. Contact A&A Associate LLC for detailed cost breakdowns specific to your business needs.",
+        "The costs for Dubai freezone company setup typically include: license fees, registration fees, visa costs, office or workspace charges, and initial capital requirements. The exact costs vary depending on the chosen freezone, type of license, number of visas required, and office space selection. Contact Globex Incorporation for detailed cost breakdowns specific to your business needs.",
       ],
     }
   ];
@@ -220,7 +221,7 @@ function Freezone() {
             Transform Your Business Vision into Reality
           </h2>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            Partner with A&A Associate LLC for expert guidance and innovative
+            Partner with Globex Incorporation for expert guidance and innovative
             solutions that will elevate your business in Dubai's dynamic market.
             Let's build your success story together.
           </p>
@@ -279,12 +280,12 @@ function Freezone() {
                 within the Freezone. Benefit from a streamlined process and
                 expand your expertise.
               </p>
-              <a
-                href="https://www.aaconsultancy.ae/professional-license/"
+              <Link
+                to="professional-license/"
                 className="text-blue-500 hover:underline mt-4 inline-block"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -295,12 +296,12 @@ function Freezone() {
                 within the Freezone. Experience ease of operations and tap into
                 new markets.
               </p>
-              <a
-                href="https://www.aaconsultancy.ae/dubai/commercial-license/"
+              <Link
+                to="dubai/commercial-license/"
                 className="text-blue-500 hover:underline mt-4 inline-block"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -311,12 +312,12 @@ function Freezone() {
                 Freezone. Explore growth opportunities and optimize production
                 processes.
               </p>
-              <a
-                href="https://www.aaconsultancy.ae/dubai/industrial-license/"
+              <Link
+                to="dubai/industrial-license/"
                 className="text-blue-500 hover:underline mt-4 inline-block"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -326,7 +327,7 @@ function Freezone() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">
-              Your Gateway to Success: A&A Associate LLC
+              Your Gateway to Success: Globex Incorporation
             </h2>
             <p className="mt-4 text-gray-600">
               Discovery the potential of Dubai's Free Zones, Mainland, and
@@ -398,7 +399,7 @@ function Freezone() {
             </Accordion>
           ))}
         </div>
-        <p className="text-center">Please note that specifics may vary depending on the chosen Freezone and the nature of your Dubai freezone company formation. It’s advisable to consult with experts like A&A Associate LLC for accurate and up-to-date information tailored to your situation.</p>
+        <p className="text-center">Please note that specifics may vary depending on the chosen Freezone and the nature of your Dubai freezone company formation. It’s advisable to consult with experts like Globex Incorporation for accurate and up-to-date information tailored to your situation.</p>
       </section>
     </div>
   );
