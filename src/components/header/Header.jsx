@@ -78,12 +78,32 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="services"
+                    to="freezone"
                   >
-                    Services
+                    Freezone
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="offscore"
+                  >
+                    Offscore
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="mainland"
+                  >
+                    Mainland
+                  </NavLink>
+                </li>
+                {/* <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
@@ -92,8 +112,8 @@ function Header() {
                   >
                     Our Team
                   </NavLink>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
@@ -102,31 +122,42 @@ function Header() {
                   >
                     10 Year UAE Visa
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <div className="relative group">
                     <NavLink
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"} flex items-center gap-1`
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } flex items-center gap-1`
                       }
-                      to="media"
+                      to="/about"
                     >
                       About Us
-                      <svg 
-                        className="w-4 h-4 transition-transform group-hover:rotate-180" 
-                        fill="none" 
-                        stroke="currentColor" 
+                      <svg
+                        className="w-4 h-4 transition-transform group-hover:rotate-180"
+                        fill="none"
+                        stroke="currentColor"
                         viewBox="0 0 24 24"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </NavLink>
-                    <div className="absolute hidden group-hover:block w-48 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] before:content-[''] before:absolute before:top-[-20px] before:left-0 before:right-0 before:h-[20px] before:bg-transparent"
-                         style={{ transitionDelay: '200ms' }}>
+                    <div
+                      className="absolute hidden group-hover:block w-48 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] before:content-[''] before:absolute before:top-[-20px] before:left-0 before:right-0 before:h-[20px] before:bg-transparent"
+                      style={{ transitionDelay: "200ms" }}
+                    >
                       <NavLink
                         to="/media"
                         className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Media
@@ -134,7 +165,9 @@ function Header() {
                       <NavLink
                         to="/blog"
                         className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Blogs
@@ -142,10 +175,32 @@ function Header() {
                       <NavLink
                         to="/contact"
                         className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Contact Us
+                      </NavLink>
+                      <NavLink
+                        className={({ isActive }) =>
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100`
+                        }
+                        to="our-team"
+                      >
+                        Our Team
+                      </NavLink>
+                      <NavLink
+                        className={({ isActive }) =>
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100`
+                        }
+                        to="year-uae-visa"
+                      >
+                        10 Year UAE Visa
                       </NavLink>
                       {/* <NavLink
                         to="/our-services"
@@ -231,26 +286,37 @@ function Header() {
                 <div className="relative group">
                   <NavLink
                     className={({ isActive }) =>
-                      `${isActive ? "font-bold" : "font-normal"} flex items-center gap-1`
+                      `${
+                        isActive ? "font-bold" : "font-normal"
+                      } flex items-center gap-1`
                     }
-                    to="about"
+                    to="/about"
                   >
                     About Us
-                    <svg 
-                      className="w-4 h-4 transition-transform group-hover:rotate-180" 
-                      fill="none" 
-                      stroke="currentColor" 
+                    <svg
+                      className="w-4 h-4 transition-transform group-hover:rotate-180"
+                      fill="none"
+                      stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
                     </svg>
                   </NavLink>
-                  <div className="absolute hidden group-hover:block w-48 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] before:content-[''] before:absolute before:top-[-20px] before:left-0 before:right-0 before:h-[20px] before:bg-transparent"
-                       style={{ transitionDelay: '200ms' }}>
+                  <div
+                    className="absolute hidden group-hover:block w-48 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] before:content-[''] before:absolute before:top-[-20px] before:left-0 before:right-0 before:h-[20px] before:bg-transparent"
+                    style={{ transitionDelay: "200ms" }}
+                  >
                     <NavLink
                       to="/media"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
                       Media
@@ -258,7 +324,9 @@ function Header() {
                     <NavLink
                       to="/blogs"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
                       Blogs
@@ -266,7 +334,9 @@ function Header() {
                     <NavLink
                       to="/contact-us"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
                       Contact Us
@@ -274,7 +344,9 @@ function Header() {
                     <NavLink
                       to="/our-services"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
                       Our Services

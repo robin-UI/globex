@@ -56,50 +56,50 @@ function Freezone() {
       id: 1,
       title: "Winning formula",
       content: [
-        "The UAE was the first country in the Middle East to establish the concept of the free zone in 1985, with the launch of Jebel Ali Free Zone Authority (JAFZA). Although it was a small operation catering only to a handful of companies, it became the first free zone in the world to be awarded ISO certification within 10 years.",
-        "The JAFZA success story became the foundation for several free zones across the country, each offering strategic benefits and business advantages. These free zones are collectively home to many thousands of individuals and institutions who have been successful at new business set up in UAE.",
-        "Today, there are roughly 50 free zones in the country catering to specialised sectors including but not limited to: trade, industry, energy and renewable energy, exports and re-exports, media and media communications, metals and commodities, finance, healthcare, and Information and Communications Technology (ICT).",
+        "The UAE pioneered the concept of free zones in the Middle East in 1985 with the establishment of the Jebel Ali Free Zone Authority (JAFZA). Starting as a modest initiative supporting a few businesses, JAFZA quickly gained global recognition, becoming the first free zone to achieve ISO certification within a decade of its inception.",
+        "The success of JAFZA laid the groundwork for the development of numerous free zones across the UAE, each designed to provide unique benefits and strategic opportunities for businesses. These zones have since become thriving hubs, supporting thousands of entrepreneurs and organizations in establishing and growing their ventures in the UAE.",
+        "Today, the UAE is home to nearly 50 free zones, catering to a wide range of specialized industries. These include trade, manufacturing, energy and renewables, exports and re-exports, media and communications, metals and commodities, finance, healthcare, and Information and Communications Technology (ICT), among others",
       ],
     },
     {
       id: 2,
       title: "Unique features",
       content: [
-        "Incorporating the principles and international best practices of free trade, free zones help stimulate trade and investment, and facilitate the transfer of skills, knowledge and technology. A unique offering is the easy access to more than 2 billion consumers in multiple markets located within a 4 hour flight.",
-        "The staggering number of international firms located at the UAE's free zones are proof of this.",
-        "Those who are interested in Business setup services in Dubai UAE Free Zone stand to benefit in many ways, anywhere in the country.",
-        "For instance, when Sharjah Airport International Free Zone (SAIF) saw that the prospect of lengthy, bureaucratic procedures was daunting to potential investors, the authorities launched a 24-hour licensing service which enables new entrants to set up a business in the UAE almost instantly. Also in Sharjah, the Hamriyah Free Zone Authority (HFZA) offers huge industrial and commercial plots running into several thousand square feet, and infrastructure specifically designed to facilitate import and re-export.",
-        "In the capital, Khalifa Industrial Zone Abu Dhabi (KIZAD), a subsidiary of Abu Dhabi Ports, recently announced a UAE free zone business set-up cost to support entrepreneurs, costing an extremely affordable USD 2,500.",
-        "Low Cost Business setup in Dubai free zones is simple, easy and quick.",
+        "Built on the foundations of global free trade principles and best practices, UAE free zones play a pivotal role in driving trade, attracting investment, and fostering the exchange of skills, knowledge, and technology. A key advantage of these zones is their strategic location, offering businesses seamless access to over 2 billion consumers within just a 4-hour flight radius.",
+        "The presence of a vast number of international companies in UAE free zones is a testament to their unmatched appeal and benefits.",
+        "For businesses exploring setup services in Dubai's free zones, the opportunities are plentiful and accessible throughout the country.",
+        "For example, the Sharjah Airport International Free Zone (SAIF) addressed investor concerns over time-consuming bureaucratic processes by introducing a 24-hour licensing service, enabling businesses to launch operations almost instantly. Similarly, the Hamriyah Free Zone Authority (HFZA) in Sharjah provides expansive industrial and commercial plots tailored to support large-scale import and re-export operations.",
+        "In Abu Dhabi, the Khalifa Industrial Zone Abu Dhabi (KIZAD), a division of Abu Dhabi Ports, has introduced highly affordable business setup packages, with costs starting as low as USD 2,500, making it an attractive choice for entrepreneurs.",
+        "With straightforward processes and competitive costs, setting up a business in Dubai free zones is designed to be quick, hassle-free, and cost-effective.",
       ],
     },
     {
       id: 3,
       title: "Better business",
       content: [
-        "The basic premise of a free zone is that it makes it much easier for businesses to conduct business. Setting up new business in UAE or getting a trade license can sound like a long and complicated process, but it is not. Paperwork is simplified, efforts are minimised, and everything is designed to attract international investors and help them build up their business.",
-        "The wide and varied choice of free zones comes with 100% foreign ownership, with no requirements for local sponsors or service agents. Business owners can also enjoy 100% repatriation of revenues and profits, and 100% transfer of funds.",
-        "More importantly, there is a time-bound waiver of all corporate taxes as well as import and export taxes, and an exemption from all personal taxes.",
-        "Many of the larger free zones have their own laws and courts based on both English and common law, sitting alongside the country's mainland business environment which has also modernised in recent years.",
+        "The core idea behind a free zone is to simplify and streamline the process of doing business, making it accessible and appealing to global entrepreneurs. While setting up a new business or obtaining a trade license in the UAE might seem daunting, the reality is far easier. Processes are straightforward, paperwork is minimal, and the entire framework is tailored to attract international investors and empower them to grow their ventures seamlessly.",
+        "Free zones offer a host of benefits, starting with 100% foreign ownership, eliminating the need for local sponsors or service agents. Business owners also enjoy the ability to repatriate 100% of their profits and revenues and transfer funds without restrictions.",
+        "Additionally, free zones provide significant financial incentives, including time-limited waivers on corporate taxes, exemptions from import and export duties, and freedom from personal taxation.",
+        "Many major free zones operate under their own legal frameworks and courts, inspired by English and common law principles. These systems exist alongside the UAE's evolving mainland business environment, which has also embraced modernization to support entrepreneurship and innovation.The core idea behind a free zone is to simplify and streamline the process of doing business, making it accessible and appealing to global entrepreneurs. While setting up a new business or obtaining a trade license in the UAE might seem daunting, the reality is far easier. Processes are straightforward, paperwork is minimal, and the entire framework is tailored to attract international investors and empower them to grow their ventures seamlessly.",
       ],
     },
     {
       id: 4,
       title: "Speed and simplicity",
       content: [
-        "For foreigners and resident expatriates with an interest in setting up a business in the UAE (either a small office or full-scale operations), a free zone is the surest route to success.",
-        "UAE free zone business setup is easier, simpler, and faster. Documentation is simplified, and recruitment and workforce processes are faster and cheaper than onshore options. Most free zone authorities also extend support for ancillary services such as legal, medical, labour, and immigration processes.",
-        "In UAE freezone company formation options in space, style, tenure, and budget are almost unlimited – from individual freelance permits to international branch office licences, and from shared desk space on a 1-year contract to industrial warehouse leasing for up to 25 years.",
+        "For entrepreneurs worldwide looking to establish a presence in the UAE, free zones offer an optimal pathway to market entry, whether you're planning a small startup or a large-scale enterprise.",
+        "The free zone company formation process stands out for its efficiency and streamlined approach. With reduced bureaucracy, simplified documentation requirements, and expedited processing times, businesses can become operational significantly faster than through traditional mainland setups. Free zones also provide comprehensive support services, including assistance with visa processing, banking relationships, and compliance matters.",
+        "Free zones accommodate diverse business needs with flexible options - ranging from cost-effective co-working spaces and virtual offices to dedicated commercial units and expansive warehouses. Lease terms are equally flexible, spanning from short-term arrangements to long-term commitments of up to 25 years, allowing businesses to scale their presence according to their growth trajectory.",
       ],
     },
     {
       id: 5,
       title: "Expert assistance",
       content: [
-        "With many years of experience and many hundreds of satisfied clients on our roster, our teams continue to offer personalised and professional service.",
-        "We cater to both, residents and international investors who are interested in UAE free zone company formation.",
-        "We can help you identify the right specialty and choose the best free zone location. We help you create compelling value propositions. We process all the documentation and paperwork while complying with regulations. We will even fulfil unusual requests.",
-        "If you are looking for UAE Free Zone company set up, we are happy to serve you – and deliver high levels of satisfaction.",
+        "Backed by decades of industry expertise and a proven track record of successful client partnerships, our dedicated team delivers exceptional service tailored to your needs.",
+        "Our comprehensive solutions serve both UAE residents and international entrepreneurs seeking to establish their presence in UAE free zones.",
+        "From strategic zone selection and value proposition development to complete documentation handling and regulatory compliance, our end-to-end support ensures a smooth setup process. We pride ourselves on finding solutions for even the most complex business requirements.",
+        "Let us be your trusted partner in establishing your UAE Free Zone company, where excellence in service meets unparalleled results.",
       ],
     },
   ];
@@ -109,69 +109,73 @@ function Freezone() {
       image: "/api/placeholder/271/189",
       title: "Sheikh Zayed Road",
       description:
-        "Prime business location with high visibility and connectivity for your company's growth and success.",
+        "Strategic location on Dubai's main artery offering prestigious address, exceptional accessibility, and unparalleled business networking opportunities.",
     },
     {
       image: "/api/placeholder/271/189",
       title: "Commercial License",
       description:
-        "Establish your business operations smoothly in Dubai's thriving commercial sector with our comprehensive support and expertise.",
+        "Fast-track your trading operations with our comprehensive commercial licensing solutions, including import-export privileges and access to global markets.",
     },
     {
       image: "/api/placeholder/271/189",
       title: "Professional License",
       description:
-        "Step into the professional services industry in Dubai with ease and efficiency, guided by our knowledgeable team.",
+        "Launch your consultancy or service-based business with tailored licensing packages designed for professionals, entrepreneurs, and SMEs.",
     },
     {
       image: "/api/placeholder/271/189",
       title: "Industrial License",
       description:
-        "Explore immense opportunities in Dubai's industrial sector with our assistance in obtaining the necessary licenses for your manufacturing or production business.",
+        "Set up your manufacturing facility with our industrial licensing expertise, complete with warehouse solutions and logistics support in strategic free zones.",
     },
   ];
 
   const accordionData2 = [
     {
       id: 1,
-      title: "What is a Dubai Freezone and why is it beneficial for starting a freezone company formation in Dubai, UAE?",
+      title:
+        "What makes Dubai Freezones a strategic choice for international businesses?",
       content: [
-        "A Dubai Freezone is a designated geographic area within the city where foreign investors can set up and operate their businesses with various incentives such as 100% foreign ownership, tax exemptions, and simplified regulations. It provides an attractive environment for international companies to establish their presence in Dubai and access the regional markets.",
+        "Dubai Freezones offer unparalleled advantages for international businesses, including 100% foreign ownership, complete repatriation of profits, zero corporate and personal tax for 50 years, no currency restrictions, and streamlined visa processing. These zones also provide state-of-the-art infrastructure, strategic location with excellent connectivity, and access to a skilled workforce. The business-friendly environment, coupled with Dubai's position as a global trade hub, makes Freezones an ideal choice for companies looking to expand their presence in the Middle East, Africa, and South Asia markets.",
       ],
     },
     {
       id: 2,
-      title: "What are the main types of Freezones in Dubai, UAE?",
+      title: "What are the prominent Freezone options available in Dubai?",
       content: [
-        "Dubai has several Freezones, each catering to different industries and offering unique benefits. Some of the most prominent types include:",
+        "Dubai hosts several specialized Freezones catering to diverse industries: Dubai Multi Commodities Centre (DMCC) for trading and commodities, Dubai International Financial Centre (DIFC) for financial services, Dubai Healthcare City for healthcare and medical services, Dubai Internet City for technology and IT companies, Dubai Media City for media and creative industries, Jebel Ali Free Zone (JAFZA) for manufacturing and logistics, and Dubai Airport Free Zone (DAFZA) for aviation and logistics. Each zone offers industry-specific benefits, infrastructure, and networking opportunities tailored to business needs.",
       ],
     },
     {
       id: 3,
-      title: "How can Globex Incorporation assist with freezone company formation in Dubai, UAE?",
+      title:
+        "What comprehensive services does Globex Incorporation provide for Freezone setup?",
       content: [
-        "Globex Incorporation is a trusted business setup and licensing company in Dubai, UAE. We offer comprehensive services to help you navigate the complexities of freezone company formation. Our expert team can guide you through:",
+        "Globex Incorporation offers end-to-end support for Freezone company formation, including strategic consulting to identify the most suitable Freezone, license type selection, documentation preparation and processing, corporate bank account opening assistance, visa processing for employees and dependents, office space procurement, and ongoing compliance support. Our experienced team provides personalized guidance throughout the setup process, ensuring a smooth and efficient establishment of your business in Dubai's Freezones.",
       ],
     },
     {
       id: 4,
-      title: "What are the key requirements for freezone company formation in Dubai, UAE?",
+      title:
+        "What are the essential steps and documentation needed for Freezone company registration?",
       content: [
-        "The key requirements for freezone company formation in Dubai include: valid passport copies of shareholders/directors, business plan or project summary, completed application forms, and initial capital requirements which vary by freezone. Additional documentation may be required based on the specific freezone and type of license.",
+        "The Freezone company registration process involves several key steps: choosing a business activity and company name, selecting appropriate office space, submitting incorporation documents (including passport copies, CV, and bank reference letters), obtaining initial approval, signing legal documents, making necessary payments, and receiving the trade license. Additional requirements may include opening a corporate bank account, applying for employee visas, and ensuring compliance with specific Freezone regulations. Our team assists in preparing and organizing all necessary documentation to ensure a seamless registration process.",
       ],
     },
     {
       id: 5,
-      title: "What are the costs involved in Dubai freezone company setup?",
+      title:
+        "What investment considerations should be made when planning a Freezone company setup?",
       content: [
-        "The costs for Dubai freezone company setup typically include: license fees, registration fees, visa costs, office or workspace charges, and initial capital requirements. The exact costs vary depending on the chosen freezone, type of license, number of visas required, and office space selection. Contact Globex Incorporation for detailed cost breakdowns specific to your business needs.",
+        "When planning a Freezone company setup, consider various cost components: initial registration fees (ranging from AED 10,000 to AED 50,000 depending on the zone), license fees (varying by activity type), office space costs (flexible options from virtual offices to physical spaces), visa allocation fees, and working capital requirements. Additional considerations include choosing between different license types (trading, service, or industrial), understanding specific Freezone regulations, and planning for annual renewal costs. We provide detailed cost analysis and help optimize your investment based on your business model and growth plans.",
       ],
-    }
+    },
   ];
 
   return (
-    <div>
-      <section className="freezone px-4 md:px-20 lg:px-32 py-12 md:py-20 bg-gradient-to-br from-blue-50 to-white">
+    <div className="freezone ">
+      <section className="freezone px-4 md:px-20 lg:px-32 py-12 md:py-20 md:pt-28 bg-gradient-to-br from-blue-50 to-white">
         <div className="container mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-12">
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6">
@@ -192,23 +196,25 @@ function Freezone() {
             </p>
             <div className="space-y-4 text-gray-600">
               <p>
-                When individuals and institutions weigh the options for freezone
-                company formation dubai, one aspect firmly tilts the balance in
-                favor – free zones.
+                When businesses and entrepreneurs explore their options for
+                establishing a company in Dubai's free zones, one key advantage
+                stands out – the benefits of operating within these specialized
+                areas.
               </p>
               <p>
-                Freezone areas are those designated business zones where
-                corporate and personal income taxes are scaled down to 0%.
-                Choosing a free zone can depend on many factors: the nature and
-                type of business, the size, flexibility and availability of
-                office space, location, and pricing.
+                Free zones are designated regions designed to attract businesses
+                with incentives such as 0% corporate and personal income tax.
+                Selecting the right free zone depends on several factors,
+                including the nature of your business, the availability and
+                flexibility of office spaces, strategic location, and
+                cost-effectiveness.
               </p>
               <p>
-                Obtaining a business license for Dubai freezone company setup is
-                easier and faster than offshore and mainland, given you have the
-                right set of guidance from experts. The decision to set up
-                business in the UAE free zone totally depends on the type of
-                business you're looking to form.
+                Setting up a company in a Dubai free zone is often quicker and
+                more straightforward than mainland or offshore options, provided
+                you have the right guidance from experienced professionals.
+                Ultimately, choosing a free zone is all about aligning your
+                business needs with the unique benefits these zones offer.
               </p>
             </div>
           </div>
@@ -263,11 +269,11 @@ function Freezone() {
               <span>Freezone </span>Company Formation Dubai, UAE - Insights
             </h2>
             <p className="mt-4 text-gray-700">
-              Discover the opportunity to start your freezone company setup
-              Dubai with our expert assistance. Whether you prefer the
-              flexibility of a Free Zone, the advantages of Mainland, or the
-              privacy of an Offshore setup, we have the knowledge and resources
-              to support you every step of the way.
+              Start your business journey in Dubai's Free Zones with our
+              comprehensive company formation services. Our expert team provides
+              tailored solutions for Free Zone, Mainland, and Offshore setups,
+              ensuring a smooth and efficient establishment process aligned with
+              your business objectives.
             </p>
           </div>
 
@@ -276,9 +282,10 @@ function Freezone() {
               <h5 className="text-lg font-bold">01</h5>
               <h3 className="text-xl font-semibold">Professional License</h3>
               <p className="text-gray-600 mt-2">
-                Obtain the authorization needed to provide professional services
-                within the Freezone. Benefit from a streamlined process and
-                expand your expertise.
+                Secure the necessary authorization to offer professional
+                services within the Free Zone. With a simplified and efficient
+                licensing process, you can focus on leveraging your expertise
+                and expanding your business operations seamlessly.
               </p>
               <Link
                 to="professional-license/"
@@ -292,8 +299,9 @@ function Freezone() {
               <h5 className="text-lg font-bold">02</h5>
               <h3 className="text-xl font-semibold">Commercial License</h3>
               <p className="text-gray-600 mt-2">
-                Secure the privilege to trade and conduct commercial activities
-                within the Freezone. Experience ease of operations and tap into
+                Obtain the authorization to trade and engage in commercial
+                activities within the Free Zone. Enjoy simplified processes,
+                efficient operations, and the opportunity to access and grow in
                 new markets.
               </p>
               <Link
@@ -308,9 +316,10 @@ function Freezone() {
               <h5 className="text-lg font-bold">03</h5>
               <h3 className="text-xl font-semibold">Industrial License</h3>
               <p className="text-gray-600 mt-2">
-                Attain the permit to establish industrial operations within the
-                Freezone. Explore growth opportunities and optimize production
-                processes.
+                Acquire the necessary permit to set up and operate industrial
+                activities within the Free Zone. Unlock growth opportunities,
+                enhance production efficiency, and take advantage of a
+                business-friendly environment to scale your operations.
               </p>
               <Link
                 to="dubai/industrial-license/"
@@ -330,9 +339,9 @@ function Freezone() {
               Your Gateway to Success: Globex Incorporation
             </h2>
             <p className="mt-4 text-gray-600">
-              Discovery the potential of Dubai's Free Zones, Mainland, and
-              Offshore regions with our expert guidance in starting and
-              expanding your Dubai free zone company setup.
+              Unlock the potential of Dubai's Free Zones, Mainland, and
+              Offshore regions through our comprehensive guidance and expertise
+              in business establishment and expansion strategies.
             </p>
           </div>
 
@@ -399,7 +408,12 @@ function Freezone() {
             </Accordion>
           ))}
         </div>
-        <p className="text-center">Please note that specifics may vary depending on the chosen Freezone and the nature of your Dubai freezone company formation. It’s advisable to consult with experts like Globex Incorporation for accurate and up-to-date information tailored to your situation.</p>
+        <p className="text-center">
+          Each Freezone in Dubai offers unique advantages and requirements
+          based on your business type and objectives. For personalized guidance
+          and the most current regulations, connect with our Globex Incorporation
+          experts to ensure your business setup aligns perfectly with your goals.
+        </p>
       </section>
     </div>
   );

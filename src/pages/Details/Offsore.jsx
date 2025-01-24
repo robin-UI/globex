@@ -224,14 +224,14 @@ const services = [
 ];
 
 const benefits = [
-  "Ideal place for international trading, legally exempt from corporate tax",
-  "Shareholders or directors not required to register their details and name for public record",
-  "Exempt from annual accounting and other tax obligations",
-  "Easy to setup corporate bank account in UAE",
-  "Full repatriation of funds and allows multi-currency transactions",
-  "Complete ownership of your company",
-  "Maintain confidentiality in the business dealings",
-  "No trade barriers or any other foreign exchange controls",
+  "Strategic hub for global commerce with comprehensive corporate tax exemptions",
+  "Enhanced privacy protection with confidential shareholder and director information",
+  "Streamlined compliance with exemption from annual financial reporting requirements",
+  "Efficient banking solutions with expedited corporate account establishment",
+  "Flexible financial operations with unrestricted fund transfers and multi-currency capabilities",
+  "Guaranteed 100% ownership rights with complete operational autonomy",
+  "Robust business privacy framework ensuring confidential commercial operations",
+  "Liberalized trade environment free from exchange controls and trade restrictions"
 ];
 
 const ServiceCard = ({ Icon, title }) => (
@@ -274,30 +274,26 @@ function Offsore() {
             </h3>
 
             <p className="text-gray-600 leading-relaxed">
-              A company can be established offshore, that is away from the UAE
-              mainland and not in a free zone. You could establish an offshore
-              company in RAK Offshore (officially the Ras Al Khaimah
-              International Corporate Centre or RAK ICC), which is a Company
-              Registry containing details of offshore companies; or overseas.
-              The{" "}
+              Offshore company establishment provides a strategic alternative to UAE mainland 
+              and free zone operations. Premier jurisdictions include RAK Offshore 
+              (Ras Al Khaimah International Corporate Centre or RAK ICC), alongside 
+              prestigious international locations such as the{" "}
               <a href="#" className="text-blue-600 hover:underline">
                 British Virgin Islands
               </a>
-              ,
+              ,{" "}
               <a href="#" className="text-blue-600 hover:underline">
                 Cayman Islands
               </a>
-              , and
+              , and{" "}
               <a href="#" className="text-blue-600 hover:underline">
                 Mauritius
-              </a>{" "}
-              also offer excellent venues. An offshore company formation in
-              Dubai is a legal business that is established with the intention
-              of operating outside its registered jurisdiction or location of
-              ownership. In the majority of cases, offshore companies do not
-              need to occupy physical office space, but in turn, cannot
-              undertake extensive any business activities in the country of its
-              origin when <strong>setting up your offshore company</strong>.
+              </a>
+              . An offshore company in Dubai represents a legally structured entity 
+              designed to operate beyond its registered jurisdiction. While these 
+              entities typically benefit from virtual office arrangements, they face 
+              certain operational restrictions within their country of incorporation 
+              when <strong>establishing your offshore presence</strong>.
             </p>
           </div>
         </div>
@@ -307,50 +303,48 @@ function Offsore() {
         <div className="space-y-8">
           <div className="max-w-4xl">
             <p className="text-gray-700 text-left leading-relaxed mb-6">
-              Offshore companies can be created and owned by individuals or
-              institutions, and shares can be easily and freely transferred by a
-              written instrument.
+              Offshore entities offer flexible ownership structures, accommodating both 
+              individual entrepreneurs and institutional investors, with seamless share 
+              transfer capabilities through formal documentation.
             </p>
 
             <p className="text-gray-700 text-left leading-relaxed mb-6">
-              <strong>Offshore company formation in Dubai</strong> is a
-              fast-growing sector of new business setup in the country. It is
-              typically built with provisions to minimize or eliminate taxes
-              associated with property sales, capital gains, value-added tax
-              (VAT), death duties, and profits on business earnings.
+              <strong>Offshore company formation in Dubai</strong> represents one of 
+              the UAE's most dynamic business sectors. These entities are strategically 
+              structured to optimize tax efficiency across multiple areas, including 
+              real estate transactions, investment gains, value-added taxation (VAT), 
+              inheritance planning, and commercial profits.
             </p>
 
             <p className="text-gray-700 text-left leading-relaxed mb-6">
-              For investors looking at{" "}
-              <strong>offshore company registration in Dubai</strong>, favored
-              considerations include the ability to create or maintain wealth,
-              hold or protect property and other assets, and offer international
-              trading, contracting and consulting services from a single
-              location.
+              Global investors seeking <strong>offshore company registration in Dubai</strong>{" "}
+              benefit from comprehensive advantages: sophisticated wealth management 
+              solutions, robust asset protection frameworks, and centralized operational 
+              capabilities for international trade, consultancy, and contractual services.
             </p>
 
             <p className="text-gray-700 text-left leading-relaxed mb-8">
-              <strong>Benefits of Offshore Company setup in Dubai</strong> is an
-              assurance of confidentiality over ownership and related financial
-              affairs.
+              <strong>Dubai's offshore company framework</strong> ensures paramount 
+              discretion in corporate ownership structures while maintaining the highest 
+              standards of financial privacy and operational security.
             </p>
           </div>
 
           <div className="max-w-4xl">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-left">
-              Structural Benefits of Offshore Company Registration in Dubai
+              Strategic Advantages of Dubai Offshore Company Formation
             </h3>
 
             <p className="text-gray-700 text-left leading-relaxed mb-8">
-              When compared to many other jurisdictions, the UAE has a highly
-              regulated banking system, sophisticated infrastructure and
-              facilities, cutting-edge telecommunications networks, and easy
-              access to international markets.
+              Dubai distinguishes itself among global jurisdictions through its 
+              world-class financial infrastructure, state-of-the-art business facilities, 
+              advanced digital ecosystem, and strategic position as a gateway to 
+              emerging markets.
             </p>
 
             <p className="text-gray-700 font-semibold text-left mb-6">
-              Registering an offshore company in UAE spells out several business
-              benefits:
+              Establishing an offshore entity in the UAE presents distinctive 
+              competitive advantages:
             </p>
 
             <ul className="space-y-4 ml-2">
@@ -373,8 +367,9 @@ function Offsore() {
             </ul>
 
             <p className="text-gray-700 text-left leading-relaxed mt-8">
-              Incorporation of offshore companies is relatively easy, quick, and
-              simplified, and we often complete the process in a few days.
+              Our streamlined incorporation process ensures efficient offshore company 
+              establishment, typically completing all formalities within an expedited 
+              timeframe of just a few business days.
             </p>
           </div>
         </div>
@@ -402,35 +397,30 @@ function Offsore() {
                 <div className="flex items-start space-x-3">
                   <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <p>
-                    Unlike other jurisdictions, offshore company formation in
-                    UAE offers numerous advantages: direct investment into
-                    specific jurisdictions, better management of taxes on
-                    foreign income, full ownership of intellectual property, and
-                    the separation and protection of personal assets from
-                    operating entities.
+                    UAE offshore companies offer distinctive advantages over other jurisdictions, 
+                    including strategic direct investment opportunities, optimized international 
+                    tax management, comprehensive intellectual property protection, and 
+                    sophisticated asset segregation mechanisms for enhanced security.
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-3">
                   <Globe className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                   <p>
-                    An offshore company formation in UAE can be strategically
-                    designed to minimise overall international tax liability.
-                    There are no requirements for minimum share capital,
-                    although in some cases, the government registrar may ask
-                    that paid-up capital be commensurate with proposed
-                    activities.
+                    Strategic structuring of UAE offshore entities enables optimal 
+                    international tax efficiency. While no minimum capital requirements 
+                    exist, regulatory authorities may recommend capital adequacy levels 
+                    aligned with intended business operations and scope.
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-3">
                   <Info className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
                   <p>
-                    Another localised advantage is related to realty. Some
-                    property developers in the UAE allow up to four owners for a
-                    single property. In the case of an offshore company, the
-                    number of such property owners can be extended up to 50,
-                    with ownership registered to the offshore company.
+                    In real estate investments, UAE offshore companies provide enhanced 
+                    flexibility in ownership structures. While standard property ownership 
+                    is typically limited to four individuals, offshore company structures 
+                    can accommodate up to 50 stakeholders under a single corporate entity.
                   </p>
                 </div>
               </div>

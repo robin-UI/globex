@@ -37,39 +37,39 @@ function Mainland() {
 
   const benefits = [
     {
-      title: "Well established Connections",
+      title: "Strategic Global Connectivity",
       description:
-        "Dubai mainland is central to global links – ideal for your business setup.",
+        "Leverage Dubai's strategic position as a global business hub, connecting your enterprise to major international markets and trade routes.",
     },
     {
-      title: "Top-notch Locations",
+      title: "Premium Business Districts",
       description:
-        "Get access to prime spots in Dubai for your business. Connect with various markets and people effortlessly.",
+        "Establish your presence in Dubai's prestigious commercial locations, offering unparalleled access to key business clusters and networking opportunities.",
     },
     {
-      title: "Local & Worldwide Reach",
+      title: "Dual Market Integration",
       description:
-        "With mainland business setup Dubai, your business connects easily with local UAE markets and the global business community.",
+        "Benefit from seamless access to both UAE's lucrative domestic market and international business opportunities through established trade channels.",
     },
     {
-      title: "No Money Worries",
+      title: "Unrestricted Capital Flow",
       description:
-        "Unlike free zones, mainland companies have no money limits on business activities. Do more things with your business!",
+        "Enjoy complete financial freedom with no capital restrictions or profit repatriation limits, maximizing your business's financial potential.",
     },
     {
-      title: "More Talented People",
+      title: "Diverse Talent Pool",
       description:
-        "Find the best local and international talents. This helps your business grow and come up with new ideas.",
+        "Access a rich multicultural workforce combining local expertise with international experience, driving innovation and business excellence.",
     },
     {
-      title: "Easy Government Interaction",
+      title: "Streamlined Regulatory Framework",
       description:
-        "Say goodbye to complicated processes. Dubai mainland business setup offers simple rules and direct contact with the government.",
+        "Experience efficient government processes and transparent regulations, supported by advanced digital infrastructure and business-friendly policies.",
     },
     {
-      title: "Limitless Growth",
+      title: "Scalable Business Operations",
       description:
-        "Your business can expand anywhere without problems. Grow as much as you want!",
+        "Capitalize on unlimited expansion opportunities across various sectors and geographical locations within the UAE and beyond.",
     },
   ];
 
@@ -87,8 +87,8 @@ function Mainland() {
           />
         ))}
         <div className="text-center mt-6 text-gray-700 italic">
-          Globex Incorporation makes starting your Dubai mainland company formation
-          easy. Let's make your business dreams come true!
+          Trust Globex Incorporation for seamless Dubai mainland company formation. 
+          Partner with us to transform your business vision into reality.
         </div>
       </div>
       <div className="max-w-full p-6 lg:px-24 bg-white shadow-md">
@@ -98,23 +98,23 @@ function Mainland() {
 
         <div className="mb-6">
           <p className="text-gray-700 leading-relaxed">
-            Our team of experienced{" "}
+            Our elite team of{" "}
             <span className="italic">
-              lawyers, chartered accountants, and consultants
+              legal experts, financial advisors, and business consultants
             </span>{" "}
-            specialize in establishing various types of companies, including{" "}
+            excel in facilitating diverse business establishments, from{" "}
             <span className="italic">
-              Trading Consulting & 100% expat owned companies
+              trading enterprises to fully foreign-owned corporations
             </span>{" "}
-            on the UAE mainland.
+            in the UAE mainland market.
           </p>
         </div>
 
         <div className="mb-6">
           <p className="text-gray-700 leading-relaxed">
-            We help hundreds of individuals and institutions worldwide to
-            procure new business licenses, rent office space, and start a
-            successful new life in the UAE.
+            Our proven track record includes assisting countless entrepreneurs 
+            and organizations globally in securing business licenses, establishing 
+            physical presence, and building prosperous ventures in the UAE.
           </p>
         </div>
 
