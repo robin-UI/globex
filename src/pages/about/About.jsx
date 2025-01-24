@@ -122,7 +122,7 @@ function About() {
           <div className="flex justify-center items-start gap-2 w-full mb-5">
             <img
               className="w-10 h-10 lg:w-24 lg:h-24"
-              src="./images/homepage/ourVision.png"
+              src="./images/homepage/OurMission1.svg"
               alt=""
             />
             <div>
@@ -141,7 +141,7 @@ function About() {
           <div className="flex justify-center items-start gap-2 w-full ">
             <img
               className="w-10 h-10 lg:w-24 lg:h-24"
-              src="./images/homepage/ourMission.png"
+              src="./images/homepage/OurVision1.svg"
               alt=""
             />
             <div>

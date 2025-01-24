@@ -53,7 +53,7 @@ function Header() {
             </div>
             <nav className="hidden lg:block">
               <ol className="flex justify-center gap-10 text-[#353535]">
-                <li>
+                {/* <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
@@ -62,7 +62,7 @@ function Header() {
                   >
                     Home
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink
                     className={({ isActive }) =>
@@ -90,7 +90,7 @@ function Header() {
                     }
                     to="offscore"
                   >
-                    Offscore
+                    Offshsore
                   </NavLink>
                 </li>
                 <li>
@@ -113,7 +113,7 @@ function Header() {
                     Our Team
                   </NavLink>
                 </li> */}
-                {/* <li>
+                <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
@@ -122,7 +122,7 @@ function Header() {
                   >
                     10 Year UAE Visa
                   </NavLink>
-                </li> */}
+                </li>
                 <li>
                   <div className="relative group">
                     <NavLink
@@ -192,7 +192,7 @@ function Header() {
                       >
                         Our Team
                       </NavLink>
-                      <NavLink
+                      {/* <NavLink
                         className={({ isActive }) =>
                           `${
                             isActive ? "font-bold" : "font-normal"
@@ -201,15 +201,15 @@ function Header() {
                         to="year-uae-visa"
                       >
                         10 Year UAE Visa
-                      </NavLink>
-                      {/* <NavLink
-                        to="/our-services"
+                      </NavLink> */}
+                      <NavLink
+                        to="/services"
                         className={({ isActive }) =>
                           `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Our Services
-                      </NavLink> */}
+                      </NavLink>
                     </div>
                   </div>
                 </li>
