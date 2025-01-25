@@ -88,7 +88,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="offscore"
+                    to="offshore"
                   >
                     Offshsore
                   </NavLink>

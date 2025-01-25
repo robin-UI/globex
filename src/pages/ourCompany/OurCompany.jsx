@@ -141,7 +141,7 @@ function OurCompany() {
         <SignupOffer />
 
         <div>
-          <div className="lg:flex justify-between items-center">
+          <div className="lg:flex justify-between items-center mt-5 lg:mt-10">
             <div className="mb-8">
               <h2 className="text-2xl lg:text-[42px] font-semibold leading-[54px] lg:mb-8">
                 Why Dubai

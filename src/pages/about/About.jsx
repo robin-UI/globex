@@ -83,7 +83,7 @@ function About() {
         </h1>
         <hr className="mt-4 mb-6 border-[#FFFFFF32] border-[1px] lg:my-11" />
 
-        <div className="flex flex-col lg:flex-row gap-28">
+        <div className="flex flex-col lg:flex-row items-center gap-5 md:gap-10 lg:gap-28">
           <div className="grid grid-cols-2 lg:grid-cols-2 gap-7 mb-6">
             {coreValue.map((e, i) => (
               <div className="flex flex-col gap-1" key={i + 1}>
@@ -105,10 +105,15 @@ function About() {
           </div>
 
           <img
+            className="w-full lg:w-[420px] rounded-lg"
+            src="./images/homepage/coreteam1.jpeg"
+            alt=""
+          />
+          {/* <img
             className="w-full "
             src="./images/homepage/coreteam.png"
             alt=""
-          />
+          /> */}
         </div>
       </section>
 

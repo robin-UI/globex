@@ -43,7 +43,7 @@ function DubaiSection() {
                 title="Offshore"
                 description="The biggest benefit of opening an offshore company is not having to pay any taxes."
                 icon={<BuildingIcon />}
-                link="/offsore"
+                link="/offshore"
               />
               <BusinessCard
                 title="Mainland"

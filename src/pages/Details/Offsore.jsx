@@ -231,123 +231,143 @@ const benefits = [
   "Flexible financial operations with unrestricted fund transfers and multi-currency capabilities",
   "Guaranteed 100% ownership rights with complete operational autonomy",
   "Robust business privacy framework ensuring confidential commercial operations",
-  "Liberalized trade environment free from exchange controls and trade restrictions"
+  "Liberalized trade environment free from exchange controls and trade restrictions",
 ];
 
 const ServiceCard = ({ Icon, title }) => (
-  <div className="flex flex-col items-center p-4 text-center bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100">
-    <div className="mb-2 w-16 h-16 flex items-center justify-center">
-      <Icon />
+  <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-gray-50 p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    <div className="absolute top-0 right-0 h-20 w-20 -translate-x-4 -translate-y-4 transform rounded-full bg-blue-500 opacity-10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-300"></div>
+    <div className="relative z-10">
+      <div className="mb-4 transform transition-transform duration-300 group-hover:scale-110">
+        <Icon />
+      </div>
+      <h3 className="mb-2 text-lg font-bold text-gray-800">
+        {title.split("\n")[0]}
+      </h3>
+      {title.split("\n")[1] && (
+        <p className="text-sm text-gray-600">{title.split("\n")[1]}</p>
+      )}
+      <div className="mt-4 h-0.5 w-10 bg-blue-500 transition-all duration-300 group-hover:w-full"></div>
     </div>
-    <h3 className="text-sm font-semibold text-gray-800 text-center break-words whitespace-pre-line">
-      {title}
-    </h3>
   </div>
 );
 
 function Offsore() {
   return (
     <div className="pt-20">
-      <section className="container mx-auto px-4 py-12">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          {/* Image Column */}
-          <div className="w-full md:w-1/2">
-            <img
-              src="/api/placeholder/394/407"
-              alt="Start your offshore Company with Globex Incorporation"
-              className="w-full h-auto object-cover rounded-lg shadow-md"
-            />
-          </div>
+      <section className="relative py-24 overflow-hidden">
+        {/* Background Design */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white"></div>
+        <div className="absolute right-0 top-0 w-1/3 h-full bg-blue-100/30 -skew-x-12 transform-gpu"></div>
+        
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            {/* Image Column with Floating Effect */}
+            <div className="w-full lg:w-1/2 relative group">
+              <div className="absolute inset-0 bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
+              <div className="relative transform -rotate-3 group-hover:rotate-0 transition-transform duration-300">
+                <img
+                  src="../images/otherImages/dubaiCompany.jpg"
+                  alt="Start your offshore Company with Globex Incorporation"
+                  className="w-full h-[500px] object-cover rounded-2xl shadow-lg"
+                />
+                {/* Overlay Pattern */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent rounded-2xl"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <span className="px-4 py-2 bg-white/90 backdrop-blur-sm rounded-lg text-blue-600 text-sm font-semibold">
+                    Strategic Business Solutions
+                  </span>
+                </div>
+              </div>
+              
+              {/* Floating Elements */}
+              <div className="absolute -top-8 -right-8 w-24 h-24 bg-blue-100/80 rounded-full blur-2xl"></div>
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#2BDEFA]/20 rounded-full blur-2xl"></div>
+            </div>
 
-          {/* Content Column */}
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Offshore Company Registration in Dubai
-            </h2>
+            {/* Content Column */}
+            <div className="w-full lg:w-1/2 space-y-8">
+              <div className="space-y-4">
+                <span className="text-[#377CFF] font-semibold text-sm tracking-wider uppercase">
+                  International Business Hub
+                </span>
+                <h2 className="text-4xl font-bold text-gray-900">
+                  Offshore Company Registration in Dubai
+                </h2>
+                <div className="w-20 h-2 bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] rounded-full"></div>
+              </div>
 
-            <h6 className="text-lg font-semibold text-gray-600 mb-4">
-              Unique features of offshore company formation Dubai, UAE
-            </h6>
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-blue-100/50 hover:shadow-lg transition-all duration-300">
+                <h6 className="text-lg font-semibold text-gray-800 mb-3">
+                  Unique features of offshore company formation Dubai, UAE
+                </h6>
+                <h3 className="text-xl font-bold text-[#377CFF] mb-4">
+                  Scope and scale
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Offshore company establishment provides a strategic alternative to
+                  UAE mainland and free zone operations. Premier jurisdictions
+                  include RAK Offshore (Ras Al Khaimah International Corporate
+                  Centre or RAK ICC), alongside prestigious international locations
+                  such as the{" "}
+                  <a href="#" className="text-[#377CFF] font-medium hover:underline inline-flex items-center">
+                    British Virgin Islands
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  ,{" "}
+                  <a href="#" className="text-[#377CFF] font-medium hover:underline inline-flex items-center">
+                    Cayman Islands
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  , and{" "}
+                  <a href="#" className="text-[#377CFF] font-medium hover:underline inline-flex items-center">
+                    Mauritius
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  .
+                </p>
+              </div>
 
-            <h3 className="text-2xl font-bold text-gray-700 mb-4">
-              Scope and scale
-            </h3>
-
-            <p className="text-gray-600 leading-relaxed">
-              Offshore company establishment provides a strategic alternative to UAE mainland 
-              and free zone operations. Premier jurisdictions include RAK Offshore 
-              (Ras Al Khaimah International Corporate Centre or RAK ICC), alongside 
-              prestigious international locations such as the{" "}
-              <a href="#" className="text-blue-600 hover:underline">
-                British Virgin Islands
-              </a>
-              ,{" "}
-              <a href="#" className="text-blue-600 hover:underline">
-                Cayman Islands
-              </a>
-              , and{" "}
-              <a href="#" className="text-blue-600 hover:underline">
-                Mauritius
-              </a>
-              . An offshore company in Dubai represents a legally structured entity 
-              designed to operate beyond its registered jurisdiction. While these 
-              entities typically benefit from virtual office arrangements, they face 
-              certain operational restrictions within their country of incorporation 
-              when <strong>establishing your offshore presence</strong>.
-            </p>
+              {/* Additional Info Box */}
+              <div className="bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] p-6 rounded-2xl text-white">
+                <p className="leading-relaxed">
+                  An offshore company in Dubai represents a legally structured
+                  entity designed to operate beyond its registered jurisdiction.
+                  While these entities typically benefit from virtual office
+                  arrangements, they face certain operational restrictions within
+                  their country of incorporation when{" "}
+                  <strong>establishing your offshore presence</strong>.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-12">
-        <div className="space-y-8">
-          <div className="max-w-4xl">
-            <p className="text-gray-700 text-left leading-relaxed mb-6">
-              Offshore entities offer flexible ownership structures, accommodating both 
-              individual entrepreneurs and institutional investors, with seamless share 
-              transfer capabilities through formal documentation.
-            </p>
-
-            <p className="text-gray-700 text-left leading-relaxed mb-6">
-              <strong>Offshore company formation in Dubai</strong> represents one of 
-              the UAE's most dynamic business sectors. These entities are strategically 
-              structured to optimize tax efficiency across multiple areas, including 
-              real estate transactions, investment gains, value-added taxation (VAT), 
-              inheritance planning, and commercial profits.
-            </p>
-
-            <p className="text-gray-700 text-left leading-relaxed mb-6">
-              Global investors seeking <strong>offshore company registration in Dubai</strong>{" "}
-              benefit from comprehensive advantages: sophisticated wealth management 
-              solutions, robust asset protection frameworks, and centralized operational 
-              capabilities for international trade, consultancy, and contractual services.
-            </p>
-
-            <p className="text-gray-700 text-left leading-relaxed mb-8">
-              <strong>Dubai's offshore company framework</strong> ensures paramount 
-              discretion in corporate ownership structures while maintaining the highest 
-              standards of financial privacy and operational security.
-            </p>
-          </div>
-
-          <div className="max-w-4xl">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-left">
+      <section className="container mx-auto px-4 lg:px-20 py-16">
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left Column */}
+          <div className="space-y-8 lg:sticky lg:top-24 lg:h-fit">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
               Strategic Advantages of Dubai Offshore Company Formation
-            </h3>
+            </h2>
+            
+            <div className="relative pl-6 border-l-2 border-blue-500">
+              <p className="text-gray-600 leading-relaxed">
+                Dubai distinguishes itself among global jurisdictions through its
+                world-class financial infrastructure, state-of-the-art business
+                facilities, advanced digital ecosystem, and strategic position as
+                a gateway to emerging markets.
+              </p>
+            </div>
 
-            <p className="text-gray-700 text-left leading-relaxed mb-8">
-              Dubai distinguishes itself among global jurisdictions through its 
-              world-class financial infrastructure, state-of-the-art business facilities, 
-              advanced digital ecosystem, and strategic position as a gateway to 
-              emerging markets.
-            </p>
-
-            <p className="text-gray-700 font-semibold text-left mb-6">
-              Establishing an offshore entity in the UAE presents distinctive 
-              competitive advantages:
-            </p>
-
-            <ul className="space-y-4 ml-2">
+            <ul className="grid grid-cols-2 gap-4">
               {[
                 "Stable and business-friendly legal system",
                 "Flexible regulatory regime",
@@ -358,197 +378,139 @@ function Offsore() {
               ].map((benefit, index) => (
                 <li
                   key={index}
-                  className="flex items-center text-gray-700 gap-3"
+                  className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl hover:bg-blue-50 transition-colors duration-300"
                 >
-                  <CheckIcon className="text-green-500 flex-shrink-0" />
-                  <span className="text-left">{benefit}</span>
+                  <CheckIcon className="text-blue-500 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">{benefit}</span>
                 </li>
               ))}
             </ul>
-
-            <p className="text-gray-700 text-left leading-relaxed mt-8">
-              Our streamlined incorporation process ensures efficient offshore company 
-              establishment, typically completing all formalities within an expedited 
-              timeframe of just a few business days.
-            </p>
           </div>
-        </div>
-      </section>
 
-      <section className="container">
-        <div className="bg-gray-100 py-16">
-          <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-            {/* Image Section */}
-            <div className="w-full md:w-1/2">
-              <img
-                src="/api/placeholder/390/396"
-                alt="Benefits of offshore company registration in Dubai"
-                className="w-full rounded-lg shadow-lg"
-              />
+          {/* Right Column */}
+          <div className="space-y-8">
+            <div className="relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-blue-50 rounded-bl-full"></div>
+              <div className="relative">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Offshore entities offer flexible ownership structures,
+                  accommodating both individual entrepreneurs and institutional
+                  investors, with seamless share transfer capabilities through
+                  formal documentation.
+                </p>
+              </div>
             </div>
 
-            {/* Content Section */}
-            <div className="w-full md:w-1/2 space-y-6">
-              <h2 className="text-2xl font-bold text-gray-800">
-                Benefits of Offshore Company Registration in Dubai
-              </h2>
+            <div className="relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-green-50 rounded-bl-full"></div>
+              <div className="relative">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  <strong>Offshore company formation in Dubai</strong> represents
+                  one of the UAE's most dynamic business sectors. These entities are
+                  strategically structured to optimize tax efficiency across
+                  multiple areas, including real estate transactions, investment
+                  gains, value-added taxation (VAT), inheritance planning, and
+                  commercial profits.
+                </p>
+              </div>
+            </div>
 
-              <div className="space-y-4 text-gray-700">
-                <div className="flex items-start space-x-3">
-                  <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-                  <p>
-                    UAE offshore companies offer distinctive advantages over other jurisdictions, 
-                    including strategic direct investment opportunities, optimized international 
-                    tax management, comprehensive intellectual property protection, and 
-                    sophisticated asset segregation mechanisms for enhanced security.
-                  </p>
-                </div>
+            <div className="relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-purple-50 rounded-bl-full"></div>
+              <div className="relative">
+                <p className="text-gray-700 leading-relaxed">
+                  Global investors seeking{" "}
+                  <strong>offshore company registration in Dubai</strong> benefit
+                  from comprehensive advantages: sophisticated wealth management
+                  solutions, robust asset protection frameworks, and centralized
+                  operational capabilities for international trade, consultancy, and
+                  contractual services.
+                </p>
+              </div>
+            </div>
 
-                <div className="flex items-start space-x-3">
-                  <Globe className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                  <p>
-                    Strategic structuring of UAE offshore entities enables optimal 
-                    international tax efficiency. While no minimum capital requirements 
-                    exist, regulatory authorities may recommend capital adequacy levels 
-                    aligned with intended business operations and scope.
-                  </p>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <Info className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
-                  <p>
-                    In real estate investments, UAE offshore companies provide enhanced 
-                    flexibility in ownership structures. While standard property ownership 
-                    is typically limited to four individuals, offshore company structures 
-                    can accommodate up to 50 stakeholders under a single corporate entity.
-                  </p>
-                </div>
+            <div className="relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-orange-50 rounded-bl-full"></div>
+              <div className="relative">
+                <p className="text-gray-700 leading-relaxed">
+                  <strong>Dubai's offshore company framework</strong> ensures
+                  paramount discretion in corporate ownership structures while
+                  maintaining the highest standards of financial privacy and
+                  operational security.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-12 space-y-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-800">
-            Offshore Company Registration in Dubai
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-blue-700">
-              Jurisdiction Selection Factors
-            </h3>
-            <p className="text-gray-700">
-              Choosing a jurisdiction for offshore company registration depends
-              on:
-              <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Country laws and regulations</li>
-                <li>Political and geopolitical climate</li>
-                <li>Nature of the business</li>
-                <li>Type of assets to be held</li>
-              </ul>
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-blue-700">
-              Top Offshore Jurisdictions
-            </h3>
-            <div className="flex items-center space-x-3">
-              <CheckIcon className="text-green-600" />
-              <span>RAK International Corporate Centre (RAK ICC)</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <CheckIcon className="text-green-600" />
-              <span>Jebel Ali Free Zone Authority (JAFZA)</span>
-            </div>
-            <p className="text-gray-700">
-              Both offer 100% foreign ownership, are tax-free, and have Double
-              Taxation Treaty Agreements with over 110 countries.
-            </p>
-          </div>
-        </div>
-
-        <div className="bg-gray-100 p-8 rounded-lg">
-          <h3 className="text-2xl font-semibold mb-6 text-blue-800">
-            Our Comprehensive Services
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <div className="flex items-center mb-4">
-                <Briefcase className="mr-3 text-blue-600" />
-                <h4 className="text-xl font-semibold">End-to-End Support</h4>
-              </div>
-              <p>
-                We provide complete offshore company formation services
-                including:
-                <ul className="list-disc pl-5 mt-2 space-y-1 text-gray-700">
-                  <li>Corporate documentation</li>
-                  <li>Bank account opening</li>
-                  <li>Director and shareholder services</li>
-                  <li>Authority liaisons</li>
-                </ul>
-              </p>
-            </div>
-            <div>
-              <div className="flex items-center mb-4">
-                <Globe className="mr-3 text-green-600" />
-                <h4 className="text-xl font-semibold">Flexible Setup</h4>
-              </div>
-              <p className="text-gray-700">
-                Most instances don't require physical presence. We guide you
-                through every stage: name registration, due diligence, reference
-                letters, and more.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section className="container mx-auto px-4 py-12">
+      <section className="container mx-auto px-4 lg:px-20 py-12">
         <SignupOffer />
       </section>
 
-      <section className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+      <section className="container mx-auto px-4 lg:px-20 py-16 bg-gray-50">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Our Comprehensive Services
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            We offer end-to-end solutions for offshore company formation,
+            ensuring a smooth and efficient process
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
-              Icon={service.Icon} // Pass Icon component directly
+              Icon={service.Icon}
               title={service.title}
             />
           ))}
         </div>
       </section>
 
-      <section className="w-full bg-white shadow-md">
-        <div className="max-w-4xl mx-auto p-6">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 text-gray-800">
+      <section className="w-full bg-gradient-to-br from-blue-50 to-white py-16 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
             Benefits of Offshore Company Formation in Dubai, UAE
           </h2>
-          <div className="grid md:grid-cols-2 gap-4">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                className="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 ease-out"
               >
-                <div className="w-10 flex-shrink-0 mr-4">
-                  <svg
-                    className="w-full h-10 text-orange-500"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                {/* Number indicator - bigger size */}
+                <div className="absolute -top-4 -left-4 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold text-base z-20 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                  {(index + 1).toString().padStart(2, '0')}
                 </div>
-                <span className="text-gray-700">{benefit}</span>
+                
+                {/* Simple border animation */}
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-2xl transition-all duration-500 ease-out"></div>
+                
+                {/* Content */}
+                <div className="relative z-10 h-full flex flex-col">
+                  <div className="h-12 w-12 mb-6 bg-blue-100 rounded-xl flex items-center justify-center">
+                    <svg
+                      className="w-6 h-6 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                      />
+                    </svg>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    {benefit}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
