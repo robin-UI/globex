@@ -382,8 +382,8 @@ function Freezone() {
                     </p>
 
                     {/* Link with arrow */}
-                    <Link
-                      to={item.link}
+                    <p
+                      // to={item.link}
                       className="inline-flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors duration-300"
                     >
                       Learn More
@@ -400,7 +400,7 @@ function Freezone() {
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
-                    </Link>
+                    </p>
                   </div>
                 </div>
 
