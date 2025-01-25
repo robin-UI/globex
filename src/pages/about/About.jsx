@@ -3,22 +3,22 @@ function About() {
     {
       title: "Quality",
       text: "We are committed to delivering top-notch services that not only meet but surpass our clients expectations.",
-      img: "./images/homepage/quality.png",
+      img: "./images/homepage/quality.svg",
     },
     {
       title: "Integrity",
       text: "We embed integrity into every facet of our services, striving to earn and maintain the trust of our clients.",
-      img: "./images/homepage/integrity.png",
+      img: "./images/homepage/integrity.svg",
     },
     {
       title: "Teamwork",
       text: "We are committed to delivering top-notch services that not only meet but surpass our clients expectations.",
-      img: "./images/homepage/teamwork.png",
+      img: "./images/homepage/teamwork.svg",
     },
     {
       title: "Competence",
       text: "We continuously update our processes and systems to ensure efficiency and timely delivery for our valued clients.",
-      img: "./images/homepage/competence.png",
+      img: "./images/homepage/competence.svg",
     },
   ];
   return (
@@ -87,7 +87,7 @@ function About() {
           <div className="grid grid-cols-2 lg:grid-cols-2 gap-7 mb-6">
             {coreValue.map((e, i) => (
               <div className="flex flex-col gap-1" key={i + 1}>
-                <div className="h-10 lg:h-14 w-10 lg:w-14 p-2 mb-6 rounded-lg bg-[#FFFFFF32]">
+                <div className="h-16 lg:h-26 w-16 lg:w-26 p-2 mb-2 rounded-lg">
                   <img
                     className="w-full h-full object-contain"
                     src={e.img}
