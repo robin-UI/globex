@@ -14,9 +14,8 @@ function Icon({ id, open }) {
       viewBox="0 0 24 24"
       strokeWidth={2}
       stroke="currentColor"
-      className={`${
-        id === open ? "rotate-180" : ""
-      } h-5 w-5 transition-transform`}
+      className={`${id === open ? "rotate-180" : ""
+        } h-5 w-5 transition-transform`}
     >
       <path
         strokeLinecap="round"
@@ -341,7 +340,7 @@ function Freezone() {
                 number: "01",
                 title: "Professional License",
                 description:
-                  "Secure the necessary authorization to offer professional services within the Free Zone. With a simplified and efficient licensing process, you can focus on leveraging your expertise and expanding your business operations seamlessly.",
+                  "Obtain the essential authorization to deliver professional services within the Free Zone. Enjoy a streamlined and efficient licensing process that allows you to concentrate on utilizing your expertise and growing your business with ease.",
                 link: "professional-license/",
                 color: "from-blue-500 to-blue-600",
               },
@@ -349,7 +348,7 @@ function Freezone() {
                 number: "02",
                 title: "Commercial License",
                 description:
-                  "Obtain the authorization to trade and engage in commercial activities within the Free Zone. Enjoy simplified processes, efficient operations, and the opportunity to access and grow in new markets.",
+                  "Obtain the necessary authorization to trade and conduct commercial activities within the Free Zone. With simplified procedures and efficient operations, you can seamlessly explore opportunities to expand into new and emerging markets.",
                 link: "dubai/commercial-license/",
                 color: "from-purple-500 to-purple-600",
               },
@@ -382,7 +381,7 @@ function Freezone() {
                     </p>
 
                     {/* Link with arrow */}
-                    <Link
+                    {/* <Link
                       to={item.link}
                       className="inline-flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors duration-300"
                     >
@@ -400,7 +399,7 @@ function Freezone() {
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
 
@@ -548,9 +547,8 @@ function Freezone() {
                       <div className="absolute right-6 top-1/2 -translate-y-1/2">
                         <div className="w-8 h-8 rounded-full border-2 border-blue-200 flex items-center justify-center group-hover:border-blue-400 transition-colors">
                           <svg
-                            className={`w-4 h-4 text-blue-600 transform transition-transform duration-300 ${
-                              open2 === item.id ? "rotate-180" : ""
-                            }`}
+                            className={`w-4 h-4 text-blue-600 transform transition-transform duration-300 ${open2 === item.id ? "rotate-180" : ""
+                              }`}
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -588,7 +586,7 @@ function Freezone() {
               <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-blue-50/30"></div>
               <div className="absolute -right-20 -bottom-20 w-40 h-40 bg-blue-100/50 rounded-full blur-3xl"></div>
               <div className="absolute -left-20 -top-20 w-40 h-40 bg-blue-50/50 rounded-full blur-3xl"></div>
-              
+
               {/* Content */}
               <div className="relative z-10">
                 <div className="w-16 h-16 mx-auto mb-6 bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] rounded-2xl flex items-center justify-center transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
