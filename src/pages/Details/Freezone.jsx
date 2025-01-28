@@ -105,12 +105,12 @@ function Freezone() {
   ];
 
   const services = [
-    {
-      image: "../images/otherImages/sheikhZayedRoad.jpg",
-      title: "Sheikh Zayed Road",
-      description:
-        "Strategic location on Dubai's main artery offering prestigious address, exceptional accessibility, and unparalleled business networking opportunities.",
-    },
+    // {
+    //   image: "../images/otherImages/sheikhZayedRoad.jpg",
+    //   title: "Sheikh Zayed Road",
+    //   description:
+    //     "Strategic location on Dubai's main artery offering prestigious address, exceptional accessibility, and unparalleled business networking opportunities.",
+    // },
     {
       image: "../images/otherImages/Commercial.jpg",
       title: "Commercial License",
@@ -350,7 +350,7 @@ function Freezone() {
                 title: "Commercial License",
                 description:
                   "Obtain the authorization to trade and engage in commercial activities within the Free Zone. Enjoy simplified processes, efficient operations, and the opportunity to access and grow in new markets.",
-                link: "dubai/commercial-license/",
+                link: "commercial-license/",
                 color: "from-purple-500 to-purple-600",
               },
               {
@@ -358,7 +358,7 @@ function Freezone() {
                 title: "Industrial License",
                 description:
                   "Acquire the necessary permit to set up and operate industrial activities within the Free Zone. Unlock growth opportunities, enhance production efficiency, and take advantage of a business-friendly environment to scale your operations.",
-                link: "dubai/industrial-license/",
+                link: "industrial-license/",
                 color: "from-indigo-500 to-indigo-600",
               },
             ].map((item, index) => (
@@ -382,8 +382,8 @@ function Freezone() {
                     </p>
 
                     {/* Link with arrow */}
-                    <p
-                      // to={item.link}
+                    <Link
+                      to={item.link}
                       className="inline-flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors duration-300"
                     >
                       Learn More
@@ -400,7 +400,7 @@ function Freezone() {
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
-                    </p>
+                    </Link>
                   </div>
                 </div>
 

@@ -20,6 +20,9 @@ import LoadingAnimation from "../components/lotties/loading.json";
 import Freezone from "../pages/Details/Freezone";
 import Offsore from "../pages/Details/Offsore";
 import Mainland from "../pages/Details/Mainland";
+import ProfessionalLicense from "../pages/Details/freezone/ProfessionalLicense";
+import CommercialLicense from "../pages/Details/freezone/CommercialLicense";
+import IndustrialLicense from "../pages/Details/freezone/IndustrialLicense";
 
 function Routers() {
   const [loading, setLoading] = useState(false);
@@ -46,6 +49,9 @@ function Routers() {
             </Route>
             <Route path="contact" element={<ContactUs />} />
             <Route path="freezone" element={<Freezone />} />
+            <Route path="professional-license" element={<ProfessionalLicense />} />
+            <Route path="commercial-license" element={<CommercialLicense />} />
+            <Route path="industrial-license" element={<IndustrialLicense />} />
             <Route path="offshore" element={<Offsore />} />
             <Route path="mainland" element={<Mainland />} />
             <Route path="*" element={<div> This page is not found </div>} />
