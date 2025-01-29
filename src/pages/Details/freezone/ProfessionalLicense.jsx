@@ -48,9 +48,9 @@ const ProfessionalLicense = () => {
       <section className="relative h-[1010px] overflow-hidden pt-1">
         {/* Background with proper positioning */}
         <div
-          className="absolute inset-0 bg-cover bg-no-repeat transition-transform duration-700 hover:scale-105"
+          className="absolute -left-36 inset-0 bg-cover bg-no-repeat transition-transform duration-700 hover:scale-105"
           style={{
-            backgroundImage: "url('/images/homepage/proLicance.jpg')",
+            backgroundImage: "url('/images/otherImages/proLicance.jpg')",
             backgroundPosition: "20% center",
             backgroundSize: "auto 100%",
           }}

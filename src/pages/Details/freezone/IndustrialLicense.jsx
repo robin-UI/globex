@@ -81,33 +81,69 @@ function IndustrialLicense() {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto p-6">
-        <div className="grid md:grid-cols-2 gap-8 mt-12">
-          {/* Left Column */}
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-gray-800">
-              What is an Industrial Manufacturing License in Dubai?
-            </h2>
+      <section className="relative h-[110vh] w-full overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img
+            src="../images/otherImages/indLic.jpg"
+            alt="UAE industrial license"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+        </div>
 
-            <p className="text-gray-600">
-              An Industrial Manufacturing License in Dubai or anywhere else in
-              the United Arab Emirates is granted when the commercial activity
-              undertaken is of an industrial nature, such as manufacturing or
-              refining of petrochemicals. If you are unsure of whether a
-              particular business activity is industrial or not, the rule of
-              thumb is that it is most likely to be industrial if it involves
-              the use of specialized plant equipment.
-            </p>
+        {/* Content Container */}
+        <div className="relative h-full container mx-auto px-4 lg:px-20 lg:pt-28">
+          <div className="h-full flex items-center">
+            <div className="grid md:grid-cols-2 gap-12 w-full">
+              {/* Left Column - Main Content */}
+              <div className="space-y-8 text-white">
+                <div>
+                  <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+                    Industrial Manufacturing
+                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] mt-2">
+                      License in Dubai
+                    </span>
+                  </h2>
+                  <div className="w-20 h-1.5 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-full mt-6"></div>
+                </div>
 
-            <div className="space-y-3">
-              <h3 className="text-lg font-semibold text-gray-700">
-                Examples of industrial activity include:
-              </h3>
-              <ul className="space-y-2">
-                {industrialActivities.map((activity, index) => (
-                  <li key={index} className="flex items-start space-x-2">
+                <p className="text-gray-200 text-lg leading-relaxed max-w-xl">
+                  An Industrial Manufacturing License in Dubai is granted for commercial activities 
+                  of an industrial nature, such as manufacturing or refining of petrochemicals. 
+                  Activities involving specialized plant equipment typically fall under this category.
+                </p>
+
+                {/* Key Activities Scrollable Section */}
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-white/90">Key Industrial Activities</h3>
+                  <div className="space-y-3 max-h-[200px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#377CFF] scrollbar-track-white/10">
+                    {industrialActivities.map((activity, index) => (
+                      <div
+                        key={index}
+                        className="group flex items-center p-3 bg-white/10 backdrop-blur-sm rounded-xl 
+                                 hover:bg-white/20 transition-all duration-300"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] 
+                                      flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <span className="text-white text-sm font-bold">
+                            {(index + 1).toString().padStart(2, "0")}
+                          </span>
+                        </div>
+                        <span className="text-white/90">{activity}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Requirements Card */}
+              <div className="relative">
+                <div className="relative bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 
+                              hover:bg-white/20 transition-all duration-300">
+                  <h3 className="text-2xl font-bold mb-6 text-white flex items-center">
                     <svg
-                      className="w-5 h-5 text-green-500 mt-1 flex-shrink-0"
+                      className="w-6 h-6 text-[#2BDEFA] mr-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -116,128 +152,40 @@ function IndustrialLicense() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        d="M5 13l4 4L19 7"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span className="text-gray-600">{activity}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-        {/* </div>
-        <div className="max-w-4xl mx-auto p-6 space-y-8"> */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Industrial Manufacturing License in Dubai</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <section>
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">
-                Why do you need an Industrial Manufacturing License in Dubai?
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                All business entities into manufacturing or industrial activity
-                need an Industrial Manufacturing License. Although it is issued
-                by the Department of Economic Development in the emirate you
-                plan to set up your company in, there are several clearances and
-                mandatory approvals that need to be obtained before one can
-                apply for an Industrial Manufacturing License in Dubai.
-              </p>
-              <div className="mt-4 space-y-2">
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-gray-600">Key requirements include:</p>
-                  <ul className="list-disc ml-6 mt-2 space-y-2">
-                    <li>Necessary firefighting equipment with certification</li>
-                    <li>Worker health protection plans</li>
-                    <li>Appropriate electrical power connections</li>
-                    <li>
-                      Failsafe electrical protection equipment meeting UAE
-                      standards
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+                    Key Requirements
+                  </h3>
+                  <div className="space-y-4 max-h-[310px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-[#377CFF] scrollbar-track-white/10">
+                    {[
+                      "Necessary firefighting equipment with certification",
+                      "Worker health protection plans",
+                      "Appropriate electrical power connections",
+                      "Failsafe electrical protection equipment",
+                    ].map((req, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start space-x-3 p-4 bg-white/10 rounded-xl 
+                                 hover:bg-white/20 transition-colors duration-300"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] 
+                                      flex items-center justify-center flex-shrink-0">
+                          <span className="text-white font-bold">
+                            {index + 1}
+                          </span>
+                        </div>
+                        <span className="text-white/90 mt-1.5">{req}</span>
+                      </div>
+                    ))}
+                  </div>
 
-            <section>
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">
-                About Industrial Manufacturing License in United Arab Emirates
-              </h3>
-              <div className="space-y-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-gray-600">
-                    Once your Industrial Manufacturing License has been
-                    sanctioned:
-                  </p>
-                  <ul className="list-disc ml-6 mt-2 space-y-2">
-                    <li>Construction must start within six months</li>
-                    <li>
-                      DED permission required to start functioning after
-                      construction
-                    </li>
-                    <li>Must notify authorities of any operational changes</li>
-                    <li>Registration in Industrial Register required</li>
-                  </ul>
-                </div>
-
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-gray-600 font-semibold mb-2">
-                    Ongoing Requirements:
-                  </p>
-                  <ul className="list-disc ml-6 space-y-2">
-                    <li>Maintain accurate worker records</li>
-                    <li>
-                      Ensure workers are qualified for machinery operation
-                    </li>
-                    <li>Proper use of imported materials</li>
-                    <li>Notify DED of Director appointments</li>
-                  </ul>
-                </div>
-
-                <div className="bg-yellow-50 p-4 rounded-lg">
-                  <p className="text-gray-700 font-medium">
-                    Special Requirement for Abu Dhabi:
-                  </p>
-                  <p className="mt-2 text-gray-600">
-                    25% of all workers must be of Emirati nationality
-                  </p>
-                </div>
-              </div>
-            </section>
-          </CardContent>
-        </Card>
-      </div>
-
-      <section className="py-8">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* Left Column - Image */}
-            <div className="w-full md:w-1/2">
-              <div className="relative">
-                <img
-                  src="/api/placeholder/448/325"
-                  alt="UAE industrial license"
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* Right Column - Content */}
-            <div className="w-full md:w-1/2">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-gray-800">
-                  Requirements to Get Industrial Manufacturing License in Dubai
-                </h3>
-                <div className="text-gray-600 leading-relaxed">
-                  You need to submit a report which includes all the details
-                  about the industrial establishment, including the reason for
-                  starting it or expanding current industrial operations. The
-                  latter assumes significance if you already own an industrial
-                  establishment, but your current Industrial Manufacturing
-                  License does not include the scope of activity that you
-                  propose to undertake.
+                  {/* CTA Button */}
+                  <button className="w-full mt-8 px-8 py-4 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] 
+                                 text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-[#377CFF]/20 
+                                 transform hover:-translate-y-0.5 transition-all duration-300">
+                    Get Started Now
+                  </button>
                 </div>
               </div>
             </div>
@@ -245,121 +193,259 @@ function IndustrialLicense() {
         </div>
       </section>
 
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="space-y-8">
-          {/* Report Requirements Section */}
-          <div className="prose max-w-none">
-            <p className="text-gray-600 leading-relaxed">
-              This report must include everything possible about the production
-              tools, including detailed technical information, as well as the
-              estimated cost of production. Your report must also contain how
-              you plan to finance this industrial operation – whether you plan
-              to set up the industrial unit with your own funds or with help
-              from a financial institution. Since the objective behind this is
-              to see to it that you are successfully able to continue operations
-              after you have established your unit, you must show proof of
-              funds, such as a bank statement or a letter of credit / bank
-              guarantee from a bank or financial institution in the United Arab
-              Emirates.
-            </p>
-
-            <p className="text-gray-600 leading-relaxed mt-4">
-              The report should include the number of employees that you plan to
-              hire for the operation of the industrial establishment. It is
-              important that your establishment be large enough to accommodate
-              all of them. Additionally, the consent of the Municipality must be
-              obtained and included along with the report in your application
-              for an Industrial Manufacturing License. You must also be a member
-              of the local Chamber of Commerce and Industry; and documentation
-              to this effect needs to be enclosed.
-            </p>
-          </div>
-
-          {/* Requirements Section */}
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Requirements to Get Industrial Manufacturing License in Dubai
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              The Government will provide land for free or at reduced rates,
-              plus assistance in R&D if your product is expected to add value to
-              the UAE economy. You will need to get permission from the local
-              Municipality to build your plant, if it is located outside of a
-              free zone. Electricity and water will be provided at subsidized
-              rates to your plant as per its needs.
-            </p>
-          </div>
-
-          {/* Industrial Activities Section */}
-          <div>
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">
-              A more detailed list of industrial activities in the United Arab
-              Emirates:
-            </h4>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <ul className="space-y-3">
-                  {industrialActivitiesLeft.map((activity, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                      <span className="text-gray-600">{activity}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <ul className="space-y-3">
-                  {industrialActivitiesRight.map((activity, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                      <span className="text-gray-600">{activity}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Divider */}
-          <div className="border-t border-gray-200 my-8"></div>
-
-          {/* Procedure Section */}
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Procedure to Get Industrial Manufacturing License
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              For more information on securing an Industrial Manufacturing
-              License in Dubai or elsewhere in the United Arab Emirates, please
-              get in touch with us.
-            </p>
-          </div>
-
-          {/* Contact Section */}
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Need Help Getting an Industrial Manufacturing License in UAE?
+      {/* Information Cards Grid */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 lg:px-20 pt-16">
+        {/* License Sanctions Card */}
+        <div className="relative group col-span-full lg:col-span-1">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+          <div className="relative h-full bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-6">
+              Post-License Sanctions
             </h3>
             <div className="space-y-4">
-              <p className="text-gray-600">
-                We are a team of passionate company formation specialists
-                dedicated to helping entrepreneurs establish businesses in the
-                UAE. We help foreign investors through the array of paperwork
-                and everything needed for setting up an industrial unit,
-                including securing all the necessary permissions from the
-                respective Government agencies concerned.
+              {[
+                "Construction must start within six months",
+                "DED permission required to start functioning",
+                "Must notify authorities of operational changes",
+                "Registration in Industrial Register required",
+              ].map((item, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <svg
+                    className="w-5 h-5 text-[#377CFF]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span className="text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Ongoing Requirements Card */}
+        <div className="relative group col-span-full lg:col-span-1">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+          <div className="relative h-full bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-6">Ongoing Requirements</h3>
+            <div className="space-y-4">
+              {[
+                "Maintain accurate worker records",
+                "Ensure workers are qualified for machinery",
+                "Proper use of imported materials",
+                "Notify DED of Director appointments",
+              ].map((item, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <svg
+                    className="w-5 h-5 text-[#2BDEFA]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span className="text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Special Requirements Card */}
+        <div className="relative group col-span-full lg:col-span-1">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+          <div className="relative h-full bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300">
+            <h3 className="text-xl font-bold mb-6">Special Requirements</h3>
+            <div className="p-4 bg-gradient-to-r from-[#2BDEFA]/10 to-[#377CFF]/10 rounded-xl">
+              <p className="text-gray-800 font-medium mb-2">
+                Abu Dhabi Requirement:
               </p>
-              <p className="text-gray-600">
-                If you would like us to assist you procure an Industrial
-                Manufacturing License in the UAE, please give us a call or use
-                the form to send us a message. We can also be contacted over
-                email, and a senior member of A&A Associate will get in touch
-                with you shortly.
+              <p className="text-gray-700">
+                25% of all workers must be of Emirati nationality
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Requirements Section with Image */}
+      <section className="px-4 lg:px-20 py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-r from-[#2BDEFA]/5 to-[#377CFF]/5 p-8 lg:p-12">
+            <div className="flex flex-col lg:flex-row gap-12">
+              {/* Left Column - Image */}
+              <div className="lg:w-1/2">
+                <div className="relative group h-full">
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                  <img
+                    src="../images/otherImages/requir.jpg"
+                    alt="UAE industrial license"
+                    className="w-full h-full object-cover rounded-2xl shadow-lg"
+                  />
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#2BDEFA]/10 rounded-full blur-2xl"></div>
+                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#377CFF]/10 rounded-full blur-2xl"></div>
+                </div>
+              </div>
+
+              {/* Right Column - Content */}
+              <div className="lg:w-1/2 space-y-8">
+                <div>
+                  <h3 className="text-3xl font-bold mb-4">
+                    Requirements for
+                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
+                      Industrial Manufacturing License
+                    </span>
+                  </h3>
+                  <div className="w-20 h-1.5 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-full"></div>
+                </div>
+
+                <div className="space-y-6">
+                  {[
+                    "Detailed report about industrial establishment",
+                    "Technical information & production tools details",
+                    "Estimated cost of production",
+                    "Proof of funds or financial backing",
+                    "Employee accommodation plans",
+                  ].map((req, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start space-x-4 bg-white/60 p-4 rounded-xl hover:shadow-md transition-all duration-300"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] flex items-center justify-center flex-shrink-0">
+                        <span className="text-white font-bold">
+                          {index + 1}
+                        </span>
+                      </div>
+                      <p className="text-gray-700 mt-1">{req}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Report Details Section */}
+          <div className="mt-16 grid md:grid-cols-2 gap-8">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+              <div className="relative bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-xl font-bold mb-6 flex items-center">
+                  <svg
+                    className="w-6 h-6 text-[#2BDEFA] mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  Financial Documentation
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Your report must detail financing plans, including proof of
+                  funds through bank statements or UAE financial institution
+                  guarantees.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] rounded-2xl opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
+              <div className="relative bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300">
+                <h4 className="text-xl font-bold mb-6 flex items-center">
+                  <svg
+                    className="w-6 h-6 text-[#377CFF] mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  Employee Requirements
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Documentation must include employee hiring plans and facility
+                  accommodation details, with Municipality approval.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Industrial Activities Grid */}
+          <div className="mt-16">
+            <h4 className="text-2xl font-bold mb-8 text-center">
+              Comprehensive List of
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] ml-2">
+                Industrial Activities
+              </span>
+            </h4>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[...industrialActivitiesLeft, ...industrialActivitiesRight].map(
+                (activity, index) => (
+                  <div
+                    key={index}
+                    className="group relative bg-white p-4 rounded-xl hover:shadow-lg transition-all duration-300"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 rounded-lg bg-[#377CFF]/10 flex items-center justify-center group-hover:bg-[#377CFF] transition-colors duration-300">
+                        <Check className="w-4 h-4 text-[#377CFF] group-hover:text-white" />
+                      </div>
+                      <span className="text-gray-700">{activity}</span>
+                    </div>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Contact Section */}
+          <div className="mt-16">
+            <div className="relative group overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] opacity-5"></div>
+              <div className="relative p-8 lg:p-12 rounded-3xl backdrop-blur-sm">
+                <div className="max-w-3xl mx-auto text-center space-y-6">
+                  <h3 className="text-3xl font-bold">
+                    Need Assistance with Your
+                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
+                      Industrial License?
+                    </span>
+                  </h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">
+                    Our team of specialists is here to guide you through the
+                    entire process of obtaining your Industrial Manufacturing
+                    License in the UAE.
+                  </p>
+                  <button className="px-8 py-4 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] text-white rounded-xl font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
+                    Contact Our Experts
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

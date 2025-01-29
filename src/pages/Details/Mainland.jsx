@@ -245,9 +245,28 @@ function Mainland() {
                 </p>
                 <button 
                   onClick={handleOpen}
-                  className="px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+                  className="px-8 py-3 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] text-white rounded-xl font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 relative group overflow-hidden"
                 >
-                  Contact Us
+                  {/* Gradient hover effect overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#377CFF] to-[#2BDEFA] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Button content */}
+                  <span className="relative flex items-center">
+                    Contact Us
+                    <svg 
+                      className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth={2} 
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </span>
                 </button>
               </div>
             </div>

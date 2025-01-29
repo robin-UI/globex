@@ -342,7 +342,7 @@ function Freezone() {
                 title: "Professional License",
                 description:
                   "Secure the necessary authorization to offer professional services within the Free Zone. With a simplified and efficient licensing process, you can focus on leveraging your expertise and expanding your business operations seamlessly.",
-                link: "professional-license/",
+                link: "/professional-license",
                 color: "from-blue-500 to-blue-600",
               },
               {
@@ -350,7 +350,7 @@ function Freezone() {
                 title: "Commercial License",
                 description:
                   "Obtain the authorization to trade and engage in commercial activities within the Free Zone. Enjoy simplified processes, efficient operations, and the opportunity to access and grow in new markets.",
-                link: "commercial-license/",
+                link: "/commercial-license",
                 color: "from-purple-500 to-purple-600",
               },
               {
@@ -358,7 +358,7 @@ function Freezone() {
                 title: "Industrial License",
                 description:
                   "Acquire the necessary permit to set up and operate industrial activities within the Free Zone. Unlock growth opportunities, enhance production efficiency, and take advantage of a business-friendly environment to scale your operations.",
-                link: "industrial-license/",
+                link: "/industrial-license",
                 color: "from-indigo-500 to-indigo-600",
               },
             ].map((item, index) => (
@@ -414,7 +414,7 @@ function Freezone() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white lg:px-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
@@ -433,11 +433,11 @@ function Freezone() {
             {/* Decorative background element */}
             <div className="absolute inset-y-0 left-0 w-1/2 bg-blue-50/50 rounded-3xl -skew-y-6 transform-gpu"></div>
 
-            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="group relative bg-white rounded-xl overflow-hidden"
+                  className="group relative bg-white rounded-xl overflow-hidden "
                 >
                   {/* Image Container with Overlay */}
                   <div className="relative h-48 overflow-hidden">
@@ -468,23 +468,6 @@ function Freezone() {
                     {/* Description */}
                     <p className="text-gray-600 mb-6">{service.description}</p>
 
-                    {/* Learn More Link */}
-                    <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700 transition-colors">
-                      <span className="mr-2">Learn More</span>
-                      <svg
-                        className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M13 7l5 5m0 0l-5 5m5-5H6"
-                        />
-                      </svg>
-                    </div>
 
                     {/* Decorative corner */}
                     <div className="absolute bottom-0 right-0 w-16 h-16">
