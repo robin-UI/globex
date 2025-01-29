@@ -127,8 +127,7 @@ function Header() {
                   <div className="relative group">
                     <NavLink
                       className={({ isActive }) =>
-                        `${
-                          isActive ? "font-bold" : "font-normal"
+                        `${isActive ? "font-bold" : "font-normal"
                         } flex items-center gap-1`
                       }
                       to="/about"
@@ -155,8 +154,7 @@ function Header() {
                       <NavLink
                         to="/media"
                         className={({ isActive }) =>
-                          `${
-                            isActive ? "font-bold" : "font-normal"
+                          `${isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
@@ -165,8 +163,7 @@ function Header() {
                       <NavLink
                         to="/blog"
                         className={({ isActive }) =>
-                          `${
-                            isActive ? "font-bold" : "font-normal"
+                          `${isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
@@ -175,8 +172,7 @@ function Header() {
                       <NavLink
                         to="/contact"
                         className={({ isActive }) =>
-                          `${
-                            isActive ? "font-bold" : "font-normal"
+                          `${isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
@@ -184,8 +180,7 @@ function Header() {
                       </NavLink>
                       <NavLink
                         className={({ isActive }) =>
-                          `${
-                            isActive ? "font-bold" : "font-normal"
+                          `${isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
                         to="our-team"
@@ -233,16 +228,55 @@ function Header() {
           <nav className={`top-bar__nav ${isOpen ? "expanded" : "collapsed"}`}>
             <ul>
               <li>
-                <NavLink
+                {/* <NavLink
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
                   to="/"
                 >
                   Home
+                </NavLink> */}
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "font-bold" : "font-normal"
+                  }
+                  to="our-company"
+                >
+                  Business Setup
                 </NavLink>
               </li>
               <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="freezone"
+                  >
+                    Freezone
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="offshore"
+                  >
+                    Offshsore
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "font-bold" : "font-normal"
+                    }
+                    to="mainland"
+                  >
+                    Mainland
+                  </NavLink>
+                </li>
+              {/* <li>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
@@ -261,7 +295,7 @@ function Header() {
                 >
                   Services
                 </NavLink>
-              </li>
+              </li> */}
               {/* <li>
               <NavLink
                 className={({ isActive }) =>
@@ -286,8 +320,7 @@ function Header() {
                 <div className="relative group">
                   <NavLink
                     className={({ isActive }) =>
-                      `${
-                        isActive ? "font-bold" : "font-normal"
+                      `${isActive ? "font-bold" : "font-normal"
                       } flex items-center gap-1`
                     }
                     to="/about"
@@ -314,8 +347,7 @@ function Header() {
                     <NavLink
                       to="/media"
                       className={({ isActive }) =>
-                        `${
-                          isActive ? "font-bold" : "font-normal"
+                        `${isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
@@ -324,8 +356,7 @@ function Header() {
                     <NavLink
                       to="/blogs"
                       className={({ isActive }) =>
-                        `${
-                          isActive ? "font-bold" : "font-normal"
+                        `${isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
@@ -334,8 +365,7 @@ function Header() {
                     <NavLink
                       to="/contact-us"
                       className={({ isActive }) =>
-                        `${
-                          isActive ? "font-bold" : "font-normal"
+                        `${isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
@@ -344,8 +374,7 @@ function Header() {
                     <NavLink
                       to="/our-services"
                       className={({ isActive }) =>
-                        `${
-                          isActive ? "font-bold" : "font-normal"
+                        `${isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
