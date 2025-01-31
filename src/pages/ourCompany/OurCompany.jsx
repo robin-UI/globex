@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import SignupOffer from "../../components/utils/SignupOffer";
 
 function OurCompany() {
+
+  const navigate = useNavigate();
   return (
     <>
       <section
@@ -68,7 +71,7 @@ function OurCompany() {
               </p>
             </div>
 
-            <button className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button onClick={() => navigate("/commercial-license") } className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
               Explore more <img src="../images/homepage/our1.png" alt="" />
             </button>
           </div>
@@ -89,7 +92,7 @@ function OurCompany() {
               </p>
             </div>
 
-            <button className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button onClick={() => navigate("/professional-license")} className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
               Explore more <img src="../images/homepage/our2.png" alt="" />
             </button>
           </div>
@@ -107,7 +110,7 @@ function OurCompany() {
               </p>
             </div>
 
-            <button className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button onClick={() => navigate("/")} className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
               Explore more <img src="../images/homepage/our1.png" alt="" />
             </button>
           </div>
@@ -127,7 +130,7 @@ function OurCompany() {
               </p>
             </div>
 
-            <button className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button onClick={() => navigate('/industrial-license')} className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
               Explore more <img src="../images/homepage/our2.png" alt="" />
             </button>
           </div>

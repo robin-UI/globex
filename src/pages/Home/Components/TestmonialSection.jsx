@@ -5,7 +5,7 @@ const testimonials = [
     id: 1,
     name: "JEFF THOMPSON",
     company: "Steel Industries",
-    image: "https://placehold.co/100x100",
+    image: "../images/avatar/avatar1.jpg",
     content:
       "Globex simplifies company setup with needs assessment, legal registration, and compliance. Our tailored solutions in accounting, marketing, and IT support sustainable growth.",
   },
@@ -13,7 +13,7 @@ const testimonials = [
     id: 2,
     name: "MARENA JOHNS",
     company: "Gold Medal Electricals",
-    image: "https://placehold.co/100x100",
+    image: "../images/avatar/avatar2.jpg",
     content:
       "Globex simplifies company setup with needs assessment, legal registration, and compliance. Our tailored solutions in accounting, marketing, and IT support sustainable growth.",
   },
@@ -21,7 +21,7 @@ const testimonials = [
     id: 3,
     name: "MICHAEL SMITH",
     company: "Tech Solutions",
-    image: "https://placehold.co/100x100",
+    image: "../images/avatar/avatar3.jpg",
     content:
       "Globex simplifies company setup with needs assessment, legal registration, and compliance. Our tailored solutions in accounting, marketing, and IT support sustainable growth.",
   },
