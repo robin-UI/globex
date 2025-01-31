@@ -1,4 +1,40 @@
+import axios from "axios";
+import { useState } from "react";
+import BurjumanMap from "./BurjumanMap";
+
 function ContactUs() {
+  const [isDisable, setIsDisable] = useState(false);
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    setIsDisable(true);
+    // Collect form data
+    const formData = new FormData(e.target);
+
+    // Convert FormData to a plain object for better control
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await axios({
+        method: "post",
+        url: "https://script.google.com/macros/s/AKfycbzRWKb4i1CL1L9SoPgvMu0NRhB2IDuRkTFkSbxRpoTAifqP_zaSU4qlXsyaQEKIecdg/exec",
+        data: data,
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+
+      if (response.status === 200 || response.status === 302) {
+        alert("Form submitted successfully!");
+        e.target.reset(); // Clear the form after successful submission
+        setIsDisable(false);
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      alert("Failed to submit the form. Please try again.");
+    }
+  };
   return (
     <>
       {/* Hero Section */}
@@ -39,7 +75,8 @@ function ContactUs() {
           </div>
 
           {/* Form Section */}
-          <div
+          <form
+            onSubmit={handleSubmit}
             className="rounded-xl bg-white px-6 py-8 sm:px-8 sm:py-12 w-full lg:w-[447px]"
             style={{ boxShadow: "0px 0px 4px 4px #5A9CFE14" }}
           >
@@ -49,6 +86,8 @@ function ContactUs() {
                 <input
                   type="text"
                   placeholder="Your name"
+                  id="name"
+                  name="name"
                   className="w-full border-0 border-b border-b-gray-400 px-2 py-1 text-[#377CFF] placeholder-black"
                 />
                 <img
@@ -63,6 +102,8 @@ function ContactUs() {
                 <input
                   type="text"
                   placeholder="Email"
+                  id="Email"
+                  name="email"
                   className="w-full border-0 border-b border-b-gray-400 px-2 py-1 text-[#377CFF] placeholder-black"
                 />
                 <img
@@ -75,6 +116,8 @@ function ContactUs() {
               {/* Phone Number Input */}
               <div className="relative w-full">
                 <input
+                  id="number"
+                  name="number"
                   type="text"
                   placeholder="Phone number"
                   className="w-full border-0 border-b border-b-gray-400 px-2 py-1 text-[#377CFF] placeholder-black"
@@ -89,6 +132,8 @@ function ContactUs() {
               {/* Looking For Input */}
               <div className="relative w-full">
                 <input
+                  id="Lookingfor"
+                  name="lookingfor"
                   type="text"
                   placeholder="What are you looking for"
                   className="text-[#377CFF] placeholder-black w-full"
@@ -103,11 +148,20 @@ function ContactUs() {
 
             {/* Submit Button */}
             <div className="flex justify-center w-full">
-              <button className="gradientBackground text-white px-8 py-3 sm:px-9 sm:py-4 rounded-full">
+              <button
+                disabled={isDisable}
+                type="submit"
+                className="gradientBackground text-white px-8 py-3 sm:px-9 sm:py-4 rounded-full"
+              >
                 Keep in Touch
               </button>
             </div>
-          </div>
+          </form>
+          {isSubmitted && (
+            <p className="text-green-500 mt-4 text-center">
+              Form submitted successfully!
+            </p>
+          )}
         </div>
 
         {/* Info Cards */}
@@ -117,25 +171,30 @@ function ContactUs() {
             {
               icon: "mapc.png",
               title: "Reach us",
-              description: "PO Box 16122, Collins Street Victoria 8007, Dubai",
+              description: `Burjuman Business Tower
+              Sheikh Khalifa Bin Zayed St, Al Mankhool
+              Dubai , United Arab Emirates`,
               button: "View on Google Map",
+              link: "https://www.google.com/maps/place/Burjuman+Business+Tower/@25.2516318,55.3001969,17z/data=!4m6!3m5!1s0x3e5f43000ab4b8ed:0xb841c92a2428953c!8m2!3d25.2521752!4d55.3016882!16s%2Fg%2F11vy3_cnnm?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
             },
             {
               icon: "callc.png",
               title: "Call us",
-              description: "Monday - Friday\n08 am - 05 pm",
-              button: "+971 564 000 123",
+              description: "Monday - Friday\n08: 00 am - 05: 00 pm",
+              button: "+97 1529 326 975",
+              link: "tel:+971529326975"
             },
             {
               icon: "emailc.png",
               title: "Mail us",
               description: "Have a business idea?\nLet’s work on it.",
-              button: "info@globexdubai.in",
+              button: "contact@globexincorporation.com",
+              link: "mailto:contact@globexincorporation.com"
             },
           ].map((card, idx) => (
             <div
               key={idx}
-              className="px-6 py-8 rounded-lg w-full sm:w-[287px] bg-white"
+              className="px-6 py-8 rounded-lg w-full sm:w-[300px] bg-white"
               style={{ boxShadow: "0px 0px 0px 2.25px #5A9CFE1F" }}
             >
               <div
@@ -151,12 +210,14 @@ function ContactUs() {
                 {card.description}
               </p>
               <div className="flex justify-center w-full">
-                <button
-                  className="px-6 py-2 sm:px-8 sm:py-2 rounded-lg w-full"
+                <a
+                  className=" py-2  sm:py-2 rounded-lg w-full text-center"
                   style={{ boxShadow: "0px 0px 0px 2.25px #5A9CFE1F" }}
+                  href={card.link}
+                  target="_blank"
                 >
                   {card.button}
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -165,11 +226,12 @@ function ContactUs() {
 
       {/* Map Section */}
       <section>
-        <img
+        {/* <img
           src="./images/homepage/mapC.png"
           alt=""
           className="w-full h-auto"
-        />
+        /> */}
+        <BurjumanMap />
       </section>
     </>
   );

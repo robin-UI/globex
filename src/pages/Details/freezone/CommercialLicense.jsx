@@ -258,11 +258,11 @@ function CommercialLicense() {
                     <div className="relative p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 text-center">
                       <div className="text-3xl mb-3">{service.icon}</div>
                       <h3 className="font-semibold text-gray-800">{service.title}</h3>
-                      <div className="mt-4 opacity-0 group-hover/service:opacity-100 transition-opacity duration-300">
+                      {/* <div className="mt-4 opacity-0 group-hover/service:opacity-100 transition-opacity duration-300">
                         <button className="text-[#377CFF] font-medium hover:underline">
                           Learn More →
                         </button>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 ))}

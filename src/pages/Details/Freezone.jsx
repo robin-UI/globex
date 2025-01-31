@@ -5,6 +5,7 @@ import {
 } from "@material-tailwind/react";
 import React from "react";
 import { Link } from "react-router-dom";
+import FormModal from "../../components/utils/FormModal";
 
 function Icon({ id, open }) {
   return (
@@ -48,8 +49,12 @@ function ChevronRight() {
 function Freezone() {
   const [open, setOpen] = React.useState(0);
   const [open2, setOpen2] = React.useState(0);
+  const [openModal, setOpenModal] = React.useState(false);
+
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const handleOpen2 = (value) => setOpen2(open2 === value ? 0 : value);
+  const handleModal = () => setOpenModal(!openModal);
+
   const accordionData = [
     {
       id: 1,
@@ -173,6 +178,7 @@ function Freezone() {
   ];
 
   return (
+    <>
     <div className="freezone ">
       <section className="relative py-12 md:py-20 lg:py-24 lg:pt-32 overflow-hidden">
         {/* Gradient Background with improved colors */}
@@ -600,7 +606,7 @@ function Freezone() {
                 </p>
 
                 <div className="mt-6">
-                  <button className="inline-flex items-center px-6 py-3 bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] text-white font-semibold rounded-xl hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
+                  <button onClick={() => handleModal()} className="inline-flex items-center px-6 py-3 bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] text-white font-semibold rounded-xl hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
                     Contact Our Experts
                     <svg
                       className="w-5 h-5 ml-2"
@@ -623,6 +629,10 @@ function Freezone() {
         </div>
       </section>
     </div>
+
+    <FormModal open={openModal} handleOpen={handleModal} />
+
+    </>
   );
 }
 

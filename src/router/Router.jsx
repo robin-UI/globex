@@ -35,7 +35,7 @@ function Routers() {
         <Routes>
           <Route path="/" element={<LayOut />}>
             <Route index element={<Home />} />
-            <Route path="our-company" element={<OurCompany />} />
+            <Route path="business-setup" element={<OurCompany />} />
             <Route path="services" element={<Services2 />} />
             {/* <Route path="our-team" element={<CompanySetup />} /> */}
             <Route path="our-team" element={<Team />} />

@@ -1,6 +1,10 @@
-// import React from "react";
+import React from "react";
+import FormModal from "../../../components/utils/FormModal";
 
 const ProfessionalLicense = () => {
+  const [openModal, setOpenModal] = React.useState(false);
+  const handleModal = () => setOpenModal(!openModal);
+
   const activities = [
     "Accountants, Auditors and Financial Advisors",
     "Accounting and Auditing Companies",
@@ -44,6 +48,7 @@ const ProfessionalLicense = () => {
     "Copy of Ejari or registered Tenancy Contract for your office",
   ];
   return (
+    <>
     <div>
       <section className="relative h-[1010px] overflow-hidden pt-1">
         {/* Background with proper positioning */}
@@ -90,8 +95,8 @@ const ProfessionalLicense = () => {
             </p>
 
             {/* CTA Button */}
-            <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-full font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 group">
-              Get Started
+            <button onClick={() => handleModal()} className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-full font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 group">
+              Contact Now
               <svg
                 className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
                 fill="none"
@@ -282,6 +287,8 @@ const ProfessionalLicense = () => {
         </div>
       </section>
     </div>
+    <FormModal open={openModal} handleOpen={handleModal} />
+    </>
   );
 };
 

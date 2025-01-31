@@ -68,7 +68,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="our-company"
+                    to="business-setup"
                   >
                     Business Setup
                   </NavLink>
@@ -241,7 +241,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="our-company"
+                  to="business-setup"
                 >
                   Business Setup
                 </NavLink>
@@ -281,7 +281,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="our-company"
+                  to="business-setup"
                 >
                   Our Company
                 </NavLink>

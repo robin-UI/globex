@@ -1,3 +1,6 @@
+import React from "react";
+import FormModal from "../../../components/utils/FormModal";
+
 const Card = ({ children, className = "" }) => (
   <div className={`bg-white rounded-lg shadow-lg overflow-hidden ${className}`}>
     {children}
@@ -38,6 +41,9 @@ const Check = () => (
 );
 
 function IndustrialLicense() {
+  const [openModal, setOpenModal] = React.useState(false);
+  const handleModal = () => setOpenModal(!openModal);
+
   const industrialActivities = [
     "Manufacturing of paper and/or paper-based products",
     "Production of bread on a commercial scale",
@@ -437,7 +443,7 @@ function IndustrialLicense() {
                     entire process of obtaining your Industrial Manufacturing
                     License in the UAE.
                   </p>
-                  <button className="px-8 py-4 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] text-white rounded-xl font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
+                  <button onClick={()=> handleModal()} className="px-8 py-4 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] text-white rounded-xl font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
                     Contact Our Experts
                   </button>
                 </div>
@@ -446,6 +452,7 @@ function IndustrialLicense() {
           </div>
         </div>
       </section>
+    <FormModal open={openModal} handleOpen={handleModal} />
     </>
   );
 }

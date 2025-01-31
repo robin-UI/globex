@@ -46,7 +46,7 @@ const SideMedia = () => {
           </button>
 
           <a
-            href="mailto:nayeem46.nm@gmail.com"
+            href="mailto:contact@globexincorporation.com"
             className="hover:bg-gradient-to-r from-blue-100 to-blue-150 hover:rounded hover:scale-105 transition duration-220 ease-in-out w-150px h-auto"
           >
             <img
@@ -131,7 +131,7 @@ const SideMedia = () => {
             </div>
             <div data-projection-id={3}>
               <a
-                href="mailto:nayeem46.nm@gmail.com"
+                href="mailto:contact@globexincorporation.com"
                 className="m-0.5 flex min-h-[48px] min-w-[48px] flex-col items-center justify-center gap-1 rounded-full p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100"
               >
                 <img
