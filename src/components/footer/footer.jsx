@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-custom-gradient">
-        <div className="footer-sections lg:px-10 py-10 lg:py-24 flex justify-center gap-2 lg:gap-10 flex-col lg:flex-row">
+        <div className="footer-sections lg:px-10 py-10 lg:py-24 flex justify-center gap-2 lg:gap-[0.8rem] flex-col lg:flex-row">
           {/* Logo Section */}
           <div className="logo-sec ">
             <div className="flex justify-between items-center px-6 lg:px-0">

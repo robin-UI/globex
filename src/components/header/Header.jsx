@@ -52,7 +52,7 @@ function Header() {
               </a>
             </div>
             <nav className="hidden lg:block">
-              <ol className="flex justify-center gap-10 text-[#353535]">
+              <ol className="flex justify-center gap-5 text-[#353535]">
                 {/* <li>
                   <NavLink
                     className={({ isActive }) =>
@@ -178,7 +178,7 @@ function Header() {
                       >
                         Contact Us
                       </NavLink>
-                      <NavLink
+                      {/* <NavLink
                         className={({ isActive }) =>
                           `${isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
@@ -186,7 +186,7 @@ function Header() {
                         to="our-team"
                       >
                         Our Team
-                      </NavLink>
+                      </NavLink> */}
                       {/* <NavLink
                         className={({ isActive }) =>
                           `${

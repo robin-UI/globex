@@ -50,10 +50,10 @@ function Freezone() {
   const [open, setOpen] = React.useState(0);
   const [open2, setOpen2] = React.useState(0);
   const [openModal, setOpenModal] = React.useState(false);
+  const handleModal = () => setOpenModal(!openModal);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   const handleOpen2 = (value) => setOpen2(open2 === value ? 0 : value);
-  const handleModal = () => setOpenModal(!openModal);
 
   const accordionData = [
     {
