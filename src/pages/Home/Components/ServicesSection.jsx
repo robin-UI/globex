@@ -7,8 +7,10 @@ import {
   TradeIcon,
   VisaIcon,
 } from "../../../components/Icons/Icons";
+import { useNavigate } from "react-router";
 
 function ServicesSection() {
+  const navigate = useNavigate();
   const [isActive, setIsActive] = useState({ status: true, title: "COMPANY FORMATION" });
   return (
     <section>
@@ -126,7 +128,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800">
+                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/business-setup")}>
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"
@@ -168,7 +170,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800">
+                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/commercial-license")}>
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"
@@ -210,7 +212,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800">
+                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/year-uae-visa")}>
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"
