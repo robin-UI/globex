@@ -165,8 +165,8 @@ function ContactUs() {
         </div>
 
         {/* Info Cards */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
-          {/* Individual Card */}
+        {/* Individual Card */}
+        {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8">
           {[
             {
               icon: "mapc.png",
@@ -221,7 +221,77 @@ function ContactUs() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+<div className="flex flex-col sm:flex-row items-stretch justify-center gap-6 sm:gap-8">
+  {[
+    {
+      icon: "mapc.png",
+      title: "Reach us",
+      description: `Burjuman Business Tower\nSheikh Khalifa Bin Zayed St, Al Mankhool\nDubai, United Arab Emirates`,
+      button: "View on Google Map",
+      link: "https://www.google.com/maps/place/Burjuman+Business+Tower/@25.2516318,55.3001969,17z/data=!4m6!3m5!1s0x3e5f43000ab4b8ed:0xb841c92a2428953c!8m2!3d25.2521752!4d55.3016882!16s%2Fg%2F11vy3_cnnm?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      icon: "callc.png",
+      title: "Call us",
+      description: "Monday - Friday\n08:00 am - 05:00 pm",
+      button: "+97 1529 326 975",
+      link: "tel:+971529326975"
+    },
+    {
+      icon: "emailc.png",
+      title: "Mail us",
+      description: "Have a business idea?\nLet’s work on it.",
+      button: "contact@globexincorporation.com",
+      link: "mailto:contact@globexincorporation.com"
+    }
+  ].map((card, idx) => (
+    <div
+      key={idx}
+      className="flex flex-col px-6 py-8 rounded-lg w-full sm:w-[330px] bg-white shadow-md"
+      style={{ boxShadow: "0px 0px 0px 2.25px #5A9CFE1F" }}
+    >
+      {/* Icon */}
+      <div
+        className="w-12 h-12 rounded-lg flex items-center justify-center mb-6"
+        style={{ boxShadow: "0px 0px 0px 2px rgba(90, 156, 254, 0.1)" }}
+      >
+        <img
+          src={`./images/homepage/${card.icon}`}
+          alt={`${card.title} icon`}
+          className="w-6 h-6"
+        />
+      </div>
+
+      {/* Title */}
+      <h4 className="text-xl font-bold text-gray-800 mb-4">
+        {card.title}
+      </h4>
+
+      {/* Description */}
+      <p
+        className="text-gray-600 text-sm sm:text-base leading-relaxed whitespace-pre-line flex-grow"
+        style={{ marginBottom: "1.5rem" }}
+      >
+        {card.description}
+      </p>
+
+      {/* Button */}
+      <div className="flex justify-center w-full mt-auto">
+        <a
+          href={card.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={card.title}
+          className="py-2 px-4 rounded-lg w-full text-center text-blue-600 font-medium border border-blue-600"
+          style={{ boxShadow: "0px 0px 0px 2px rgba(90, 156, 254, 0.1)" }}
+        >
+          {card.button}
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
       </section>
 
       {/* Map Section */}

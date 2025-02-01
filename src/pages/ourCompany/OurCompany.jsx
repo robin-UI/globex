@@ -110,7 +110,7 @@ function OurCompany() {
               </p>
             </div>
 
-            <button onClick={() => navigate("/")} className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button onClick={() => navigate("/tourism-guide")} className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
               Explore more <img src="../images/homepage/our1.png" alt="" />
             </button>
           </div>

@@ -293,7 +293,7 @@ function GoldenVisa() {
           first step toward your new life in Dubai
         </p>
         <div>
-          <button className="flex justify-between items-center gap-3 cursor-pointer px-4 py-2 text-base rounded-lg text-white bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
+          <button onClick={handleModal} className="flex justify-between items-center gap-3 cursor-pointer px-4 py-2 text-base rounded-lg text-white bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
             <samp className="">Check your Ellgibllity</samp>
             <svg
               xmlns="http://www.w3.org/2000/svg"
