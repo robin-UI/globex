@@ -13,6 +13,14 @@
 }
 
 @font-face {
+  font-family: "AltmannGrotesk";
+  src: url("./assets/fonts/AltmannGrotesk-Regular.woff")
+      format("woff"),
+    url("./assets/fonts/AltmannGrotesk-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
   font-family: "autography";
   src: url("./assets/fonts/Autography.otf") format("opentype");
 }
@@ -24,10 +32,11 @@
   padding: 0;
   box-sizing: inherit;
   -webkit-appearance: none;
+  font-family: AltmannGrotesk;
 }
 
 html {
-  font-family: TT Interphases Pro Mono Trial Regular;
+  font-family: AltmannGrotesk;
 }
 
 body {

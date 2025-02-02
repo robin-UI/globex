@@ -1,4 +1,6 @@
+import { useState } from "react";
 import OnecontinuousLine from "../../assets/images/dubainSectionBG.png";
+import CheckEllgibllity from "../../components/utils/CheckEllgibllity";
 
 const sections = [
   {
@@ -37,7 +39,10 @@ const sections = [
 ];
 
 function GoldenVisa() {
+    const [openModal, setOpenModal] = useState(false);
+    const handleModal = () => setOpenModal(!openModal);
   return (
+    <>
     <main className="pt-24 md:pt-32 ">
       <section className="flex justify-between flex-col md:flex-row md:items-center mb-8 gap-5 px-3 lg:px-16">
         <div className="md:w-1/2 flex flex-col gap-1 lg:gap-3">
@@ -51,7 +56,10 @@ function GoldenVisa() {
             Live, work, thrive and experience unmatched freedom
           </p>
           <div>
-            <button className="flex justify-between items-center gap-3 cursor-pointer px-4 py-2 text-base rounded-lg text-white bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
+            <button
+              className="flex justify-between items-center gap-3 cursor-pointer px-4 py-2 text-base rounded-lg text-white bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]"
+              onClick={() => handleModal()}
+            >
               <samp className="">Check your Ellgibllity</samp>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,8 +164,9 @@ function GoldenVisa() {
         </h4>
         <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-center lg:mb-10  tracking-widest">
           Delve into a world of benefits and open the door to a prosperous
-          future with the UAE’s Golden Visa program. <br className="hidden md:block" /> Here are five key reasons
-          why the Golden Visa is an excellent choice for your residency.
+          future with the UAE’s Golden Visa program.{" "}
+          <br className="hidden md:block" /> Here are five key reasons why the
+          Golden Visa is an excellent choice for your residency.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-8 mt-2">
           <div>
@@ -245,11 +254,12 @@ function GoldenVisa() {
         </h4>
         <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-center lg:mb-10 tracking-widest">
           Embark on your journey towards residency in the vibrant city of Dubai
-          with the prestigious Dubai Golden Visa. <br className="hidden md:block" /> Designed to attract and retain
-          top talent from around the world, the Golden Visa offers unparalleled
-          opportunities for <br className="hidden md:block" /> investors, entrepreneurs, professionals, and
-          students. Here are the requirements to obtain the coveted Dubai Golden
-          Visa:
+          with the prestigious Dubai Golden Visa.{" "}
+          <br className="hidden md:block" /> Designed to attract and retain top
+          talent from around the world, the Golden Visa offers unparalleled
+          opportunities for <br className="hidden md:block" /> investors,
+          entrepreneurs, professionals, and students. Here are the requirements
+          to obtain the coveted Dubai Golden Visa:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-8 my-3">
           {sections.map((section, index) => (
@@ -283,7 +293,7 @@ function GoldenVisa() {
           first step toward your new life in Dubai
         </p>
         <div>
-          <button className="flex justify-between items-center gap-3 cursor-pointer px-4 py-2 text-base rounded-lg text-white bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
+          <button onClick={handleModal} className="flex justify-between items-center gap-3 cursor-pointer px-4 py-2 text-base rounded-lg text-white bg-gradient-to-r from-[#2BDEFA] to-[#377CFF]">
             <samp className="">Check your Ellgibllity</samp>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -303,6 +313,8 @@ function GoldenVisa() {
         </div>
       </section>
     </main>
+    <CheckEllgibllity open={openModal} handleOpen={handleModal} />
+    </>
   );
 }
 
