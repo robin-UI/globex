@@ -2,7 +2,7 @@ import { Route, Routes, useLocation } from "react-router";
 import Home from "../pages/Home/Home";
 import { LayOut } from "../App";
 import OurCompany from "../pages/ourCompany/OurCompany";
-// import Services from "../pages/services/Services";
+import Services from "../pages/services/Services";
 import CompanySetup from "../pages/companySetup/CompanySetup";
 // import YearVisit from "../pages/yearVisit/YearVisit";
 import Media from "../pages/media/Media";
@@ -51,7 +51,7 @@ function Routers() {
               <Route index element={<BlogList />} /> {/* Blog homepage */}
               <Route path=":blogId" element={<BlogDetails />} />
             </Route>
-            <Route path="contact" element={<ContactUs />} />
+            <Route path="contact-us" element={<ContactUs />} />\
             <Route path="freezone" element={<Freezone />} />
             <Route path="professional-license" element={<ProfessionalLicense />} />
             <Route path="commercial-license" element={<CommercialLicense />} />
