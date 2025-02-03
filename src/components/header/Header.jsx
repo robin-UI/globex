@@ -171,7 +171,7 @@ function Header() {
                           Media
                         </NavLink>
                         <NavLink
-                          to="/blogs"
+                          to="/blog"
                           className={({ isActive }) =>
                             `${
                               isActive ? "font-bold" : "font-normal"
@@ -222,7 +222,7 @@ function Header() {
                         Media
                       </NavLink>
                       <NavLink
-                        to="/blogs"
+                        to="/blog"
                         className={({ isActive }) =>
                           `${
                             isActive ? "font-bold" : "font-normal"
@@ -367,7 +367,7 @@ function Header() {
                       </NavLink>
 
                       <NavLink
-                        to="/blogs"
+                        to="/blog"
                         className={({ isActive }) =>
                           `${
                             isActive ? "font-bold" : "font-normal"
@@ -428,7 +428,7 @@ function Header() {
                       Media
                     </NavLink>
                     <NavLink
-                      to="/blogs"
+                      to="/blog"
                       className={({ isActive }) =>
                         `${
                           isActive ? "font-bold" : "font-normal"

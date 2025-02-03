@@ -144,7 +144,7 @@ const Footer = () => {
                     d="m8.25 4.5 7.5 7.5-7.5 7.5"
                   />
                 </svg>
-                <Link to="contact">Contact Us</Link>
+                <Link to="contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>

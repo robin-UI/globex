@@ -212,7 +212,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/year-uae-visa")}>
+                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/services")}>
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"
