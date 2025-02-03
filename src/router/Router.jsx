@@ -24,6 +24,9 @@ import ProfessionalLicense from "../pages/Details/freezone/ProfessionalLicense";
 import CommercialLicense from "../pages/Details/freezone/CommercialLicense";
 import IndustrialLicense from "../pages/Details/freezone/IndustrialLicense";
 import TourismGuide from "../pages/Details/freezone/TourismGuide";
+import ProServices from "../pages/services/ProServices";
+import AttestationServices from "../pages/services/AttestationServices";
+import LabourServices from "../pages/services/LabourServices";
 
 function Routers() {
   const [loading, setLoading] = useState(false);
@@ -56,6 +59,9 @@ function Routers() {
             <Route path="tourism-guide" element={<TourismGuide />} />
             <Route path="offshore" element={<Offsore />} />
             <Route path="mainland" element={<Mainland />} />
+            <Route path="pro-services" element={<ProServices />} />
+            <Route path="attestation-services" element={<AttestationServices />} />
+            <Route path="labour-services" element={<LabourServices />} />
             <Route path="*" element={<div> This page is not found </div>} />
           </Route>
         </Routes>

@@ -10,7 +10,7 @@ const SideMedia = () => {
       <div className="hidden lg:block side-container bg-gradient-to-r from-blue-600 to-blue-400 rounded-[10px_0px_0px_10px] w-[auto] right-0 fixed mt-28 z-50">
         <div className="media-icons p-2 pl-3 flex flex-col gap-2">
           <a
-            href="tel:+971529326975"
+            href="tel:+971585951234"
             className="hover:bg-gradient-to-r from-blue-100 to-blue-150 hover:rounded hover:scale-105 transition duration-220 ease-in-out w-150px h-auto"
           >
             <img
@@ -86,7 +86,7 @@ const SideMedia = () => {
           <div className="absolute top-[-315px] left-[-14px] hidden w-max  flex-col items-center gap-1 group-hover:flex rounded-full border border-blue-gray-50 bg-white p-0.5 shadow-xl shadow-black/10">
             <div data-projection-id={1}>
               <a
-                href="tel:+971529326975"
+                href="tel:+971585951234"
                 className="m-0.5 flex min-h-[48px] min-w-[48px] flex-col items-center justify-center gap-1 rounded-full p-1 font-normal transition-transform duration-300 ease-in-out hover:scale-110 focus:scale-110 active:scale-100"
               >
                 <img

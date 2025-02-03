@@ -238,7 +238,7 @@ const Footer = () => {
                 src="../images/homepage/footer-call.png"
                 alt=""
               />
-              <p className="text-white pl-3">+971529326975</p>
+              <p className="text-white pl-3">+971585951234</p>
             </div>
             <div className="email flex lg:justify-start items-center pt-2">
               <img

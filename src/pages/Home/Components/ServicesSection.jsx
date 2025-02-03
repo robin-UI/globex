@@ -254,7 +254,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800">
+                  <button onClick={() => navigate("pro-services")} className="text-blue-600 font-semibold flex hover:text-blue-800">
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"
@@ -298,7 +298,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800">
+                  <button onClick={() => navigate('attestation-services')} className="text-blue-600 font-semibold flex hover:text-blue-800">
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"
@@ -340,7 +340,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800">
+                  <button onClick={() => navigate('labour-services')} className="text-blue-600 font-semibold flex hover:text-blue-800">
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"

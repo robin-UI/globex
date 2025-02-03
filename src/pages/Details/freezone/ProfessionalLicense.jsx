@@ -198,7 +198,7 @@ const ProfessionalLicense = () => {
             {activities.map((activity, index) => (
               <div
                 key={index}
-                className="group relative p-6 rounded-2xl bg-white hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="group relative p-6 rounded-2xl rounded-t-none bg-white hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                 <div className="flex items-center space-x-4">
