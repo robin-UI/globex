@@ -15,6 +15,8 @@ function Header() {
 
   const [open, setOpen] = useState(false);
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const handleOpen = () => setOpen(!open);
 
   const toggleNav = () => {
@@ -123,18 +125,24 @@ function Header() {
                     10 Year UAE Visa
                   </NavLink>
                 </li>
-                <li>
-                  <div className="relative group">
+                <li className="relative group">
+                  <div
+                    className="flex items-center justify-center cursor-pointer"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  >
                     <NavLink
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"
-                        } flex items-center gap-1`
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } flex items-center gap-1 cursor-pointer`
                       }
                       to="/about"
                     >
                       About Us
                       <svg
-                        className="w-4 h-4 transition-transform group-hover:rotate-180"
+                        className={`w-4 h-4 transition-transform ${
+                          isDropdownOpen ? "rotate-180" : ""
+                        } md:group-hover:rotate-180`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -147,60 +155,98 @@ function Header() {
                         />
                       </svg>
                     </NavLink>
-                    <div
-                      className="absolute hidden group-hover:block w-48 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] before:content-[''] before:absolute before:top-[-20px] before:left-0 before:right-0 before:h-[20px] before:bg-transparent"
-                      style={{ transitionDelay: "200ms" }}
-                    >
+                  </div>
+                  {/* Desktop Dropdown */}
+                  <div className="hidden md:block">
+                    <div className="absolute left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                      <div className="bg-white rounded-lg shadow-lg w-48 py-2">
+                        <NavLink
+                          to="/media"
+                          className={({ isActive }) =>
+                            `${
+                              isActive ? "font-bold" : "font-normal"
+                            } block px-4 py-2 hover:bg-gray-100 text-center`
+                          }
+                        >
+                          Media
+                        </NavLink>
+                        <NavLink
+                          to="/blogs"
+                          className={({ isActive }) =>
+                            `${
+                              isActive ? "font-bold" : "font-normal"
+                            } block px-4 py-2 hover:bg-gray-100 text-center`
+                          }
+                        >
+                          Blogs
+                        </NavLink>
+                        <NavLink
+                          to="/contact-us"
+                          className={({ isActive }) =>
+                            `${
+                              isActive ? "font-bold" : "font-normal"
+                            } block px-4 py-2 hover:bg-gray-100 text-center`
+                          }
+                        >
+                          Contact Us
+                        </NavLink>
+                        <NavLink
+                          to="/our-services"
+                          className={({ isActive }) =>
+                            `${
+                              isActive ? "font-bold" : "font-normal"
+                            } block px-4 py-2 hover:bg-gray-100 text-center`
+                          }
+                        >
+                          Our Services
+                        </NavLink>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Mobile Dropdown */}
+                  <div
+                    className={`md:hidden mobile-dropdown ${
+                      isDropdownOpen ? "open" : ""
+                    }`}
+                  >
+                    <div className="bg-gray-50 w-full">
                       <NavLink
                         to="/media"
                         className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"
+                          `${
+                            isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Media
                       </NavLink>
                       <NavLink
-                        to="/blog"
+                        to="/blogs"
                         className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"
+                          `${
+                            isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Blogs
                       </NavLink>
                       <NavLink
-                        to="/contact"
-                        className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"
-                          } block px-4 py-2 hover:bg-gray-100`
-                        }
-                      >
-                        Contact Us
-                      </NavLink>
-                      {/* <NavLink
-                        className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"
-                          } block px-4 py-2 hover:bg-gray-100`
-                        }
-                        to="our-team"
-                      >
-                        Our Team
-                      </NavLink> */}
-                      {/* <NavLink
+                        to="/contact-us"
                         className={({ isActive }) =>
                           `${
                             isActive ? "font-bold" : "font-normal"
                           } block px-4 py-2 hover:bg-gray-100`
                         }
-                        to="year-uae-visa"
                       >
-                        10 Year UAE Visa
-                      </NavLink> */}
+                        Contact Us
+                      </NavLink>
                       <NavLink
-                        to="/services"
+                        to="/our-services"
                         className={({ isActive }) =>
-                          `${isActive ? "font-bold" : "font-normal"} block px-4 py-2 hover:bg-gray-100`
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100`
                         }
                       >
                         Our Services
@@ -228,15 +274,6 @@ function Header() {
           <nav className={`top-bar__nav ${isOpen ? "expanded" : "collapsed"}`}>
             <ul>
               <li>
-                {/* <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "font-bold" : "font-normal"
-                  }
-                  to="/"
-                >
-                  Home
-                </NavLink> */}
-
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
@@ -247,43 +284,13 @@ function Header() {
                 </NavLink>
               </li>
               <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "font-bold" : "font-normal"
-                    }
-                    to="freezone"
-                  >
-                    Freezone
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "font-bold" : "font-normal"
-                    }
-                    to="offshore"
-                  >
-                    Offshsore
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "font-bold" : "font-normal"
-                    }
-                    to="mainland"
-                  >
-                    Mainland
-                  </NavLink>
-                </li>
-              {/* <li>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="business-setup"
+                  to="freezone"
                 >
-                  Our Company
+                  Freezone
                 </NavLink>
               </li>
               <li>
@@ -291,21 +298,22 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="services"
+                  to="offshore"
                 >
-                  Services
+                  Offshsore
                 </NavLink>
-              </li> */}
-              {/* <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "font-bold" : "font-normal"
-                }
-                to="our-team"
-              >
-                Company Setup
-              </NavLink>
-            </li> */}
+              </li>
+              <li>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "font-bold" : "font-normal"
+                  }
+                  to="mainland"
+                >
+                  Mainland
+                </NavLink>
+              </li>
+
               <li>
                 <NavLink
                   className={({ isActive }) =>
@@ -316,18 +324,20 @@ function Header() {
                   10 Year UAE Visa
                 </NavLink>
               </li>
-              <li>
-                <div className="relative group">
-                  <NavLink
-                    className={({ isActive }) =>
-                      `${isActive ? "font-bold" : "font-normal"
-                      } flex items-center gap-1`
-                    }
-                    to="/about"
+              <li className="relative group">
+                <div
+                  className="flex items-center justify-center cursor-pointer"
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                  <p
+                    className="flex items-center gap-1 cursor-pointer text-lg"
+                    // to="/about"
                   >
-                    About Us
+                    More
                     <svg
-                      className="w-4 h-4 transition-transform group-hover:rotate-180"
+                      className={`w-4 h-4 transition-transform ${
+                        isDropdownOpen ? "rotate-180" : ""
+                      } md:group-hover:rotate-180`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -339,15 +349,79 @@ function Header() {
                         d="M19 9l-7 7-7-7"
                       />
                     </svg>
-                  </NavLink>
-                  <div
-                    className="absolute hidden group-hover:block w-48 bg-white shadow-lg rounded-lg py-2 mt-2 transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)] before:content-[''] before:absolute before:top-[-20px] before:left-0 before:right-0 before:h-[20px] before:bg-transparent"
-                    style={{ transitionDelay: "200ms" }}
-                  >
+                  </p>
+                </div>
+                {/* Desktop Dropdown */}
+                <div className="hidden md:block">
+                  <div className="absolute left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                    <div className="bg-white rounded-lg shadow-lg w-48 py-2">
+                      <NavLink
+                        to="/media"
+                        className={({ isActive }) =>
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100 text-center`
+                        }
+                      >
+                        Media
+                      </NavLink>
+
+                      <NavLink
+                        to="/blogs"
+                        className={({ isActive }) =>
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100 text-center`
+                        }
+                      >
+                        Blogs
+                      </NavLink>
+                      <NavLink
+                        to="/contact-us"
+                        className={({ isActive }) =>
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100 text-center`
+                        }
+                      >
+                        Contact Us
+                      </NavLink>
+                      <NavLink
+                        to="/our-services"
+                        className={({ isActive }) =>
+                          `${
+                            isActive ? "font-bold" : "font-normal"
+                          } block px-4 py-2 hover:bg-gray-100 text-center`
+                        }
+                      >
+                        Our Services
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Dropdown */}
+                <div
+                  className={`md:hidden mobile-dropdown ${
+                    isDropdownOpen ? "open" : ""
+                  }`}
+                >
+                  <div className="bg-gray-50 w-full">
+                    <NavLink
+                      to="/about"
+                      className={({ isActive }) =>
+                        `${
+                          isActive ? "font-bold" : "font-normal"
+                        } block px-4 py-2 hover:bg-gray-100 text-center`
+                      }
+                    >
+                      About Us
+                    </NavLink>
                     <NavLink
                       to="/media"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"
+                        `${
+                          isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
@@ -356,7 +430,8 @@ function Header() {
                     <NavLink
                       to="/blogs"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"
+                        `${
+                          isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
@@ -365,7 +440,8 @@ function Header() {
                     <NavLink
                       to="/contact-us"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"
+                        `${
+                          isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
@@ -374,7 +450,8 @@ function Header() {
                     <NavLink
                       to="/our-services"
                       className={({ isActive }) =>
-                        `${isActive ? "font-bold" : "font-normal"
+                        `${
+                          isActive ? "font-bold" : "font-normal"
                         } block px-4 py-2 hover:bg-gray-100`
                       }
                     >
