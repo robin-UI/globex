@@ -191,7 +191,7 @@ function Header() {
                           Contact Us
                         </NavLink>
                         <NavLink
-                          to="/our-services"
+                          to="/services"
                           className={({ isActive }) =>
                             `${
                               isActive ? "font-bold" : "font-normal"
@@ -242,7 +242,7 @@ function Header() {
                         Contact Us
                       </NavLink>
                       <NavLink
-                        to="/our-services"
+                        to="/services"
                         className={({ isActive }) =>
                           `${
                             isActive ? "font-bold" : "font-normal"
@@ -387,7 +387,7 @@ function Header() {
                         Contact Us
                       </NavLink>
                       <NavLink
-                        to="/our-services"
+                        to="/services"
                         className={({ isActive }) =>
                           `${
                             isActive ? "font-bold" : "font-normal"
@@ -448,7 +448,7 @@ function Header() {
                       Contact Us
                     </NavLink>
                     <NavLink
-                      to="/our-services"
+                      to="/services"
                       className={({ isActive }) =>
                         `${
                           isActive ? "font-bold" : "font-normal"

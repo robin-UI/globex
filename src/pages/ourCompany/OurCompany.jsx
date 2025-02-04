@@ -1,9 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import SignupOffer from "../../components/utils/SignupOffer";
+import { useState } from "react";
+import FormModal from "../../components/utils/FormModal";
 
 function OurCompany() {
 
   const navigate = useNavigate();
+
+  const [openModal, setOpenModal] = useState(false)
+
+  const handleModal = () =>  setOpenModal(!openModal);
+  
   return (
     <>
       <section
@@ -31,7 +38,7 @@ function OurCompany() {
 
           <div className=" h-[280px] lg:h-0 "></div>
           <div className="flex items-center justify-center lg:justify-start mt-5">
-            <button className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white">
+            <button className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white" onClick={handleModal}>
               <samp className="bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] bg-clip-text text-transparent">
                 Book Free Consultation
               </samp>
@@ -170,6 +177,9 @@ function OurCompany() {
           </div>
         </div>
       </section>
+
+      <FormModal open={openModal} handleOpen={handleModal} />
+
     </>
   );
 }
