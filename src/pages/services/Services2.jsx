@@ -136,7 +136,7 @@ function CTASection() {
             </p>
           </div>
           <button
-            className="w-full sm:w-auto px-8 py-3 bg-white text-blue-600 rounded-full font-semibold 
+            className="relative z-20 w-full sm:w-auto px-8 py-3 bg-white text-blue-600 rounded-full font-semibold 
             hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-xl
             text-sm sm:text-base whitespace-nowrap"
             onClick={handleModal}
