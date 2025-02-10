@@ -70,7 +70,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="business-setup"
+                    to="business-setup-in-dubai-UAE"
                   >
                     Business Setup
                   </NavLink>
@@ -80,7 +80,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="freezone"
+                    to="freezone-company-setup-in-UAE "
                   >
                     Freezone
                   </NavLink>
@@ -90,7 +90,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="offshore"
+                    to="offshore-company-formation-in-dubai"
                   >
                     Offshsore
                   </NavLink>
@@ -100,7 +100,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="mainland"
+                    to="UAE-mainland-company-formation"
                   >
                     Mainland
                   </NavLink>
@@ -120,7 +120,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="year-uae-visa"
+                    to="UAE-golden-visa-and-company-formation"
                   >
                     10 Year UAE Visa
                   </NavLink>
@@ -278,7 +278,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="business-setup"
+                  to="business-setup-in-dubai-UAE"
                 >
                   Business Setup
                 </NavLink>
@@ -288,7 +288,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="freezone"
+                  to="freezone-company-setup-in-UAE "
                 >
                   Freezone
                 </NavLink>
@@ -298,7 +298,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="offshore"
+                  to="offshore-company-formation-in-dubai"
                 >
                   Offshsore
                 </NavLink>
@@ -308,7 +308,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="mainland"
+                  to="UAE-mainland-company-formation"
                 >
                   Mainland
                 </NavLink>
@@ -319,7 +319,7 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? "font-bold" : "font-normal"
                   }
-                  to="year-uae-visa"
+                  to="UAE-golden-visa-and-company-formation"
                 >
                   10 Year UAE Visa
                 </NavLink>

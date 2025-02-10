@@ -39,11 +39,11 @@ function Routers() {
         <Routes>
           <Route path="/" element={<LayOut />}>
             <Route index element={<Home />} />
-            <Route path="business-setup" element={<OurCompany />} />
+            <Route path="business-setup-in-dubai-UAE" element={<OurCompany />} />
             <Route path="services" element={<Services2 />} />
             {/* <Route path="our-team" element={<CompanySetup />} /> */}
             <Route path="our-team" element={<Team />} />
-            <Route path="year-uae-visa" element={<GoldenVisa />} />
+            <Route path="UAE-golden-visa-and-company-formation" element={<GoldenVisa />} />
             <Route path="media" element={<BlogList />} />
             <Route path="about" element={<About />} />
             <Route path="team" element={<Team />} />
@@ -52,13 +52,13 @@ function Routers() {
               <Route path=":blogId" element={<BlogDetails />} />
             </Route>
             <Route path="contact-us" element={<ContactUs />} />\
-            <Route path="freezone" element={<Freezone />} />
+            <Route path="freezone-company-setup-in-UAE" element={<Freezone />} />
             <Route path="professional-license" element={<ProfessionalLicense />} />
             <Route path="commercial-license" element={<CommercialLicense />} />
             <Route path="industrial-license" element={<IndustrialLicense />} />
             <Route path="tourism-guide" element={<TourismGuide />} />
-            <Route path="offshore" element={<Offsore />} />
-            <Route path="mainland" element={<Mainland />} />
+            <Route path="offshore-company-formation-in-dubai" element={<Offsore />} />
+            <Route path="UAE-mainland-company-formation" element={<Mainland />} />
             <Route path="pro-services" element={<ProServices />} />
             <Route path="attestation-services" element={<AttestationServices />} />
             <Route path="labour-services" element={<LabourServices />} />
