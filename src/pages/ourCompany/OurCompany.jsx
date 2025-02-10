@@ -31,7 +31,7 @@ services, covering mainland, free zone, and offshore options"
         }}
         className="relative"
       >
-        <div className=" w-full lg:w-[55%] px-8 py-10 pt-28 lg:px-24 lg:py-32">
+        <div className=" w-full lg:w-[55%] px-8 py-10 pt-28 lg:px-24 lg:py-32 lg:pb-14">
           <h2 className=" text-[46px] lg:text-[64px] text-white leading-[50px] lg:leading-[66.02px] mb-[32px] lg:mb-[47px]">
             Securing a <br /> Business License
             <br /> in Dubai
