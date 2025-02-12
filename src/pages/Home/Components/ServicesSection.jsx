@@ -128,7 +128,7 @@ function ServicesSection() {
                     alignItems: "center",
                   }}
                 >
-                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/business-setup")}>
+                  <button className="text-blue-600 font-semibold flex hover:text-blue-800" onClick={() => navigate("/business-setup-in-dubai-UAE")}>
                     Read more
                     <svg
                       className="w-5 h-5 ml-2"

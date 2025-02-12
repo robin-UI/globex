@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function CommercialLicense() {
   const activities = [
     "Automobiles",
@@ -31,6 +33,8 @@ function CommercialLicense() {
     "Financial statements",
     "Notarized copy of Registry Identification form",
   ];
+  const [openModal, setopenModal] = useState(false);
+  const handleModal = () => setopenModal(!openModal);
   return (
     <section>
       <div className="relative overflow-hidden">
@@ -51,6 +55,12 @@ function CommercialLicense() {
               This type of Trade License is issued to those who are into commercial trading, 
               covering a specific range of products and services in the UAE market.
             </p>
+            <button
+                onClick={handleModal}
+                className="bg-blue-600 px-8 py-3 mt-5 hover:bg-blue-700 bg-[linear-gradient(270deg,#2BDEFA_0%,#377CFF_100%)] text-white font-semibold rounded-xl hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
+              >
+                Contact Us
+              </button>
           </div>
 
           {/* Main Content Grid */}

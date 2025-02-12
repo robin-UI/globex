@@ -1,5 +1,6 @@
 // import React from "react";
 
+import { Helmet } from "react-helmet";
 import SignupOffer from "../../components/utils/SignupOffer";
 
 function CheckIcon() {
@@ -254,12 +255,23 @@ const ServiceCard = ({ Icon, title }) => (
 
 function Offsore() {
   return (
-    <div className="pt-20">
-      <section className="relative py-24 overflow-hidden">
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Offshore Company Formation in Dubai | Fast & Easy Setup</title>
+        <meta
+          name="description"
+          content="Looking to set up an offshore company in Dubai? We offer expert
+          offshore company formation services in Dubai, simplifying the process
+          and ensuring compliance. Get started today! "
+        />
+      </Helmet>
+
+      <section className="relative py-28 overflow-hidden">
         {/* Background Design */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-white"></div>
         <div className="absolute right-0 top-0 w-1/3 h-full bg-blue-100/30 -skew-x-12 transform-gpu"></div>
-        
+
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Image Column with Floating Effect */}
@@ -279,7 +291,7 @@ function Offsore() {
                   </span>
                 </div>
               </div>
-              
+
               {/* Floating Elements */}
               <div className="absolute -top-8 -right-8 w-24 h-24 bg-blue-100/80 rounded-full blur-2xl"></div>
               <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-[#2BDEFA]/20 rounded-full blur-2xl"></div>
@@ -305,29 +317,68 @@ function Offsore() {
                   Scope and scale
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Offshore company establishment provides a strategic alternative to
-                  UAE mainland and free zone operations. Premier jurisdictions
-                  include RAK Offshore (Ras Al Khaimah International Corporate
-                  Centre or RAK ICC), alongside prestigious international locations
-                  such as the{" "}
-                  <a href="#" className="text-[#377CFF] font-medium hover:underline inline-flex items-center">
+                  Offshore company establishment provides a strategic
+                  alternative to UAE mainland and free zone operations. Premier
+                  jurisdictions include RAK Offshore (Ras Al Khaimah
+                  International Corporate Centre or RAK ICC), alongside
+                  prestigious international locations such as the{" "}
+                  <a
+                    href="#"
+                    className="text-[#377CFF] font-medium hover:underline inline-flex items-center"
+                  >
                     British Virgin Islands
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 ml-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
                   ,{" "}
-                  <a href="#" className="text-[#377CFF] font-medium hover:underline inline-flex items-center">
+                  <a
+                    href="#"
+                    className="text-[#377CFF] font-medium hover:underline inline-flex items-center"
+                  >
                     Cayman Islands
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 ml-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
                   , and{" "}
-                  <a href="#" className="text-[#377CFF] font-medium hover:underline inline-flex items-center">
+                  <a
+                    href="#"
+                    className="text-[#377CFF] font-medium hover:underline inline-flex items-center"
+                  >
                     Mauritius
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <svg
+                      className="w-4 h-4 ml-1"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
                     </svg>
                   </a>
                   .
@@ -340,8 +391,8 @@ function Offsore() {
                   An offshore company in Dubai represents a legally structured
                   entity designed to operate beyond its registered jurisdiction.
                   While these entities typically benefit from virtual office
-                  arrangements, they face certain operational restrictions within
-                  their country of incorporation when{" "}
+                  arrangements, they face certain operational restrictions
+                  within their country of incorporation when{" "}
                   <strong>establishing your offshore presence</strong>.
                 </p>
               </div>
@@ -357,13 +408,13 @@ function Offsore() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
               Strategic Advantages of Dubai Offshore Company Formation
             </h2>
-            
+
             <div className="relative pl-6 border-l-2 border-blue-500">
               <p className="text-gray-600 leading-relaxed">
-                Dubai distinguishes itself among global jurisdictions through its
-                world-class financial infrastructure, state-of-the-art business
-                facilities, advanced digital ecosystem, and strategic position as
-                a gateway to emerging markets.
+                Dubai distinguishes itself among global jurisdictions through
+                its world-class financial infrastructure, state-of-the-art
+                business facilities, advanced digital ecosystem, and strategic
+                position as a gateway to emerging markets.
               </p>
             </div>
 
@@ -405,12 +456,12 @@ function Offsore() {
               <div className="absolute top-0 right-0 w-20 h-20 bg-green-50 rounded-bl-full"></div>
               <div className="relative">
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  <strong>Offshore company formation in Dubai</strong> represents
-                  one of the UAE's most dynamic business sectors. These entities are
-                  strategically structured to optimize tax efficiency across
-                  multiple areas, including real estate transactions, investment
-                  gains, value-added taxation (VAT), inheritance planning, and
-                  commercial profits.
+                  <strong>Offshore company formation in Dubai</strong>{" "}
+                  represents one of the UAE's most dynamic business sectors.
+                  These entities are strategically structured to optimize tax
+                  efficiency across multiple areas, including real estate
+                  transactions, investment gains, value-added taxation (VAT),
+                  inheritance planning, and commercial profits.
                 </p>
               </div>
             </div>
@@ -420,11 +471,11 @@ function Offsore() {
               <div className="relative">
                 <p className="text-gray-700 leading-relaxed">
                   Global investors seeking{" "}
-                  <strong>offshore company registration in Dubai</strong> benefit
-                  from comprehensive advantages: sophisticated wealth management
-                  solutions, robust asset protection frameworks, and centralized
-                  operational capabilities for international trade, consultancy, and
-                  contractual services.
+                  <strong>offshore company registration in Dubai</strong>{" "}
+                  benefit from comprehensive advantages: sophisticated wealth
+                  management solutions, robust asset protection frameworks, and
+                  centralized operational capabilities for international trade,
+                  consultancy, and contractual services.
                 </p>
               </div>
             </div>
@@ -475,7 +526,7 @@ function Offsore() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
             Benefits of Offshore Company Formation in Dubai, UAE
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div
@@ -484,12 +535,12 @@ function Offsore() {
               >
                 {/* Number indicator - bigger size */}
                 <div className="absolute -top-4 -left-4 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold text-base z-20 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                  {(index + 1).toString().padStart(2, '0')}
+                  {(index + 1).toString().padStart(2, "0")}
                 </div>
-                
+
                 {/* Simple border animation */}
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500 rounded-2xl transition-all duration-500 ease-out"></div>
-                
+
                 {/* Content */}
                 <div className="relative z-10 h-full flex flex-col">
                   <div className="h-12 w-12 mb-6 bg-blue-100 rounded-xl flex items-center justify-center">
@@ -507,9 +558,7 @@ function Offsore() {
                       />
                     </svg>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">
-                    {benefit}
-                  </p>
+                  <p className="text-gray-700 leading-relaxed">{benefit}</p>
                 </div>
               </div>
             ))}

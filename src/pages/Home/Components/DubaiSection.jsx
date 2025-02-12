@@ -37,19 +37,19 @@ function DubaiSection() {
                 description="Setting up your company in a UAE free zone is beneficial for companies looking for more freedom in how they run."
                 icon={<GlobeIcon />}
                 gradient={true}
-                link="/freezone"
+                link="/freezone-company-setup-in-UAE "
               />
               <BusinessCard
                 title="Offshore"
                 description="The biggest benefit of opening an offshore company is not having to pay any taxes."
                 icon={<BuildingIcon />}
-                link="/offshore"
+                link="/offshore-company-formation-in-dubai"
               />
               <BusinessCard
                 title="Mainland"
                 description="A mainland business is a good choice for companies that are comfortable with functioning within an emirate."
                 icon={<MapIcon />}
-                link="/mainland"
+                link="/UAE-mainland-company-formation"
               />
             </div>
           </div>

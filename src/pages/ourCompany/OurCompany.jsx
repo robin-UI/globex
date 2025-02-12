@@ -1,18 +1,37 @@
 import { useNavigate } from "react-router-dom";
 import SignupOffer from "../../components/utils/SignupOffer";
+import { useState } from "react";
+import FormModal from "../../components/utils/FormModal";
+import { Helmet } from "react-helmet";
 
 function OurCompany() {
-
   const navigate = useNavigate();
+
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleModal = () => setOpenModal(!openModal);
+
   return (
-    <>
+    <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Business Setup in Dubai & UAE | Company Formation Services
+        </title>
+        <meta
+          name="description"
+          content="Navigate the complexities of business setup in Dubai and the wider
+UAE. Our expert team offers comprehensive company formation
+services, covering mainland, free zone, and offshore options"
+        />
+      </Helmet>
       <section
         style={{
           background: "linear-gradient(270deg, #2BDEFA 0%, #377CFF 100%)",
         }}
         className="relative"
       >
-        <div className=" w-full lg:w-[55%] px-8 py-10 pt-28 lg:px-24 lg:py-32">
+        <div className=" w-full lg:w-[55%] px-8 py-10 pt-28 lg:px-24 lg:py-32 lg:pb-14">
           <h2 className=" text-[46px] lg:text-[64px] text-white leading-[50px] lg:leading-[66.02px] mb-[32px] lg:mb-[47px]">
             Securing a <br /> Business License
             <br /> in Dubai
@@ -31,7 +50,10 @@ function OurCompany() {
 
           <div className=" h-[280px] lg:h-0 "></div>
           <div className="flex items-center justify-center lg:justify-start mt-5">
-            <button className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white">
+            <button
+              className="cursor-pointer px-14 py-2 text-base rounded-lg bg-white"
+              onClick={handleModal}
+            >
               <samp className="bg-gradient-to-r from-[#2BDEFA] to-[#377CFF] bg-clip-text text-transparent">
                 Book Free Consultation
               </samp>
@@ -71,7 +93,10 @@ function OurCompany() {
               </p>
             </div>
 
-            <button onClick={() => navigate("/commercial-license") } className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button
+              onClick={() => navigate("/commercial-license")}
+              className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] "
+            >
               Explore more <img src="../images/homepage/our1.png" alt="" />
             </button>
           </div>
@@ -92,7 +117,10 @@ function OurCompany() {
               </p>
             </div>
 
-            <button onClick={() => navigate("/professional-license")} className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button
+              onClick={() => navigate("/professional-license")}
+              className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] "
+            >
               Explore more <img src="../images/homepage/our2.png" alt="" />
             </button>
           </div>
@@ -110,7 +138,10 @@ function OurCompany() {
               </p>
             </div>
 
-            <button onClick={() => navigate("/tourism-guide")} className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button
+              onClick={() => navigate("/tourism-guide")}
+              className="bg-white text-[#377CFF] font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] "
+            >
               Explore more <img src="../images/homepage/our1.png" alt="" />
             </button>
           </div>
@@ -130,7 +161,10 @@ function OurCompany() {
               </p>
             </div>
 
-            <button onClick={() => navigate('/industrial-license')} className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] ">
+            <button
+              onClick={() => navigate("/industrial-license")}
+              className="gradientBackground text-white font-bold flex items-center gap-4 rounded-[0px_30px_30px_0px] pl-4 mb-[37px] "
+            >
               Explore more <img src="../images/homepage/our2.png" alt="" />
             </button>
           </div>
@@ -170,7 +204,9 @@ function OurCompany() {
           </div>
         </div>
       </section>
-    </>
+
+      <FormModal open={openModal} handleOpen={handleModal} />
+    </div>
   );
 }
 
