@@ -7,7 +7,7 @@ import {
   TradeIcon,
   VisaIcon,
 } from "../../../components/Icons/Icons";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 function ServicesSection() {
   const navigate = useNavigate();

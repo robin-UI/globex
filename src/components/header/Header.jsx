@@ -80,7 +80,7 @@ function Header() {
                     className={({ isActive }) =>
                       isActive ? "font-bold" : "font-normal"
                     }
-                    to="freezone-company-setup-in-UAE "
+                    to="freezone-company-setup-in-UAE"
                   >
                     Freezone
                   </NavLink>

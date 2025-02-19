@@ -22,8 +22,7 @@
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-lottie": "^1.2.10",
-    "react-router": "^6.27.0",
-    "react-router-dom": "^6.27.0",
+    "react-router-dom": "^7.1.5",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
