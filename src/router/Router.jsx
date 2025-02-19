@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import { LayOut } from "../App";
 import OurCompany from "../pages/ourCompany/OurCompany";
@@ -51,7 +51,7 @@ function Routers() {
               <Route index element={<BlogList />} /> {/* Blog homepage */}
               <Route path=":blogId" element={<BlogDetails />} />
             </Route>
-            <Route path="contact-us" element={<ContactUs />} />\
+            <Route path="contact-us" element={<ContactUs />} />
             <Route path="freezone-company-setup-in-UAE" element={<Freezone />} />
             <Route path="professional-license" element={<ProfessionalLicense />} />
             <Route path="commercial-license" element={<CommercialLicense />} />
